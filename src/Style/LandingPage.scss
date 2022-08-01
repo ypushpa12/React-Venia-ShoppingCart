@@ -1,0 +1,361 @@
+* {
+    font-family: Source Serif Pro, Semibold;
+
+}
+
+.landing_1 {
+    background-color: rgb(241, 234, 234);
+    height: 500px;
+}
+
+.Landing_left {
+    padding-left: 130px;
+    width: 500px;
+    padding-top: 80px;
+    background-color: rgb(241, 234, 234);
+
+    h2 {
+        font: normal normal 600 38px/60px Source Serif Pro;
+    }
+}
+
+.Landing_left button {
+    font-size: 12px;
+    padding: 10px;
+    width: 200px;
+    background-color: #1363DF;
+    border: none;
+    border-radius: 1rem;
+
+}
+
+.Landing_left button p {
+    color: white;
+}
+
+.landing_2 {
+    margin-top: -41px
+}
+
+.landing_2 img {
+    height: 200px;
+    width: 20rem;
+    margin-right: 5px;
+}
+
+.landing_2 .card-1 img {
+    width: 20rem;
+}
+
+.landing_2 .card-desc {
+    background-color: #1B252CD9;
+    color: white;
+    margin-top: -45px;
+    padding-left: 30px;
+    margin-right: 0.5rem;
+
+}
+
+.card-desc h3 {
+    font: normal normal 600 15px/30px Source Serif Pro;
+    padding-top: 0.5rem;
+}
+
+.card-desc p {
+    color: white;
+    font: normal normal normal 12px/23px Muli;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+}
+
+.landing_2 .card {
+    margin-top: -30px;
+    width: 20rem;
+}
+
+.landing_3 .Landing_left {
+    background-color: white;
+    padding-top: 15px;
+
+}
+
+.landing_3 {
+    margin-top: 280px;
+    height: 450px;
+
+    img {
+        margin-left: 9rem;
+    }
+}
+
+.landing_2 .card hr {
+    background: #1363DF;
+    opacity: 3;
+    height: 6px;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.landing_3 .btn_1 {
+    border: 2px solid #1363DF;
+    background-color: white;
+    width: 174px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 1rem;
+
+}
+
+.landing_3 .btn_1 p {
+    color: #1363DF;
+    font-size: 10px;
+}
+
+.landing_3 .btn_2 {
+    width: 180px;
+    height: 40px;
+    border-radius: 1rem;
+}
+
+.landing_3 .btn_2 p {
+    font-size: 10px;
+}
+
+.landing_3 hr {
+    background-color: #1363DF;
+    margin-left: 0rem;
+    margin-top: -2rem;
+    height: 0.5rem !important;
+    width: 22%;
+    opacity: 3;
+}
+
+// .landing_4 {
+
+//     margin-bottom: 107px;
+// }
+
+.landing_4 .landing-left img {
+    width: 100%;
+    height: 22rem;
+}
+
+.landing_4 .landing-right {
+    background-color: black;
+    height: 23.5rem;
+}
+
+.landing_4 .landing-right h2 {
+    color: white;
+    font: normal normal 600 30px/60px Source Serif Pro;
+    width: 326px;
+    padding-left: 108px;
+    padding-top: 60px;
+    line-height: initial;
+}
+
+.landing_4 .landing-right p {
+    color: white;
+    padding-left: 108px;
+}
+
+.landing_4 .landing-right .btn_3 {
+    margin-left: 108px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: black;
+    width: 150px;
+    height: 30px;
+}
+
+.landing_4 .landing-right .btn_3 p {
+    font-size: 12px;
+    margin-left: -100px;
+    margin-top: -0.5rem;
+}
+
+.landing_4 .landing-right {
+
+    width: 100%;
+    margin-top: -10px;
+}
+
+.landing_2 .landimg1 {
+    background-image: url("https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg");
+    background-size: cover;
+    padding-top: 15rem;
+    width: 18rem;
+    height: 12rem;
+
+}
+
+.landing_2 .landimg {
+    background-image: url("https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg");
+    background-size: cover;
+    padding-top: 15rem;
+    width: 18rem;
+}
+
+.landing_2 .landimg2 {
+    background-image: url("https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg");
+    background-size: cover;
+    padding-top: 15rem;
+    width: 18rem;
+}
+
+.landing_2 .landimg3 {
+    background-image: url("https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg");
+    background-size: cover;
+    padding-top: 15rem;
+    width: 18rem;
+}
+
+.landing_2 .landimg1 hr {
+    height: 0.5rem;
+    background-color: blue;
+}
+
+.landing_2 {
+    position: absolute;
+    padding-left: 5rem;
+}
+
+.landing_4 hr {
+    background-color: #1363DF;
+    margin-left: -2rem;
+    margin-top: 0.3rem;
+    height: 0.3rem !important;
+    width: 15%;
+    opacity: 3;
+}
+
+.landing_4 .map1 {
+    padding-right: 310px;
+    font-size: 35px;
+    color: #f3f3f3;
+    margin-left: -1.3rem;
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        overflow: hidden;
+    }
+
+    .landing_1 {
+        display: none;
+    }
+
+    .landing_2 {
+        padding-left: 3rem;
+
+        .card-desc {
+            width: 23rem;
+
+        }
+
+        .landimg1 {
+            margin-left: -4rem;
+            width: 23rem;
+            margin-top: 3rem;
+
+        }
+
+        .landimg {
+            margin-left: -4rem;
+            width: 23rem;
+            margin-top: 3rem;
+        }
+
+        .landimg2 {
+
+            margin-left: -4rem;
+            width: 23rem;
+            margin-top: 3rem;
+        }
+
+        .landimg3 {
+            margin-left: -4rem;
+            width: 23rem;
+            margin-top: 3rem;
+        }
+    }
+
+    .landing_3 .Landing_left {
+        padding-top: 40rem;
+        margin-top: 15rem;
+    }
+
+    .Landing_left h2 {
+        font: normal normal 600 32px/45px Source Serif Pro;
+        margin-left: -8rem;
+    }
+
+    h5 {
+        margin-left: -8rem;
+    }
+
+    .landing_3 p {
+        margin-left: -16rem;
+        padding-left: 8rem;
+    }
+
+    .landing_3 .btn_1 {
+        margin-left: -8rem;
+        width: 111px;
+
+        p {
+            padding-left: 15rem;
+        }
+    }
+
+    .landing_3 .btn_2 {
+        width: 111px;
+
+        p {
+            padding-left: 15rem;
+        }
+    }
+
+    .landing_3 hr {
+        margin-left: -2rem;
+        margin-top: 2rem;
+        width: 28%;
+    }
+
+    .landing_3 {
+       
+        flex-direction: row-reverse;
+    }
+
+    .landing_3 img {
+        margin-left: 0rem;
+    }
+
+    .landing_4 .landing-left img {
+        height: 12rem;
+        margin-top: 3rem;
+    }
+
+    .landing_4 .landing-right {
+        width: 21rem;
+        height: 22rem;
+
+        h2 {
+            padding-left: 2rem;
+        }
+
+        p {
+            padding-left: 2rem;
+        }
+    }
+
+    .landing_4 .landing-right .btn_3 {
+        margin-left: 39px;
+
+        p {
+            padding-left: 6rem;
+        }
+    }
+
+}

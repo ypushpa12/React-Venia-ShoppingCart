@@ -1,0 +1,194 @@
+.herosection {
+  font-family: 'Source Serif Pro', serif;
+}
+.hero-sec .card_1-body{
+  height: 18rem;
+    width: 26rem;
+    background-color: #1B252C;
+    margin-left: -8.2rem;
+  }
+  .hero-sec .card_1_title {
+    color: white;
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 3rem;
+    font-family: 'Source Serif Pro', serif;
+  }
+ 
+  .main .card-img{
+    width: 71rem;
+    margin-left: -7.4rem;
+    margin-top: 1rem;
+  }
+  .lines img{
+    width: 122px;
+    margin-left: 81px;
+  }
+  .hero-sec{
+    padding-bottom: 30px;
+  }
+  
+  .lines hr {
+    background-color: #E26A2C;
+    margin-left: 11rem;
+    margin-top: 1.3rem;
+   height: 0.5rem !important;
+    width: 22%;
+  opacity: 3;
+  }
+  
+  .sub{
+    display:none;
+  }
+.herosection .card-body {
+  // margin-left: -6rem;
+  width: 24rem;
+height: 18rem;
+  background-color: #1B252C;
+}
+.herosection .cardone{
+  margin-top: -3rem;
+  // margin-left: -3rem;
+}
+.herosection .card-title {
+  color: white;
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 3rem;
+  font-family: 'Source Serif Pro', serif;
+}
+.card-img{
+  margin-top: -2rem;
+  width: 68rem;
+
+}
+.card-img-top {
+ 
+  height: 16.5rem;
+  // margin-top: -2rem;
+  margin-left: -3rem;
+
+}
+
+.lines img {
+  width: 122px;
+  margin-left: 81px;
+}
+
+.herosection {
+  padding-top: 33px;
+  padding-bottom: 12px;
+}
+.lines{
+  margin: -4rem -1rem;
+}
+.lines hr {
+  background-color: #1F39FF !important;
+  height: 0.5rem !important;
+  width: 19%;
+  margin: 6rem 11rem;
+
+  opacity: 3;
+}
+
+.mob {
+  display: none;
+}
+
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+  .lines hr {
+    margin: 5rem 7rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 765px) {
+  .adc {
+    display: none;
+  }
+
+  .mob {
+    display: block;
+  }
+
+  .card-img img {
+    width: 28rem;
+    height: 163px;
+    margin-top: 11px;
+    margin-bottom: 30px;
+  }
+  .card-img{
+    width: 100%;
+  }
+
+  .lines hr {
+    margin: 3rem 7rem;
+  }
+
+  .cardone {
+    margin-top: -77px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .herosection .card-body {
+    height: 11rem;
+    width: 24rem;
+    background-color: #1B252C;
+  }
+
+  .herosection .card-title {
+
+    padding-top: 0rem;
+
+  }
+
+  .herosection {
+    padding-top: 3px;
+  }
+
+
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1020px) {
+  .adc {
+    display: none;
+  }
+
+  .mob {
+    display: block;
+  }
+
+  .cardone {
+    margin-top: -77px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .herosection .card-body {
+    height: 11rem;
+    background-color: #1B252C;
+  }
+
+  .herosection .card-title {
+
+    padding-top: 0rem;
+
+  }
+
+  .herosection {
+    padding-top: 3px;
+  }
+
+  .lines hr {
+    background-color: #1F39FF !important;
+    height: 0.5rem !important;
+    width: 14%;
+    margin: 3rem 22rem;
+    border-radius: 15px 15px;
+    opacity: 3;
+  }
+
+
+}

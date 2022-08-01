@@ -1,0 +1,218 @@
+@mixin swatch ($color) {
+    background: $color;
+    margin-right: 10px;
+}
+
+$blackcolor: #172026;
+
+
+.Sizebutton button {
+    border-radius: 5px;
+    width: 55px;
+    height: 35px;
+    padding-left: 5px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.swatch {
+    padding-bottom: 1rem;
+}
+
+.static1 {
+    margin-top: -1rem;
+}
+
+.swatch img {
+    padding-left: 0px;
+    width: 52px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.swatchone {
+    @include swatch(#3D84FF)
+}
+
+.swatchtwo {
+    @include swatch(#c21273)
+}
+
+.swatchthree {
+    @include swatch(#172026)
+}
+
+.swatchfour {
+    @include swatch(#B5B8BA)
+}
+
+.Details-1 h6 {
+    padding-left: 20px;
+}
+
+.Details-1 h5 {
+    padding-left: 15px;
+}
+
+.details h6 {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.details-1 {
+    padding-top: 0px !important;
+}
+
+.line hr {
+    background-color: #1F39FF !important;
+    height: 0.5rem !important;
+    width: 7%;
+    margin: 2rem 0rem;
+    opacity: 1;
+}
+
+.addtocart {
+    width: 300px;
+    height: 40px;
+
+    background: var(--primary-brand) 0% 0% no-repeat padding-box;
+    background: #1F39FF 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    opacity: 1;
+}
+
+.one {
+    border-radius: 9px;
+    float: left;
+    width: 84px;
+    text-align: center;
+    height: 30px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #d3d3d3;
+}
+
+.static .start {
+    float: left;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 50%;
+}
+
+.static {
+    padding-bottom: 1rem;
+}
+
+.static .end {
+    float: left;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 50%;
+}
+
+.size span {
+    float: left;
+    width: 60px;
+    text-align: center;
+    height: 30px;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 7px;
+
+}
+
+.qty {
+    padding: 1.5rem;
+    margin-left: -1rem;
+}
+
+.icn a {
+    text-decoration: none;
+    color: $blackcolor;
+    font-size: 20px;
+    /* text-align: center; */
+    padding-right: 25px;
+}
+
+.icn {
+    padding-left: 90px;
+}
+
+.addtocart {
+    color: white;
+    border: none;
+}
+
+.star a {
+    color: $blackcolor;
+    font-size: 14px;
+}
+
+.star ul {
+    padding-left: 0px;
+}
+
+p {
+    color: $blackcolor;
+}
+
+.Producttitle {
+    padding-top: 40px;
+}
+@media only screen and (min-width: 320px) and (max-width: 766px) {
+
+    .line {
+        display: none;
+    }
+
+    .Sizebutton button {
+
+        width: 47px;
+    }
+
+    .oneprice img {
+        height: 270px;
+        width: 270px;
+    }
+    .Sweat-wicking h5 {
+        padding-left: 116px;
+    }
+
+    .Details-1 h5 {
+        padding-left: 119px;
+    }
+
+    .Details-1 h6 {
+        padding-left: 3px;
+    }
+
+    .details {
+        padding-left: 127px;
+        margin-top: -73px;
+        margin-bottom: -96px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+    .oneprice {
+        text-align: center;
+    }
+
+    .rating-one {
+        text-align: center;
+    }
+
+    .Producttitle {
+        text-align: center;
+    }
+}

@@ -1,0 +1,84 @@
+* {
+    font-family: Source Serif Pro, Semibold;
+}
+
+.guestcheckout h4 {
+    font: normal normal 600 30px/30px Source Serif Pro;
+}
+
+.btn-shipping-1 {
+    margin-bottom: 30px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #2A65D7;
+}
+
+
+.pricing-card {
+    margin-left: 185px;
+    border: 1px solid #D1D3D6;
+    padding: 10px;
+
+}
+
+.signin-check {
+    margin-left: 185px;
+    border: 1px solid #D1D3D6;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    h5 {
+
+        font: normal normal 600 15px/20px Muli;
+    }
+
+    .signin-btn {
+     
+        padding: 5px;
+        margin-left: 20px;
+        border-radius: 10px;
+        background: white;
+        border: 1px solid #2A65D7;
+        width: 100px;
+        height: 30px;
+    }
+
+    .signin-btn p {
+        font-size: 10px;
+        color: #1363DF;
+    }
+}
+
+.h18 {
+    width: -1px;
+}
+
+.btn-shipping-1 {
+    text-align: center;
+    margin-left: 200px;
+    height: 40px;
+    border: 2px solid #1363DF;
+}
+
+.btn-shipping-1 p {
+    font-size: 10px;
+    color: #1363DF;
+
+}
+
+.main-text {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.container-Checkout hr {
+    height: 0.5rem !important;
+    width: 5%;
+    background-color: #1363DF !important;
+    margin-bottom: 3rem;
+    margin-left: 38rem !important;
+    opacity: 3;
+}

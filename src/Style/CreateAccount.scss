@@ -1,0 +1,65 @@
+.account li{
+    list-style: none;   
+}
+.account ul{
+    display: flex;
+    gap:20px;
+    padding-left: 0px;
+}
+h2 {
+    padding-top: 1.5rem;
+}
+.acc-btn{
+    margin-left: 0rem;
+}
+.acc-btn1{
+    margin-left: 16rem;
+}
+a {
+    color: #333;
+}
+.row input{
+    width: 28rem;
+}
+.card {
+    border: 0.40rem solid #f8f9fa;
+    top: 10%;
+    width: 32rem;
+}
+
+.form-control {
+    background-color: #f8f9fa;
+    padding: 20px;
+    padding: 25px 15px;
+    margin-bottom: 1.3rem;
+}
+
+.form-control:focus {
+
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid #da5767;
+    outline: 0;
+    box-shadow: none;
+
+}
+@media only screen and (min-width:320px) and (max-width:800px){
+    // .row input{
+    //     width: 15rem;
+    // }
+    // .container{
+    //     width: 28rem;
+    // }
+    // .acc-btn1{
+    //     margin: 0rem;
+    // }
+    // .card{
+    //     width: 17rem;
+    // }
+    .account{
+        width: 38rem;
+    }
+}
+
+
+
