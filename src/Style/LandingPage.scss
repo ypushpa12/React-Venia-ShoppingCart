@@ -75,61 +75,61 @@ span.carousel-control-next-icon {
 }
 
 .left-content {
+    right: 49px;
     width: 552px;
     height: 273px;
-    padding-bottom: 216px;
+    position: relative;
 }
-
+.Landing_left{
+    height: 710px;
+}
 .Landing_left .left-content h2 {
-    padding-top: 241px;
-    padding-left: 151px;
     font: normal normal 600 40px/60px Source Serif Pro;
     letter-spacing: 0px;
     color: #172026;
+    left: 86px;
 }
 
 .Landing_left .left-content p {
-    padding-top: 10px;
-    width: 552px;
-    height: 75px;
-    padding-bottom: 64px;
+ left: 86px;
     font: normal normal normal 16px/24px Muli;
-    padding-left: 151px;
+  
 
 }
 
 .Landing_left .left-content button {
-    width: 220px;
-    height: 40px;
-    position: absolute;
-    top: 35rem;
-    left: 150px;
+    border-radius: 18px;
+    border: none;
+    background: #1363DF;
+    width: 184px;
+    margin-left: 112px;
+    height: 47px;
 }
 
 .Landing_left .left-content button p {
-    text-align: center;
-    font: normal normal bold 14px/16px Muli;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    position: relative;
-    right: 18rem;
-    bottom: 0.5rem;
+    font: normal normal normal 11px/24px Muli;
+    color: white;
+ text-align: initial;
+   
 }
 
 .card-desc h3 {
-
-    font: normal normal 600 16px/30px Source Serif Pro;
+    padding-top: 12px;
+    text-align: center;
+    font-family: "Source Serif Pro";
+    font: normal normal 300 16px/30px Source Serif Pro;
     letter-spacing: 0px;
 }
 
 .landing_2 .card-desc {
+    margin-right: 6px;
     background-color: #1B252CD9;
     // width: 331px;
     // height: 90px;
     color: white;
-    margin-top: -45px;
-    padding-left: 30px;
-    margin-right: 0.5rem;
+    // margin-top: -45px;
+    // padding-left: 30px;
+    // margin-right: 0.5rem;
 }
 
 .landing_2 .card-desc1 {
@@ -148,57 +148,24 @@ span.carousel-control-next-icon {
 .Landing_left h2 {
     // width: 411px;
     // height: 126px;
-    padding-left: 117px;
+    // padding-left: 117px;
+    position: relative;
+    right: 61px;
     font: normal normal 600 40px/60px Source Serif Pro;
 }
 
 .Landing_left h5 {
-    padding-left: 117px;
+    // padding-left: 117px;
+    position: relative;
+    right: 102px;
+
     font: normal normal 600 20px/25px Muli;
 }
 
 .Landing_left p {
+    position: relative;
+    right: 65px;
     font: normal normal normal 16px/24px Muli;
-    padding-left: 117px;
-}
-
-// .Landing_left {
-
-//     width: 1000px;
-//     height: 650px;
-
-//     background-color: #e5e5e7;
-
-//     h2 {
-//         font: normal normal 600 38px/60px Source Serif Pro;
-//     }
-// }
-
-// .Landing_left button {
-//     font-size: 12px;
-//     padding: 10px;
-//     width: 200px;
-//     background-color: #1363DF;
-//     border: none;
-//     border-radius: 1rem;
-
-// }
-
-// .lines hr {
-//     background-color: #1F39FF !important;
-//     height: 0.5rem !important;
-//     width: 19%;
-//     margin: 6rem 11rem;
-
-//     opacity: 3;
-// }
-
-// .Landing_left button p {
-//     color: white;
-// }
-
-.landing_2 {
-    margin-top: -41px
 }
 
 .landing_2 img {
@@ -216,6 +183,7 @@ span.carousel-control-next-icon {
     font: normal normal normal 12px/23px Muli;
     margin-top: -1rem;
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .landing_2 .card {
@@ -225,16 +193,19 @@ span.carousel-control-next-icon {
 
 .landing_3 .Landing_left {
     background-color: white;
-    padding-top: 15px;
+    margin-top: 4rem;
 
 }
 
 .landing_3 {
-    margin-top: 280px;
+
+    margin-top: 358px;
     height: 450px;
 
     img {
         margin-left: 6rem;
+        height: 27rem;
+        width: 31rem;
     }
 }
 
@@ -243,8 +214,8 @@ span.carousel-control-next-icon {
     opacity: 3;
     height: 6px;
     padding: 0;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    // margin-bottom: 0px;
+    // margin-top: 0px;
 }
 
 .landing_3 .btn_1 {
@@ -252,23 +223,32 @@ span.carousel-control-next-icon {
     background-color: white;
     width: 174px;
     height: 40px;
-    margin-right: 15px;
+  
     border-radius: 1rem;
-
+    position: relative;
+    right: 48px;
 }
 
 .landing_3 .btn_1 p {
     color: #1363DF;
     font-size: 10px;
+    float: right;
 }
 
 .landing_3 .btn_2 {
+    background-color: #1363DF;
     width: 180px;
     height: 40px;
     border-radius: 1rem;
+    position: relative;
+    bottom: 9px;
+    margin-bottom: 42px;
+    border: 1px;
 }
 
 .landing_3 .btn_2 p {
+    color: white;
+    text-align: end;
     font-size: 10px;
 }
 
@@ -287,10 +267,10 @@ span.carousel-control-next-icon {
 // }
 
 .landing_4 .landing-left img {
-    width: 89%;
+    left: 16px;
     height: 22rem;
     position: relative;
-    left: 5.9rem;
+    width: 98%;
 }
 
 .landing_4 .landing-right {
@@ -303,7 +283,7 @@ span.carousel-control-next-icon {
     font: normal normal 600 30px/60px Source Serif Pro;
     width: 326px;
     padding-left: 45px;
-    padding-top: 60px;
+    padding-top: 81px;
     line-height: initial;
 }
 
@@ -323,8 +303,7 @@ span.carousel-control-next-icon {
 
 .landing_4 .landing-right .btn_3 p {
     font-size: 12px;
-    margin-left: -100px;
-    margin-top: -0.5rem;
+    padding-left: 0px;
 }
 
 .landing_4 .landing-right {
@@ -358,6 +337,8 @@ span.carousel-control-next-icon {
 
 .Landing_left {
     background-color: #e5e5e7;
+    position: relative;
+    bottom: 58px;
 }
 
 .landing_2 .landimg1 {
@@ -366,11 +347,15 @@ span.carousel-control-next-icon {
     padding-top: 15rem;
     width: 18rem;
     height: 12rem;
+    bottom: 38px;
+    position: relative;
+    
 
 }
 
 .Landing-right .imgsize {
     height: 650px;
+    
 }
 
 .landing_2 .landimg {
@@ -378,6 +363,8 @@ span.carousel-control-next-icon {
     background-size: cover;
     padding-top: 15rem;
     width: 18rem;
+    bottom: 38px;
+    position: relative;
 }
 
 .landing_2 .landimg2 {
@@ -385,6 +372,8 @@ span.carousel-control-next-icon {
     background-size: cover;
     padding-top: 15rem;
     width: 18rem;
+    bottom: 38px;
+    position: relative;
 }
 
 .landing_2 .landimg3 {
@@ -392,20 +381,36 @@ span.carousel-control-next-icon {
     background-size: cover;
     padding-top: 15rem;
     width: 18rem;
+    bottom: 38px;
+    position: relative;
 }
 
 .landing_2 .landimg1 hr {
     height: 0.5rem;
     background-color: blue;
+    bottom: 56px;
+    position: relative;
+    right: 14px;
+    opacity: 3;
 }
 
 .landing_2 {
+    top: 53rem;
     position: absolute;
     padding-left: 5rem;
 }
-
+.lines hr{
+    height: 0.5rem;
+   
+    background-color: blue;
+    bottom: 94px;
+    position: relative;
+    right: 14px;
+    opacity: 3;
+    width: 244px;
+}
 .landing_4 hr {
-    top: 113rem;
+    top: 134rem;
     background-color: #1363DF;
     position: absolute;
     right: 33.5rem;
@@ -419,7 +424,7 @@ span.carousel-control-next-icon {
 }
 
 .landing_4 .map1 {
-    top: 111rem;
+    top: 132rem;
     font-size: 35px;
     color: #f3f3f3;
     position: absolute;
@@ -457,7 +462,7 @@ span.carousel-control-next-icon {
     }
 
     .landing_1 {
-        display: none;
+        display: flex;
     }
 
 

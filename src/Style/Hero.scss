@@ -3,9 +3,12 @@
 }
 .hero-sec .card_1-body{
   height: 18rem;
-    width: 26rem;
+
     background-color: #1B252C;
-    margin-left: -8.2rem;
+    
+    height: 18rem;
+    width: 24.3rem;
+
   }
   .hero-sec .card_1_title {
     color: white;
@@ -28,14 +31,14 @@
     padding-bottom: 30px;
   }
   
-  .lines hr {
-    background-color: #E26A2C;
-    margin-left: 11rem;
-    margin-top: 1.3rem;
-   height: 0.5rem !important;
-    width: 22%;
-  opacity: 3;
-  }
+  // .lines hr {
+  //   background-color: #E26A2C;
+  //   margin-left: 11rem;
+  //   margin-top: 1.3rem;
+  //  height: 0.5rem !important;
+  //   width: 22%;
+  // opacity: 3;
+  // }
   
   .sub{
     display:none;
@@ -65,8 +68,7 @@ height: 18rem;
 .card-img-top {
  
   height: 16.5rem;
-  // margin-top: -2rem;
-  margin-left: -3rem;
+  
 
 }
 
@@ -79,17 +81,17 @@ height: 18rem;
   padding-top: 33px;
   padding-bottom: 12px;
 }
-.lines{
-  margin: -4rem -1rem;
-}
-.lines hr {
-  background-color: #1F39FF !important;
-  height: 0.5rem !important;
-  width: 19%;
-  margin: 6rem 11rem;
+// .lines{
+//   margin: -4rem -1rem;
+// }
+// .lines hr {
+//   background-color: #1F39FF !important;
+//   height: 0.5rem !important;
+//   width: 19%;
+//   margin: 6rem 11rem;
 
-  opacity: 3;
-}
+//   opacity: 3;
+// }
 
 .mob {
   display: none;

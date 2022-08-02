@@ -4,7 +4,7 @@ import "../Style/Hero.scss"
 
 function Hero() {
   return (
-    <div class="container">
+    <div class="container-fluid">
         <div className='main'>
         
         <div className='hero-sec'>
@@ -13,9 +13,9 @@ function Hero() {
               <div class="card_1">
                 <div class="card_1-body">
                   <h5 class="card_1_title">Men’s <br/>Outerwear</h5>
-                  <div className='lines'>
+                  {/* <div className='lines'>
                     <hr />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
