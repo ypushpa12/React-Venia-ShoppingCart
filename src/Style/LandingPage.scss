@@ -3,16 +3,17 @@
 
 }
 
-.landing_1 {
-    background-color: rgb(241, 234, 234);
-    height: 500px;
+.Landing_left .left-content h2{
+padding-top:241px;
+padding-left:151px ;
 }
 
 .Landing_left {
-    padding-left: 130px;
-    width: 500px;
-    padding-top: 80px;
-    background-color: rgb(241, 234, 234);
+  
+    width: 1000px;
+    height: 650px;
+ 
+    background-color: #e5e5e7;
 
     h2 {
         font: normal normal 600 38px/60px Source Serif Pro;
@@ -28,7 +29,14 @@
     border-radius: 1rem;
 
 }
-
+.lines hr {
+    background-color: #1F39FF !important;
+    height: 0.5rem !important;
+    width: 19%;
+    margin: 6rem 11rem;
+  
+    opacity: 3;
+  }
 .Landing_left button p {
     color: white;
 }
@@ -84,7 +92,7 @@
     height: 450px;
 
     img {
-        margin-left: 9rem;
+        margin-left: 6rem;
     }
 }
 
@@ -137,8 +145,10 @@
 // }
 
 .landing_4 .landing-left img {
-    width: 100%;
+    width: 89%;
     height: 22rem;
+    position: relative;
+    left: 5.9rem;
 }
 
 .landing_4 .landing-right {
@@ -150,18 +160,18 @@
     color: white;
     font: normal normal 600 30px/60px Source Serif Pro;
     width: 326px;
-    padding-left: 108px;
+    padding-left: 45px;
     padding-top: 60px;
     line-height: initial;
 }
 
 .landing_4 .landing-right p {
     color: white;
-    padding-left: 108px;
+    padding-left: 45px;
 }
 
 .landing_4 .landing-right .btn_3 {
-    margin-left: 108px;
+    margin-left: 53px;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     background-color: black;
@@ -177,10 +187,31 @@
 
 .landing_4 .landing-right {
 
-    width: 100%;
+    width: 89%;
     margin-top: -10px;
 }
+.landing_2 .landimg1 hr{
+    margin-left: 1rem;
+    width: 17.5rem;
+    margin-top: 4rem;
+}
+.lines hr{
+    width: 88%;
+    margin: 4rem 1rem;
+}
+.landing_2 .landimg2 hr{
+    width: 88%;
+    margin: 4rem 1rem;
 
+}
+.landing_2 .landimg3 hr{
+    width: 88%;
+    margin: 4rem 1rem;
+  
+}
+.Landing_left{
+    background-color: #e5e5e7;
+}
 .landing_2 .landimg1 {
     background-image: url("https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg");
     background-size: cover;
@@ -189,7 +220,9 @@
     height: 12rem;
 
 }
-
+.Landing-right .imgsize{
+    height: 650px;
+}
 .landing_2 .landimg {
     background-image: url("https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg");
     background-size: cover;
@@ -222,19 +255,26 @@
 }
 
 .landing_4 hr {
+    top: 113rem;
     background-color: #1363DF;
-    margin-left: -2rem;
-    margin-top: 0.3rem;
+    position: absolute;
+    right: 33.5rem;
     height: 0.3rem !important;
-    width: 15%;
+    width: 3%;
     opacity: 3;
 }
-
+.mob-landing{
+    display: none;
+}
 .landing_4 .map1 {
-    padding-right: 310px;
+   top:111rem;
     font-size: 35px;
     color: #f3f3f3;
-    margin-left: -1.3rem;
+    position: absolute;
+    right: 33.6rem;
+}
+.landing_3{
+    display: block;
 }
 
 @media only screen and (max-width: 320px) {
@@ -242,10 +282,32 @@
         overflow: hidden;
     }
 
+    .landing_3 {
+        display: none;
+    }
+
+    .landing-mob {
+        display: block;
+    }
+
+    // .landing_2 .landimg1{
+    //     margin-top:-11rem;
+    // }
+    .Landingright img {
+        height: 27rem;
+    }
+
+    .Landingleft {
+        position: relative;
+        top: -17rem;
+        text-align: center;
+    }
+
     .landing_1 {
         display: none;
     }
 
+   
     .landing_2 {
         padding-left: 3rem;
 
@@ -281,65 +343,76 @@
         }
     }
 
-    .landing_3 .Landing_left {
-        padding-top: 40rem;
-        margin-top: 15rem;
+
+    .mob-landing {
+        display: block;
     }
 
-    .Landing_left h2 {
-        font: normal normal 600 32px/45px Source Serif Pro;
-        margin-left: -8rem;
+    .mob-landing .mob-img img {
+        position: absolute;
+        top: 81rem;
+        left: 0.3rem;
+        width: 23rem;
     }
 
-    h5 {
-        margin-left: -8rem;
+    .mob-landing .mob-text h2 {
+        font: normal normal 600 34px/45px Source Serif Pro;
+        position: absolute;
+        top: 98rem;
+        left: 2rem;
     }
 
-    .landing_3 p {
-        margin-left: -16rem;
-        padding-left: 8rem;
+    .mob-landing .mob-text h5 {
+        top: 107rem;
+        // position: absolute;
+        margin-top: 103rem;
+        margin-left: 1rem;
+        font: normal normal 600 20px/25px Muli;
     }
 
-    .landing_3 .btn_1 {
-        margin-left: -8rem;
-        width: 111px;
-
-        p {
-            padding-left: 15rem;
-        }
+    .mob-landing .mob-text p {
+        position: relative;
+        left: 1rem;
+        font: normal normal normal 16px/24px Muli;
     }
 
-    .landing_3 .btn_2 {
-        width: 111px;
-
-        p {
-            padding-left: 15rem;
-        }
+    .mob-text .btns .btn_3 {
+        // position: relative;
+        width: 15rem;
+        background-color: white;
+        margin-left: 5rem;
+        border: 2px solid blue;
+        border-radius: 11px;
+        margin-top: 1rem;
     }
 
-    .landing_3 hr {
-        margin-left: -2rem;
-        margin-top: 2rem;
-        width: 28%;
+    .mob-text .btn_4 {
+
+        // position: relative;
+        width: 15rem;
+        background-color: blue;
+        margin-left: 5rem;
+        border-radius: 11px;
+
     }
 
-    .landing_3 {
-       
-        flex-direction: row-reverse;
-    }
-
-    .landing_3 img {
-        margin-left: 0rem;
+    .landing-left {
+        width: 25rem;
+        margin-left: -6rem;
     }
 
     .landing_4 .landing-left img {
-        height: 12rem;
+        height: 20rem;
         margin-top: 3rem;
+
     }
 
     .landing_4 .landing-right {
         width: 21rem;
         height: 22rem;
+        position: relative;
+        top: -3rem;
+        left: 0.5rem;
 
         h2 {
             padding-left: 2rem;
