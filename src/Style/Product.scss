@@ -159,8 +159,31 @@ $blackcolor: #172026;
 
 .star ul {
     padding-left: 0px;
+    display: flex;
 }
+.swatch{
+    display: flex;
+   
+}
+.oneprice img{
+    height: 55rem;
+    position: relative;
+    left: 9rem;
+}
+.swatch img{
+    right: 47px;
+    position: relative;
+    top: 34px;
+}
+.icn{
+    
+    display: flex;
+    padding-top: 13px;
 
+}
+.size{
+    padding-top: 37px;
+}
 p {
     color: $blackcolor;
 }

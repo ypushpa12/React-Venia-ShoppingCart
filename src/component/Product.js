@@ -56,7 +56,7 @@ const Product = (props) => {
 
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 oneprice">
                         
-                            <img src={product.image} alt={product.title} height="380px" width="380px" />
+                            <img src={product.image} alt={product.title} width="380px" />
                         </div>
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 rating-one">
                             <p>Clothing / Women’s / Outerwear</p>
