@@ -35,11 +35,11 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                 <div className="logo headerlogo"><img src="../../../assets/venia-logo.png"></img></div>
                 <nav className="nav">
                     <ul className="menu">
-                        <li className="menuitem"><a href="">Home</a></li>
+                        <li className="menuitem"><a href=""Link to ="/home">Home</a></li>
                         <li className="menuitem"><a href="" Link to ="/products">Women</a> </li>
-                        <li className="menuitem"><a href="">Men</a></li>
-                        <li className="menuitem"><a href="">Electronics</a></li>
-                        <li className="menuitem"><a href="">Jewellery</a></li>
+                        <li className="menuitem"><a href="" Link to ="/men">Men</a></li>
+                        <li className="menuitem"><a href="" Link to ="/electronics">Electronics</a></li>
+                        <li className="menuitem"><a href="" Link to ="/jewellery">Jewellery</a></li>
                     </ul>
                 </nav>
                 <div className="carticon">
