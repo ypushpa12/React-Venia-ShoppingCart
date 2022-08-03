@@ -464,12 +464,17 @@ span.carousel-control-next-icon {
 .landing-right h2 {
     position: relative;
 }
+.mob-landing{
+    display: none;
+}
 
 @media only screen and (max-width: 320px) {
     .container {
         overflow: hidden;
     }
-
+    .landing_3{
+        display: none;
+    }
     .mobile-text {
         display: block;
     }

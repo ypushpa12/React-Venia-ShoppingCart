@@ -129,6 +129,32 @@ export default function Landing() {
         </div>
       </div>
       <div className='container'>
+        <div className='landing_3'>
+          <div class="aem-Grid aem-Grid--12">
+            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+              <div className='Landing_left'>
+                <h2>Take off in the new <br />Signature Legging</h2>
+                <h5>Lorem Ipsum Dolor Tempor</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adi<br />piscing elit,sed do eiusmod tempor incididunt<br />ut labore et
+                  dolore magna aliqua.Lobortis <br />mattis aliquam faucibus purus.</p>
+                <div className='btns'>
+                  <button className='btn_1'><p>SHOP COLLECTION</p></button>
+                  <button className='btn_2'><p>SHOP NOW</p></button>
+                  <hr />
+                </div>
+              </div>
+
+            </div>
+            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+              <div className='Landing-right'>
+                <img src={landing1} />
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='container'>
         <div className='mob-landing'>
           <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
