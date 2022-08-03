@@ -59,10 +59,11 @@ function App() {
 
       {/* <LandingPage /> */}
       <Routes>
+    
         {/* <Route exact path='/landingpage' element={<LandingPage />} /> */}
-        <Route exact path='/LandingPage' element={<LandingPage category={category} />} />
+        <Route exact path='/' element={<LandingPage category={category} />} />
         <Route exact path='/Checkout1' element={<Checkout1 />} />
-        <Route exact path='/' element={<Home category={category} />} />
+        <Route exact path='/women' element={<Home category={category} />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/filter' element={<Filter />} />
         <Route exact path='/products' element={<Products category="" />} />

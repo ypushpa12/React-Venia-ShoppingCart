@@ -77,12 +77,13 @@ span.carousel-control-next-icon {
 .left-content {
     right: 49px;
     width: 552px;
-    height: 273px;
+
     position: relative;
 }
-.Landing_left{
-    height: 710px;
+ .Landing_left{
+    height: 650px;
 }
+
 .Landing_left .left-content h2 {
     font: normal normal 600 40px/60px Source Serif Pro;
     letter-spacing: 0px;
@@ -109,7 +110,7 @@ span.carousel-control-next-icon {
 .Landing_left .left-content button p {
     font: normal normal normal 11px/24px Muli;
     color: white;
- text-align: initial;
+    margin-left: -158px;
    
 }
 
@@ -122,13 +123,16 @@ span.carousel-control-next-icon {
 }
 
 .landing_2 .card-desc {
- 
     background-color: #1B252CD9;
-    
+    width: 276px;
     color: white;
+    
   
 }
-
+.landing_4 {
+    position: relative;
+    top: 78px;
+}
 .landing_2 .card-desc1 {
     background-color: #1B252CD9;
     color: white;
@@ -138,14 +142,11 @@ span.carousel-control-next-icon {
 }
 
 .landing_3 .Landing_left {
-    width: 631px;
-    height: 347px;
+  
+    height: 450px;
 }
 
 .Landing_left h2 {
-    // width: 411px;
-    // height: 126px;
-    // padding-left: 117px;
     position: relative;
     right: 61px;
     font: normal normal 600 40px/60px Source Serif Pro;
@@ -190,7 +191,8 @@ span.carousel-control-next-icon {
 
 .landing_3 .Landing_left {
     background-color: white;
-    margin-top: 4rem;
+    bottom: 0px;
+    position: relative;
 
 }
 
@@ -200,8 +202,9 @@ span.carousel-control-next-icon {
     height: 450px;
 
     img {
-        margin-left: 6rem;
-        height: 27rem;
+        height: 450px;
+        position: relative;
+        left: 80px;
         width: 31rem;
     }
 }
@@ -229,7 +232,8 @@ span.carousel-control-next-icon {
 .landing_3 .btn_1 p {
     color: #1363DF;
     font-size: 10px;
-    float: right;
+    position: relative;
+    left: 0px;
 }
 
 .landing_3 .btn_2 {
@@ -238,7 +242,7 @@ span.carousel-control-next-icon {
     height: 40px;
     border-radius: 1rem;
     position: relative;
-    bottom: 9px;
+    // bottom: 9px;
     margin-bottom: 42px;
     border: 1px;
 }
@@ -304,11 +308,11 @@ span.carousel-control-next-icon {
     margin-top: -10px;
 }
 
-.landing_2 .landimg1 hr {
-    margin-left: 1rem;
-    width: 17.5rem;
-    margin-top: 4rem;
-}
+// .landing_2 .landimg1 hr {
+//     margin-left: 1rem;
+//     width: 17.5rem;
+//     margin-top: 4rem;
+// }
 
 .lines hr {
     width: 88%;
@@ -337,7 +341,7 @@ span.carousel-control-next-icon {
     background-image: url("https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 18rem;
+    width: 20rem;
     height: 12rem;
     bottom: 38px;
     position: relative;
@@ -345,7 +349,7 @@ span.carousel-control-next-icon {
 
 }
 
-.Landing-right .imgsize {
+ .Landing-right .imgsize  {
     height: 650px;
     
 }
@@ -354,7 +358,7 @@ span.carousel-control-next-icon {
     background-image: url("https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 18rem;
+    width: 20rem;
     bottom: 38px;
     position: relative;
 }
@@ -363,7 +367,7 @@ span.carousel-control-next-icon {
     background-image: url("https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 18rem;
+    width: 20rem;
     bottom: 38px;
     position: relative;
 }
@@ -372,40 +376,49 @@ span.carousel-control-next-icon {
     background-image: url("https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 18rem;
+    width: 20rem;
     bottom: 38px;
     position: relative;
 }
 
-.landing_2 .landimg1 hr {
-    height: 0.5rem;
-    background-color: #1363DF;
-    bottom: 56px;
-    position: relative;
-    right: 14px;
-    opacity: 3;
-}
 
 .landing_2 {
     top: 53rem;
     position: absolute;
-    padding-left: 5rem;
+    
+}
+.landing_2 .lines hr{
+    height: 0.5rem;
+    background-color: #1363DF;
+    position: relative;
+  
+    opacity: 2;
+    width: 276px;
+  
+}
+.landing_2 .line hr{
+    height: 0.5rem;
+    background-color: #1363DF;
+    position: relative;
+   
+    opacity: 2;
+    width: 276px;
+    bottom: 28px;
 }
 .lines hr{
     height: 0.5rem;
-   
-    background-color: blue;
-    bottom: 94px;
+    background-color: #1363DF;
     position: relative;
     right: 14px;
-    opacity: 3;
-    width: 244px;
+    opacity: 2;
+    width: 252px;
+    bottom: 97px;
 }
 .landing_4 hr {
-    top: 134rem;
+    top: 20rem;
     background-color: #1363DF;
     position: absolute;
-    right: 33.5rem;
+    right: 351px;
     height: 0.3rem !important;
     width: 3%;
     opacity: 3;
@@ -416,11 +429,11 @@ span.carousel-control-next-icon {
 }
 
 .landing_4 .map1 {
-    top: 132rem;
+    top: 18rem;
     font-size: 35px;
     color: #f3f3f3;
     position: absolute;
-    right: 33.6rem;
+    right: 352px;
 }
 
 .landing_3 {

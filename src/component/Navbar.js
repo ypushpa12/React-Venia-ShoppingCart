@@ -1,31 +1,36 @@
 import React from 'react';
 import "../Style/Navbar.scss"
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 import { FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
+import { Nav } from 'react-bootstrap';
 
-// const categories = [
-//     {
+const categories = [
 
-//         filter: "Home",
-//         displayName: 'Home'
-//     },
-//     {
+    
+    {
 
-//         filter: "women's clothing",
-//         displayName: 'Women'
-//     },
-//     {
-//         filter: "men's clothing",
-//         displayName: 'Men'
-//     }, {
-//         filter: "jewelery",
-//         displayName: 'Smart Gear'
-//     }, {
-//         filter: "electronics",
-//         displayName: 'Accessories'
-//     },
-// ]
+        filter: "Home",
+        displayName: 'Home'
+    },
+    {
+
+        filter: "women's clothing",
+        displayName: 'Women'
+    },
+    {
+        filter: "men's clothing",
+        displayName: 'Men'
+    }, {
+        filter: "jewelery",
+        displayName: 'Smart Gear'
+    }, {
+        filter: "electronics",
+        displayName: 'Accessories'
+    },
+]
 const Navbar = ({ setCategory, selectedCategory, ...props }) => {
     return (
         <div className="headercontainer">
@@ -35,29 +40,31 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                 <div className="logo headerlogo"><img src="../../../assets/venia-logo.png"></img></div>
                 <nav className="nav">
                     <ul className="menu">
-                        <li className="menuitem"><a href=""Link to ="/home">Home</a></li>
-                        <li className="menuitem"><a href="" Link to ="/products">Women</a> </li>
-                        <li className="menuitem"><a href="" Link to ="/men">Men</a></li>
-                        <li className="menuitem"><a href="" Link to ="/electronics">Electronics</a></li>
-                        <li className="menuitem"><a href="" Link to ="/jewellery">Jewellery</a></li>
+                        {
+                            categories?.map(category =>
+                                <li className={`nav-link ${category.filter === selectedCategory ? 'active' : ''} `} aria-current="page" onClick={() => setCategory(category.filter)}>{category.displayName}
+                                </li>
+                            )
+                        }
+                     
                     </ul>
                 </nav>
                 <div className="carticon">
-                    <a href=""Link to="/cart">
+                    <NavLink to="/cart">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-icon-_rq"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>
-                            
-            </svg>
-            {props.countCartItems ? (
-                                   <span className="cartqty">{props.countCartItems}</span>
-                               ) : (
-                                    ''
-                                )}
 
-                    </a>
+                        </svg>
+                        {props.countCartItems ? (
+                            <span className="cartqty">{props.countCartItems}</span>
+                        ) : (
+                            ''
+                        )}
+
+                    </NavLink>
                 </div>
             </header>
         </div>
-        
+
 
     )
 }
