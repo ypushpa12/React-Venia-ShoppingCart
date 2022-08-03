@@ -17,6 +17,8 @@ import Checkout1 from './component/Checkout1';
 import LandingPage from './component/LandingPage';
 import Checkout3 from './component/Checkout3';
 import Checkout2 from './component/Checkout2';
+import Checkout4 from './component/Checkout4';
+import Checkout5 from './component/Checkout5';
 // import Shipping from './component/Shipping';
 
 
@@ -67,7 +69,8 @@ function App() {
         <Route exact path='/signin' element={<Signin />} />
         <Route exact path='/Checkout2' element={<Checkout2 />} />
         <Route exact path='/Checkout3' element={<Checkout3 />} />
-        {/* <Route exact path='/Checkout' element={<Checkout />} /> */}
+        <Route exact path='/Checkout4' element={<Checkout4 />} />
+        <Route exact path='/Checkout5' element={<Checkout5 />} />
         <Route exact path='/signup' element={<Signup />} />
         <Route exact path='/products/:id' element={<Product onAdd={onAdd} />} />
         <Route exact path='/cart' element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />

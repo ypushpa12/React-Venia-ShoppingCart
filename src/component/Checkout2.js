@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import edit from '../Images/edit-2.png';
 import '../Style/Checkout2.scss';
 export default function Guestcheckout() {
@@ -15,43 +16,46 @@ export default function Guestcheckout() {
         <div class="aem-Grid aem-Grid--12">
 
           <div class="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
-            <div className='guest2'>
-              <div class="aem-Grid aem-Grid--12">
-                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+            <div className='guestcheck-2'>
+              <div className='guest2'>
+                <div class="aem-Grid aem-Grid--12">
+                  <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
 
-                  <h5 className='guesth5'>Shipping Information</h5>
-                  <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
-                </div>
+                    <h5 className='guesth5'>Shipping Information</h5>
+                    <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
+                  </div>
 
 
-                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <div className='guestp'>
-                    <p>Qadim Farhan </p>
-                    <p> 1098 Wapello Street </p>
-                    <p>Altadena, California 91001 </p>
-                    <p>United States</p>
+                  <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+                    <div className='guestp'>
+                      <p>Qadim Farhan </p>
+                      <p> 1098 Wapello Street </p>
+                      <p>Altadena, California 91001 </p>
+                      <p>United States</p>
+                    </div>
+                  </div>
+                  <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+                    <p className='guest3'><img src={edit} />Edit</p>
                   </div>
                 </div>
-                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <p className='guest3'><img src={edit} />Edit</p>
-                </div>
+              </div>
+              <h6 className='guest4'>2. Shipping Method</h6>
+              <div className='check2'>
+                <input type="radio" id="html" value="HTML" />
+                <label for="html">Standard Shipping (4-8 business days via USPS) FREE</label><br />
+                <input type="radio" id="html" value="HTML" />
+                <label for="html">Express Delivery (2-5 business days via USPS) $17.95</label><br />
+                <input type="radio" id="html" value="HTML" />
+                <label for="html">Next Day Delivery (Next business days via FedEx) $53.61</label><br />
+                <button className='main-btn'><p><Link to="/Checkout3">CONTINUE TO PAYMENT</Link></p></button>
+                <p>3. Payment Information</p>
               </div>
             </div>
-            <h6 className='guest4'>2. Shipping Method</h6>
-            <div className='check2'>
-              <input type="radio" id="html" value="HTML" />
-              <label for="html">Standard Shipping (4-8 business days via USPS) FREE</label><br />
-              <input type="radio" id="html" value="HTML" />
-              <label for="html">Express Delivery (2-5 business days via USPS) $17.95</label><br />
-              <input type="radio" id="html" value="HTML" />
-              <label for="html">Next Day Delivery (Next business days via FedEx) $53.61</label><br />
-              <button className='main-btn'><p>CONTINUE TO PAYMENT</p></button>
-              <p>3. Payment Information</p>
-            </div></div>
+          </div>
 
           <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12"></div>
-            <div className='pricing-card' >
+            <div className='pricing-card-2' >
               <div className="aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--6 ">
                   <h6>Subtotal</h6>
@@ -77,3 +81,4 @@ export default function Guestcheckout() {
     </>
   )
 }
+

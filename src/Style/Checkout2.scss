@@ -4,6 +4,7 @@
 
 .guesth3 {
     color: #172026;
+    padding-left: 49px;
     font: normal normal 600 23px/30px Source Serif Pro;
 }
 
@@ -74,8 +75,22 @@
 .container-Checkout hr {
     height: 0.5rem !important;
     width: 5%;
-    // background-color: #1363DF !important;
+  
     margin-bottom: 3rem;
     margin-left: 38rem !important;
     opacity: 3;
+}
+.guestcheck-2{
+    
+    position: relative;
+    left: 53px;
+
+}
+.pricing-card-2{
+   
+    border: 1px solid #D1D3D6;
+    padding: 10px;
+    width: 64%;
+    position: relative;
+    left: 93px;
 }

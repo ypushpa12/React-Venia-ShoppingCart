@@ -1,10 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import edit from '../Images/edit-2.png';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../Style/Checkout3.scss';
-export default function Review() {
+export default function Checkout3() {
   return (
     <div className='container'>
       <div className='container-Checkout'>
@@ -81,6 +82,38 @@ export default function Review() {
           </div>
         </div>
       </div>
+      {/* <div className='pay1'>
+        <p>3. Payment Information</p>
+      </div>
+      <input type="radio" id="html" value="HTML" />
+      <label for="html">Credit Card</label><br />
+      <div class="aem-Grid aem-Grid--12">
+        <div class="aem-GridColumn aem-GridColumn--default--4">
+          <Row className="mb-3">
+            <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Label>Name on Card</Form.Label>
+              <Form.Control type="email" />
+            </Form.Group>
+          </Row>
+          <Row className="mb-3">
+            <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Label>Credit Card Number</Form.Label>
+              <Form.Control type="email" />
+            </Form.Group>
+          </Row>
+          <Row className="mb-3">
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Expiration Date</Form.Label>
+              <Form.Control />
+            </Form.Group>
+
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Label>CVV</Form.Label>
+              <Form.Control />
+            </Form.Group>
+          </Row>
+        </div >
+      </div> */}
       <div className='pay1'>
         <p>3. Payment Information</p>
       </div>
@@ -112,6 +145,15 @@ export default function Review() {
             </Form.Group>
           </Row>
         </div >
+
+      </div>
+      <div className='billing'>
+        <input type="checkbox" id="html" value="HTML" />
+        <label for="html" className='billing-proof'>Billing address same as shipping address</label><br/>
+
+      <input type="radio" id="html" value="HTML" />
+        <label for="html" className='billing-proof'>PayPal</label><br/>
+        <button class="check-3"><p><Link to="/Checkout4">CONTINUE TO REVIEW ORDER</Link></p></button>
       </div>
     </div>
   )

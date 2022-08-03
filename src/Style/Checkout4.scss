@@ -1,0 +1,53 @@
+* {
+    font-family: Source Serif Pro, Semibold;
+}
+
+.guest-3 {
+    padding-left: 245px;
+    padding-top: 10px;
+
+}
+
+.product-desc {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.checkout-pro {
+    padding-bottom: 2rem;
+}
+
+.main-btn {
+    width: 30%;
+    background: #1363DF;
+    border: 2px;
+    top: 50px;
+    left: 188px;
+    position: relative;
+    border-radius: 14px;
+    height: 33px;
+
+    a {
+        color: white;
+    }
+
+
+    p {
+        color: white;
+        font-size: 12px;
+    }
+}
+
+.main-p {
+    position: relative;
+    color: #172026;
+    text-align: center;
+    font-size: 10px;
+    top: 90px;
+}
+
+.checkout-pro img {
+    height: 140px;
+    position: relative;
+    left: 9px;
+}
