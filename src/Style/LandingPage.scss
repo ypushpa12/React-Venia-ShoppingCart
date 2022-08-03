@@ -80,7 +80,8 @@ span.carousel-control-next-icon {
 
     position: relative;
 }
- .Landing_left{
+
+.Landing_left {
     height: 650px;
 }
 
@@ -92,9 +93,9 @@ span.carousel-control-next-icon {
 }
 
 .Landing_left .left-content p {
- left: 86px;
+    left: 86px;
     font: normal normal normal 16px/24px Muli;
-  
+
 
 }
 
@@ -103,7 +104,7 @@ span.carousel-control-next-icon {
     border: none;
     background: #1363DF;
     width: 184px;
-    margin-left: 112px;
+
     height: 47px;
 }
 
@@ -111,7 +112,7 @@ span.carousel-control-next-icon {
     font: normal normal normal 11px/24px Muli;
     color: white;
     margin-left: -158px;
-   
+
 }
 
 .card-desc h3 {
@@ -126,13 +127,15 @@ span.carousel-control-next-icon {
     background-color: #1B252CD9;
     width: 276px;
     color: white;
-    
-  
+
+
 }
+
 .landing_4 {
     position: relative;
     top: 78px;
 }
+
 .landing_2 .card-desc1 {
     background-color: #1B252CD9;
     color: white;
@@ -142,7 +145,7 @@ span.carousel-control-next-icon {
 }
 
 .landing_3 .Landing_left {
-  
+
     height: 450px;
 }
 
@@ -198,7 +201,7 @@ span.carousel-control-next-icon {
 
 .landing_3 {
 
-    margin-top: 358px;
+
     height: 450px;
 
     img {
@@ -223,7 +226,7 @@ span.carousel-control-next-icon {
     background-color: white;
     width: 174px;
     height: 40px;
-  
+
     border-radius: 1rem;
     position: relative;
     right: 48px;
@@ -279,7 +282,7 @@ span.carousel-control-next-icon {
     font: normal normal 600 30px/60px Source Serif Pro;
     width: 326px;
     padding-left: 45px;
-    padding-top: 81px;
+    // padding-top: 81px;
     line-height: initial;
 }
 
@@ -304,7 +307,7 @@ span.carousel-control-next-icon {
 
 .landing_4 .landing-right {
 
-    width: 89%;
+    // width: 89%;
     margin-top: -10px;
 }
 
@@ -334,31 +337,31 @@ span.carousel-control-next-icon {
 .Landing_left {
     background-color: #e5e5e7;
     position: relative;
- 
+
 }
 
 .landing_2 .landimg1 {
     background-image: url("https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg");
     background-size: cover;
     padding-top: 15rem;
- 
+
     height: 12rem;
     bottom: 38px;
     position: relative;
-    
+
 
 }
 
- .Landing-right .imgsize  {
+.Landing-right .imgsize {
     height: 650px;
-    
+
 }
 
 .landing_2 .landimg {
     background-image: url("https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg");
     background-size: cover;
     padding-top: 15rem;
-  
+
     bottom: 38px;
     position: relative;
 }
@@ -383,25 +386,27 @@ span.carousel-control-next-icon {
 
 
 
-.landing_2 .lines hr{
+.landing_2 .lines hr {
     height: 0.5rem;
     background-color: #1363DF;
     position: relative;
-  
+
     opacity: 2;
     width: 276px;
-  
+
 }
-.landing_2 .line hr{
+
+.landing_2 .line hr {
     height: 0.5rem;
     background-color: #1363DF;
     position: relative;
-   
+
     opacity: 2;
     width: 276px;
     bottom: 28px;
 }
-.lines hr{
+
+.lines hr {
     height: 0.5rem;
     background-color: #1363DF;
     position: relative;
@@ -410,6 +415,7 @@ span.carousel-control-next-icon {
     width: 252px;
     bottom: 97px;
 }
+
 .landing_4 hr {
     top: 20rem;
     background-color: #1363DF;
@@ -420,7 +426,11 @@ span.carousel-control-next-icon {
     opacity: 3;
 }
 
-.mob-landing {
+// .mob-landing {
+//     display: none;
+// }
+
+.hide-desktop {
     display: none;
 }
 
@@ -432,8 +442,27 @@ span.carousel-control-next-icon {
     right: 352px;
 }
 
-.landing_3 {
+.left-content button {
+    color: white;
+    font-family: "Muli";
+    height: 40px;
+
+}
+
+.mobile-btn {
+    text-align: center;
+}
+
+.mobile-text {
     display: block;
+}
+
+.desktop-text {
+    display: block;
+}
+
+.landing-right h2 {
+    position: relative;
 }
 
 @media only screen and (max-width: 320px) {
@@ -441,32 +470,61 @@ span.carousel-control-next-icon {
         overflow: hidden;
     }
 
-    .landing_3 {
+    .mobile-text {
+        display: block;
+    }
+
+    .desktop-text {
         display: none;
     }
-.left-content{
-    width: 100%;
-}
-.Landing_left .left-content p {
-    left:0px;
-    right: 0px;
-    font-family: "Muli";
-    font-size: 16px;
-}
-.Landing_left .left-content h2 {
-    left:0px;
-    right: 0px;
-    font-size: 33px;
-    letter-spacing: 1px;
-    font-family: "Source-Serif-Pro";
-}
+
+    .left-content {
+        width: 100%;
+        right: 0px;
+        padding: 20px;
+    }
+
+    .Landing_left {
+        height: 619px;
+        justify-content: flex-end;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+
+    .mobile-btn {
+        padding-bottom: 25px;
+        text-align: center;
+
+    }
+
+    .Landing_left .left-content p {
+        left: 0px;
+        text-align: center;
+        right: 0px;
+        font-family: "Muli";
+        font-size: 16px;
+    }
+
+    .Landing_left .left-content h2 {
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        font-size: 33px;
+        letter-spacing: 1px;
+        font-family: "Source-Serif-Pro";
+    }
+
     .landing-mob {
         display: block;
     }
 
-    // .landing_2 .landimg1{
-    //     margin-top:-11rem;
-    // }
+
     .Landingright img {
         height: 27rem;
     }
@@ -500,20 +558,20 @@ span.carousel-control-next-icon {
         .landimg {
             margin-left: -4rem;
             width: 23rem;
-            margin-top: 3rem;
+            margin-top: 7rem;
         }
 
         .landimg2 {
 
             margin-left: -4rem;
             width: 23rem;
-            margin-top: 3rem;
+            margin-top: -7rem;
         }
 
         .landimg3 {
             margin-left: -4rem;
             width: 23rem;
-            margin-top: 3rem;
+            margin-top: -7rem;
         }
     }
 
@@ -522,31 +580,29 @@ span.carousel-control-next-icon {
         display: block;
     }
 
-    .mob-landing .mob-img img {
+    .mob-img img {
         position: absolute;
-        top: 81rem;
-        left: 0.3rem;
-        width: 23rem;
+        top: 137rem;
     }
 
     .mob-landing .mob-text h2 {
-        font: normal normal 600 34px/45px Source Serif Pro;
+        font-size: 36px;
+        font-family: "Source Serif Pro, Semibold";
         position: absolute;
-        top: 98rem;
+        top: 155rem;
         left: 2rem;
     }
 
     .mob-landing .mob-text h5 {
         top: 107rem;
         // position: absolute;
-        margin-top: 103rem;
+        margin-top: 17rem;
         margin-left: 1rem;
         font: normal normal 600 20px/25px Muli;
     }
 
     .mob-landing .mob-text p {
-        position: relative;
-        left: 1rem;
+
         font: normal normal normal 16px/24px Muli;
     }
 
@@ -554,39 +610,71 @@ span.carousel-control-next-icon {
         // position: relative;
         width: 15rem;
         background-color: white;
-        margin-left: 5rem;
-        border: 2px solid blue;
+
+        border: 2px solid #1363DF;
         border-radius: 11px;
         margin-top: 1rem;
     }
 
     .mob-text .btn_4 {
 
-        // position: relative;
+        height: 55px;
+        border: 1px;
         width: 15rem;
-        background-color: blue;
-        margin-left: 5rem;
+        background-color: #1363DF;
+
         border-radius: 11px;
 
+        p {
+            color: white;
+            font-size: 14px;
+            font-family: "Muli, Bold";
+        }
+
     }
 
-    .landing-left {
-        width: 25rem;
-        margin-left: -6rem;
+    .mob-text .btns {
+        text-align: center;
     }
+
+    .mob-text .btn_3 {
+        height: 55px;
+        border: 1px;
+        width: 15rem;
+
+
+        border-radius: 11px;
+
+        p {
+            color: #1363DF;
+            font-size: 14px;
+            font-family: "Muli, Bold";
+        }
+    }
+
+    // .landing-left {
+    //     width: 25rem;
+    //     margin-left: -6rem;
+    // }
 
     .landing_4 .landing-left img {
-        height: 20rem;
-        margin-top: 3rem;
 
+        width: 100%;
+        left: 0px;
+
+
+    }
+
+    .landing-left img {
+        height: 210px;
     }
 
     .landing_4 .landing-right {
-        width: 21rem;
-        height: 22rem;
-        position: relative;
-        top: -3rem;
-        left: 0.5rem;
+       
+        // height: 22rem;
+        // position: relative;
+         top: -3rem;
+        
 
         h2 {
             padding-left: 2rem;
@@ -601,8 +689,21 @@ span.carousel-control-next-icon {
         margin-left: 39px;
 
         p {
-            padding-left: 6rem;
+            position: relative;
+            top: 0rem;
         }
+    }
+.landing_4 .landing-right h2{
+    position: relative;
+    top: 110px;
+}
+.landing_4 .landing-right p{
+    position: relative;
+        top: 110px;
+    }
+    .landing_4 .landing-right .btn_3{
+        top: 110px;
+        position: relative;
     }
 
 }

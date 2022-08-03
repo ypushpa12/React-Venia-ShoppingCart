@@ -15,9 +15,9 @@ function Footer() {
                                 <div className='footer_account'>
                                     <h6>Account</h6>
                                     <ul className="footer_account_one">
-                                        <li><Link to="/signin">Sign In</Link></li>
-                                        <li><Link to="/signup">Register</Link></li>
-                                        <li><a href="">Order Status</a> </li>
+                                        <li>Sign In</li>
+                                        <li>Register</li>
+                                        <li>Order Status </li>
                                     </ul>
                                 </div>
                             </div>

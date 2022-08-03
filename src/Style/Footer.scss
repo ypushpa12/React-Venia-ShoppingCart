@@ -6,18 +6,13 @@ $blue: #172026;
   color: $black;
   font-size: 16px;
 }
-// .footer1{
-//   display: none;
-// }
+
 .footer1{
  
   position: relative;
   top: 151px;
 }
-// .foot{
-//   position: relative;
-//   top: 62px;
-// }
+
 .footer_account ul,
 .footer_about ul,
 .footer_help ul {
@@ -26,13 +21,31 @@ $blue: #172026;
 .footer_aboutus li,
 .footer_account_one li {
   list-style-type: none;
+  
 }
+
 .footone {
   padding-bottom: 2rem;
 }
+// .footer_follow p{
+//   font-family: "Muli, Regular";
+//   font-size: 16px;
+// }
+.footer_account h6,
+.footer_about h6,
+.footer_help h6,
+.footer_follow h6{
+  letter-spacing: 1px;
+  font-family: "Muli,SemiBold";
+  font-size: 16px;
+}
+.footer_account_one li,
+.footer_follow p,
 .footer_aboutus a,
 .footer_help_one a {
   text-decoration: none;
+  font-family: 'Muli';
+  letter-spacing: 1px;
   color: $black;
   font-size: 16px;
 }
@@ -78,9 +91,8 @@ $blue: #172026;
     gap: 20px;
     padding-top: 26px;
   }
-  .foot{
-    padding-top: 3rem;
-  }
+   
+  
   .footer_termsphone a {
     color: $blue;
     font-size: 14px;
