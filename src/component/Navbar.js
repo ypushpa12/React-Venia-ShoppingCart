@@ -9,7 +9,7 @@ import { Nav } from 'react-bootstrap';
 
 const categories = [
 
-    
+
     {
 
         filter: "Home",
@@ -37,16 +37,22 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
             <header className="header">
                 <input className="side-menu" type="checkbox" id="side-menu" />
                 <label className="hamb" for="side-menu"><span className="hamb-line"></span></label>
-                <div className="logo headerlogo"><img src="../../../assets/venia-logo.png"></img></div>
+                <div className="logo headerlogo"><NavLink to="/"><img src="../../../assets/venia-logo.png"></img></NavLink></div>
                 <nav className="nav">
                     <ul className="menu">
-                        {
+                        {/* {
                             categories?.map(category =>
                                 <li className={`nav-link ${category.filter === selectedCategory ? 'active' : ''} `} aria-current="page" onClick={() => setCategory(category.filter)}>{category.displayName}
                                 </li>
                             )
-                        }
-                     
+                        } */}
+
+                        <li className="menuitem"><NavLink to="/">Home</NavLink></li>
+                        <li className="menuitem"><NavLink to="/women">Women</NavLink> </li>
+                        <li className="menuitem"><NavLink to="/men">Men</NavLink></li>
+                        <li className="menuitem"><NavLink to="/electronics">Electronics</NavLink></li>
+                        <li className="menuitem"><NavLink to="/jewellery">Jewellery</NavLink></li>
+
                     </ul>
                 </nav>
                 <div className="carticon">

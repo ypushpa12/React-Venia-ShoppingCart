@@ -334,14 +334,14 @@ span.carousel-control-next-icon {
 .Landing_left {
     background-color: #e5e5e7;
     position: relative;
-    bottom: 58px;
+ 
 }
 
 .landing_2 .landimg1 {
     background-image: url("https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 20rem;
+ 
     height: 12rem;
     bottom: 38px;
     position: relative;
@@ -358,7 +358,7 @@ span.carousel-control-next-icon {
     background-image: url("https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 20rem;
+  
     bottom: 38px;
     position: relative;
 }
@@ -367,7 +367,7 @@ span.carousel-control-next-icon {
     background-image: url("https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 20rem;
+
     bottom: 38px;
     position: relative;
 }
@@ -376,17 +376,13 @@ span.carousel-control-next-icon {
     background-image: url("https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg");
     background-size: cover;
     padding-top: 15rem;
-    width: 20rem;
+
     bottom: 38px;
     position: relative;
 }
 
 
-.landing_2 {
-    top: 53rem;
-    position: absolute;
-    
-}
+
 .landing_2 .lines hr{
     height: 0.5rem;
     background-color: #1363DF;
@@ -448,7 +444,22 @@ span.carousel-control-next-icon {
     .landing_3 {
         display: none;
     }
-
+.left-content{
+    width: 100%;
+}
+.Landing_left .left-content p {
+    left:0px;
+    right: 0px;
+    font-family: "Muli";
+    font-size: 16px;
+}
+.Landing_left .left-content h2 {
+    left:0px;
+    right: 0px;
+    font-size: 33px;
+    letter-spacing: 1px;
+    font-family: "Source-Serif-Pro";
+}
     .landing-mob {
         display: block;
     }
