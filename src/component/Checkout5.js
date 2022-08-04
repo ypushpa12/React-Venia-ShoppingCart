@@ -46,7 +46,7 @@ export default function Order() {
               <div class="aem-Grid aem-Grid--12">
 
             
-                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                  <div className="product">
                   <div>
                   <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" height="120px" width="150px"/>
@@ -54,7 +54,7 @@ export default function Order() {
                   </div>
                 
                 </div>
-                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                 <div className='product-desc'>
                     <h5>Electric Leggings</h5>
                     <h6>Size : Medium</h6>
@@ -64,7 +64,7 @@ export default function Order() {
                 </div>
                
              
-                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                  <div className="product">
                   <div>
                   <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" height="120px" width="150px"/>
@@ -72,7 +72,7 @@ export default function Order() {
                   </div>
                 
                 </div>
-                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                 <div className='product-desc'>
                     <h5>Signature Sports Bra</h5>
                     <h6>Size : Medium</h6>
@@ -89,7 +89,7 @@ export default function Order() {
           </div>
         </div>
         <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
-          <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12"></div>
+          <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6"></div>
           <div className='pricing-card1' >
             <p>Give us a follow<br/> to SAVE 20% <br/>on your next order.</p>
             <div class="checkout5">

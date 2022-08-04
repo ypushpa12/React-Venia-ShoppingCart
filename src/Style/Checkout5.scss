@@ -86,3 +86,11 @@
         gap: 6px;
     }
 }
+@media only screen and (max-width: 320px){
+    .pricing-card1{
+        display: none;
+    }
+    .product {
+         padding-bottom: 0rem;
+    }
+}

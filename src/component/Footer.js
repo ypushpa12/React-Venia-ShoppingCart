@@ -3,6 +3,7 @@ import '../Style/Footer.scss';
 import { FaInstagram } from "react-icons/fa"
 import { FiFacebook, FiTwitter } from "react-icons/fi"
 import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 function Footer() {
     return (
         <>
@@ -62,7 +63,7 @@ function Footer() {
                     <div class="aem-Grid aem-Grid--12 footerdesktop">
                         <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                             <div className="footone">
-                                <h5>VENIA</h5>
+                                <NavLink to="/home" className='foot-logo' >VENIA</NavLink>
                             </div>
                         </div>
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
@@ -102,7 +103,7 @@ function Footer() {
                         </div>
                         <div class="aem-GridColumn  aem-GridColumn--phone--12">
                             <div className="footone">
-                                <h5>VENIA</h5>
+                            <NavLink to="/home" className='foot-logo' >VENIA</NavLink>
                             </div>
                         </div>
 

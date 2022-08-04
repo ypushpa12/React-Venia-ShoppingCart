@@ -133,7 +133,7 @@ span.carousel-control-next-icon {
 
 .landing_4 {
     position: relative;
-   bottom: 165px;
+    bottom: 165px;
 }
 
 .landing_2 .card-desc1 {
@@ -201,13 +201,12 @@ span.carousel-control-next-icon {
 }
 
 .landing_3 {
-    position: relative;
-    bottom: 111px;
+
 
     img {
-        position: relative;
-        left: 126px;
-        width: 31rem;
+
+        position: absolute;
+        right: 117px;
     }
 }
 
@@ -249,6 +248,8 @@ span.carousel-control-next-icon {
     border: 1px;
 }
 
+
+
 .landing_3 .btn_2 p {
     color: white;
     text-align: end;
@@ -257,8 +258,8 @@ span.carousel-control-next-icon {
 
 .landing_3 hr {
     background-color: #1363DF;
-    margin-left: -2rem;
-    margin-top: -2rem;
+    margin-left: -23rem;
+    margin-top: -1rem;
     height: 0.5rem !important;
     width: 22%;
     opacity: 3;
@@ -275,16 +276,18 @@ span.carousel-control-next-icon {
     background-color: black;
     height: 23.5rem;
 }
-.btn-shipping-1{
+
+.btn-shipping-1 {
     background: white
 }
+
 .landing_4 .landing-right h2 {
     color: white;
     font: normal normal 600 30px/60px Source Serif Pro;
     width: 326px;
-text-align: center;
+    text-align: center;
     line-height: initial;
-  
+
     padding-left: 53px;
 }
 
@@ -318,11 +321,26 @@ text-align: center;
     margin-top: -10px;
 }
 
+.line {
+    position: relative;
+    top: 27px;
+    right: 2px;
+}
 
+.line hr {
+    margin: auto;
+
+    height: 0.5rem !important;
+    width: 30%;
+}
 
 .lines hr {
     width: 88%;
     margin: 4rem 1rem;
+}
+
+.landing_4 {
+    bottom: 0px;
 }
 
 .landing_2 .landimg2 hr {
@@ -468,7 +486,8 @@ text-align: center;
     position: relative;
     top: 70px;
 }
-.mob-landing{
+
+.mob-landing {
     display: none;
 }
 
@@ -476,9 +495,11 @@ text-align: center;
     .container {
         overflow: hidden;
     }
-    .landing_3{
+
+    .landing_3 {
         display: none;
     }
+
     .mobile-text {
         display: block;
     }
@@ -506,10 +527,12 @@ text-align: center;
         display: block;
     }
 
+   
+
     .mobile-btn {
         padding-bottom: 25px;
         text-align: center;
-
+        display: none;
     }
 
     .Landing_left .left-content p {
@@ -602,6 +625,13 @@ text-align: center;
         left: 2rem;
     }
 
+    .landing_4 .landing-left img {
+        left: 0px;
+        height: auto;
+        position: relative;
+        // width: 98%;
+    }
+
     .mob-landing .mob-text h5 {
         top: 107rem;
         // position: absolute;
@@ -661,11 +691,6 @@ text-align: center;
         }
     }
 
-    // .landing-left {
-    //     width: 25rem;
-    //     margin-left: -6rem;
-    // }
-
     .landing_4 .landing-left img {
 
         width: 100%;
@@ -679,40 +704,62 @@ text-align: center;
     }
 
     .landing_4 .landing-right {
-       
-        // height: 22rem;
-        // position: relative;
-         top: -3rem;
-        
+        position: relative;
+        margin: -15px 10px;
+    }
 
-        h2 {
-            padding-left: 2rem;
-        }
+    .landing_4 .landing-right {
 
         p {
             padding-left: 2rem;
         }
     }
 
+    .landing_4 .map1 {
+        position: relative;
+        top: 0px;
+    }
+
     .landing_4 .landing-right .btn_3 {
-        margin-left: 39px;
+      
+            top: 110px;
+            left: 67px;
 
         p {
             position: relative;
             top: 0rem;
         }
     }
-.landing_4 .landing-right h2{
-    position: relative;
-    top: 110px;
-}
-.landing_4 .landing-right p{
-    position: relative;
+
+    .landing_4 .landing-right h2 {
+        position: relative;
         top: 110px;
     }
-    .landing_4 .landing-right .btn_3{
+
+    .landing_4 .landing-right p {
+        position: relative;
+        top: 110px;
+        right: 40px;
+    }
+
+    .landing_4 .landing-right .btn_3 {
         top: 110px;
         position: relative;
     }
-
+    .landing_2 .lines hr {
+        height: 0.5rem;
+        background-color: #1363DF;
+        position: relative;
+        opacity: 2;
+        width: 321px;
+        left: -5rem;
+    }
+    .landing_2 .line hr {
+        height: 0.5rem;
+        background-color: #1363DF;
+        position: relative;
+        opacity: 2;
+        width: 324px;
+        bottom: 30px;
+    }
 }

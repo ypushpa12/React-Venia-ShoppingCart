@@ -83,7 +83,7 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--black);
+    // background-color: var(--black);
     overflow: hidden;
 }
 
@@ -229,6 +229,12 @@ body {
 
     .carticon svg {
         width: 28px;
+    }
+    .nav{
+        background-color: var(--white);
+    }
+    .menu a{
+        color: var(--black);
     }
 }
 

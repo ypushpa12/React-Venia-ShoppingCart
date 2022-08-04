@@ -1,5 +1,7 @@
 
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import '../Style/Checkout1.scss'
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -9,6 +11,26 @@ export default function Checkout1() {
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState("");
   return (
+    // <Form>
+    //   <Form.Group className="mb-3" controlId="formBasicEmail">
+    //     <Form.Label>Email address</Form.Label>
+    //     <Form.Control type="email" placeholder="Enter email" />
+    //     <Form.Text className="text-muted">
+    //       We'll never share your email with anyone else.
+    //     </Form.Text>
+    //   </Form.Group>
+
+    //   <Form.Group className="mb-3" controlId="formBasicPassword">
+    //     <Form.Label>Password</Form.Label>
+    //     <Form.Control type="password" placeholder="Password" />
+    //   </Form.Group>
+    //   <Form.Group className="mb-3" controlId="formBasicCheckbox">
+    //     <Form.Check type="checkbox" label="Check me out" />
+    //   </Form.Group>
+    //   <Button variant="primary" type="submit">
+    //     Submit
+    //   </Button>
+    // </Form>
     <div className='container'>
       <div className='container-Checkout'>
         <h5 className='main-text'>Checkout</h5>
@@ -24,48 +46,49 @@ export default function Checkout1() {
           <div className='footer_12'>
             <div class="aem-Grid aem-Grid--12">
               <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}></form>
-                <label for="Email">Email</label><br />
+                <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+                  <label for="Email">Email</label><br />
 
-                <input {...register("Email")} placeholder="abc@xyz.com" className='fname' />
-                <p className='shipping-info'>1. Shipping Information</p>
-                <label for="Country">Country</label><br />
+                  <input {...register("Email")} placeholder="abc@xyz.com" className='fname' />
+                  <p className='shipping-info'>1. Shipping Information</p>
+                  <label for="Country">Country</label><br />
 
-                <input {...register("Country")} placeholder="United States" className='fname' /><br />
-                <label for="First Name">First Name</label><br />
+                  <input {...register("Country")} placeholder="United States" className='fname' /><br />
+                  <label for="First Name">First Name</label><br />
 
-                <input {...register("First Name")} placeholder="First Name" className='fname' /><br />
-                <label for="Street Address">Street Address</label><br />
+                  <input {...register("First Name")} placeholder="First Name" className='fname' /><br />
+                  <label for="Street Address">Street Address</label><br />
 
-                <input {...register("Street Address")} placeholder="Street Address" className='fname' /><br />
-                <label for="City">City</label><br />
+                  <input {...register("Street Address")} placeholder="Street Address" className='fname' /><br />
+                  <label for="City">City</label><br />
 
-                <input {...register("City")} placeholder="Altadena" className='fname' /><br />
+                  <input {...register("City")} placeholder="Altadena" className='fname' /><br />
 
+                </form>
               </div>
               <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}></form>
-                <label for="Phone Number">Phone Number</label><br />
-                <input {...register("Phone Number")} placeholder="Phone Number" className='fname' />
-                <label for="Last Name" className='last12'>Last Name</label><br />
-                <input {...register("Last Name")} className='fname' />
-                <label for="Street Address 2">Street Address 2</label><br />
-                <input {...register("Street Address 2")} className='fname' />
+                <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+                  <label for="Phone Number">Phone Number</label><br />
+                  <input {...register("Phone Number")} placeholder="Phone Number" className='fname' />
+                  <label for="Last Name" className='last12'>Last Name</label><br />
+                  <input {...register("Last Name")} className='fname' />
+                  <label for="Street Address 2">Street Address 2</label><br />
+                  <input {...register("Street Address 2")} className='fname' />
 
-                <label for="State">State</label> <label for="ZIP" className='c1'>ZIP</label><br />
-                <input {...register("State")} placeholder="California" className='f1name' />
+                  <label for="State">State</label> <label for="ZIP" className='c1'>ZIP</label><br />
+                  <input {...register("State")} placeholder="California" className='f1name' />
 
-                <input {...register("ZIP")} placeholder="91001" className='f2name' />
+                  <input {...register("ZIP")} placeholder="91001" className='f2name' />
 
 
-
+                </form>
               </div>
 
               <button className='btn-shipping-1'><p><Link to="/Checkout2">CONTINUE TO SHIPPING METHOD</Link></p></button>
               <div class="c2">
                 <hr />
                 <p>2. Shipping Method</p>
-                <hr/>
+                <hr />
                 <p>3. Payment Information</p>
                 <hr />
               </div>

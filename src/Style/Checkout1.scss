@@ -1,7 +1,7 @@
-// 
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
 
 * {
-    font-family: Source Serif Pro, Semibold;
+    font-family: 'Muli';
 }
 
 .guestcheckout h4 {
@@ -166,4 +166,31 @@
     margin-bottom: 3rem;
     margin-left: 38rem !important;
     opacity: 3;
+}
+@media only screen and (max-width: 320px){
+    .signin-check{
+        margin-left: 0px;
+    }
+    .pricing-card{
+        margin-left: 0px;
+    }
+    .text-right h6{
+        position: relative;
+        bottom: 180px;
+    }
+    // .c2{
+    //     padding-top: 0px;
+    // }
+    .last12{
+        margin-top: 0px;
+    }
+    .btn-shipping-1 {
+        // position: relative;
+        // top: 74px;
+        position: relative;
+        // top: 74px;
+        width: 16rem;
+        top: 45px;
+        left: 0px;
+    }
 }

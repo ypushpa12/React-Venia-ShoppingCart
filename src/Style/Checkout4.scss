@@ -1,12 +1,14 @@
-* {
-    font-family: Source Serif Pro, Semibold;
-}
+
 
 .guest-3 {
     padding-left: 245px;
     padding-top: 10px;
-
+p{
+    color: #1363DF;
+    display: flex;
 }
+}
+
 
 .product-desc {
     padding-top: 2rem;
@@ -51,4 +53,22 @@
     height: 140px;
     position: relative;
     left: 9px;
+}
+@media only screen and (max-width: 320px){
+
+.main-btn1{
+    width: 44%;
+    top: 30px;
+    left: 91px;
+    position: relative;
+}
+.text-right h6{
+    position: relative;
+    // top: 181px;
+    bottom: 177px;
+}
+.main-p{
+    position: relative;
+    top: 28px;
+}
 }

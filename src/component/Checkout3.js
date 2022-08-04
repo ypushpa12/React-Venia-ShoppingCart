@@ -70,7 +70,7 @@ export default function Checkout3() {
                 <h6>Estimated shipping</h6>
                 <h6><strong>Estimated Total</strong></h6>
               </div>
-              <div className="aem-GridColumn aem-GridColumn--default--6  text-right">
+              <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 text-right">
                 <h6>$ 388.00</h6>
                 <h6>- $ 77.60</h6>
                 <h6>- $ 100.00</h6>
@@ -89,7 +89,7 @@ export default function Checkout3() {
       <input type="radio" id="html" value="HTML" />
       <label for="html" className='d1'>Credit Card</label><br />
       <div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--4">
+        <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label>Name on Card</Form.Label>

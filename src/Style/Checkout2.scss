@@ -17,7 +17,9 @@
     border: 1px solid #D1D3D6;
 
 }
-
+.guest3 {
+    display: flex;
+}
 .guest4 {
     padding-top: 25px;
     font: normal normal 600 20px/25px Muli;
@@ -103,5 +105,24 @@
      
             font: normal normal normal 14px/24px Muli;
         
+    }
+}
+@media only screen and (max-width: 320px){
+    .check2 .main-btn{
+        top: -26px;
+        left: -227px;
+    }
+    .pricing-card-2{
+        margin-left: 0px;
+    }
+    .guest3{
+        display: flex;
+    position: relative;
+    bottom: 208px;
+    left: 111px;
+    }
+    .pricing-card {
+        margin-top: 26px;
+        margin-left: 0px;
     }
 }

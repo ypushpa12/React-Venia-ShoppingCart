@@ -1,3 +1,8 @@
+*{
+    font-family: "Muli, Regular";
+}
+
+
 @mixin swatch ($color) {
     background: $color;
     margin-right: 10px;
@@ -64,7 +69,7 @@ $blackcolor: #172026;
 }
 
 .line hr {
-    background-color: #1F39FF !important;
+    background-color: #1363DF !important;
     height: 0.5rem !important;
     width: 7%;
     margin: 2rem 0rem;
@@ -76,7 +81,7 @@ $blackcolor: #172026;
     height: 40px;
 
     background: var(--primary-brand) 0% 0% no-repeat padding-box;
-    background: #1F39FF 0% 0% no-repeat padding-box;
+    background: #1363DF 0% 0% no-repeat padding-box;
     border-radius: 28px;
     opacity: 1;
 }
@@ -193,9 +198,9 @@ p {
 }
 @media only screen and (min-width: 320px) and (max-width: 766px) {
 
-    .line {
-        display: none;
-    }
+    // .line {
+    //     display: none;
+    // }
 
     .Sizebutton button {
 

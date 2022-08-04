@@ -4,30 +4,30 @@ import "../Style/Hero.scss"
 import hero from "../Images/mobile-hero-image1.jpeg"
 function Hero() {
   return (
-    <div class="container-fluid">
+    // <div class="container-fluid">
         <div className='main'>
         
         <div className='hero-sec'>
           <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--4">
+            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div class="card_1">
                 <div class="card_1-body">
                   <h5 class="card_1_title">Men’s <br/>Outerwear</h5>
-                  {/* <div className='lines'>
+                  <div className='l'>
                     <hr />
-                  </div> */}
+                  </div> 
                 </div>
               </div>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--8">
-              <div class="card-img">
-                <img src={hero} class="card-img-top" alt="" />
+            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
+              <div class="pic1">
+                <img src={hero} class="pic" alt="" />
               </div>
             </div>
           </div>
         </div>
       
-    </div>
+    {/* </div> */}
       {/* <div className='adc'>
         <div className='container-fluid'>
           <div className='herosection'>

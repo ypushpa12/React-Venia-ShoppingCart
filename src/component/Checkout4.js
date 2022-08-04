@@ -63,7 +63,7 @@ export default function Payment() {
                             <div class="aem-Grid aem-Grid--12">
 
 
-                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                                     <div className="checkout-pro">
                                         <div>
                                             <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" />
@@ -71,7 +71,7 @@ export default function Payment() {
                                     </div>
 
                                 </div>
-                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                                     <div className='product-desc'>
                                         <h5>Electric Leggings</h5>
                                         <h6>Size : Medium</h6>
@@ -81,7 +81,7 @@ export default function Payment() {
                                 </div>
 
 
-                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                                     <div className="checkout-pro">
                                         <div>
                                             <img src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg" />
@@ -89,7 +89,7 @@ export default function Payment() {
                                     </div>
 
                                 </div>
-                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                                <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6">
                                     <div className='product-desc'>
                                         <h5>Signature Sports Bra</h5>
                                         <h6>Size : Medium</h6>
@@ -104,7 +104,7 @@ export default function Payment() {
                     </div>
                 </div>
                 <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
-                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12"></div>
+                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6"></div>
                     <div className='pricing-card' >
                         <div className="aem-Grid aem-Grid--12">
                             <div className="aem-GridColumn aem-GridColumn--default--6 ">

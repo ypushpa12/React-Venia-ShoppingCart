@@ -65,7 +65,7 @@ export default function Guestcheckout() {
                   <h6>Estimated shipping</h6>
                   <h6><strong>Estimated Total</strong></h6>
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--default--6  text-right">
+                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 text-right">
                   <h6>$ 388.00</h6>
                   <h6>- $ 77.60</h6>
                   <h6>- $ 100.00</h6>
