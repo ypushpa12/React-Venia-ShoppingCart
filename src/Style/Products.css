@@ -1,5 +1,9 @@
-* {
-  font-family: "Muli, Regular";
+.card-title {
+  font: normal normal bold 16px Muli;
+}
+
+.card-text {
+  font: normal normal 600 16px/20px Muli;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1020px) {

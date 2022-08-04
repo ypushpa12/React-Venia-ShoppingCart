@@ -19,7 +19,44 @@ $blackcolor: #172026;
     margin-right: 10px;
     background-color: white;
 }
-
+.hr-line{
+    background-color: #1363DF;
+    width: 85px;
+    height: 8px;
+    margin-top: 9px;
+}
+.oneprice p{
+    font: normal normal normal 16px/24px Muli;
+    display: none;
+}
+.qty{
+    font: normal normal 600 20px/30px Muli;
+}
+.rating-one h2{
+    font: normal normal 600 24px/30px Source Serif Pro;
+   
+}
+.Sweat-wicking h4{
+    font: normal normal 600 24px/30px Source Serif Pro;
+}
+.Sweat-wicking h5{
+    font: normal normal 600 16px/25px Muli;
+}
+.Sweat-wicking p {
+    font: normal normal normal 16px/24px Muli;
+}
+.size h5{
+    font: normal normal 600 20px/30px Muli;
+}
+.swatch h5{
+    font: normal normal 600 20px/30px Muli;
+}
+.rating-one .pro-t1{
+    font: normal normal normal 16px/24px Muli;
+}
+.rating-one p{
+    font: normal normal 600 20px/30px Muli;
+}
 .swatch {
     padding-bottom: 1rem;
 }
@@ -208,8 +245,9 @@ p {
     }
 
     .oneprice img {
-        height: 270px;
+        height: 410px;
         width: 270px;
+      
     }
     .Sweat-wicking h5 {
         padding-left: 116px;

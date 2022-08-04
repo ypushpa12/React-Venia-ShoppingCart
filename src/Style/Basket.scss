@@ -76,12 +76,23 @@
         padding-top: 1.5rem;
 
         p {
-            font-size: .8rem;
-            font-weight: 500;
+            // font-size: .8rem;
+            // font-weight: 500;
             margin-bottom: 0.5rem;
+            display: flex;
+            font-family: "Muli";
         }
     }
 
+    .basket-t h6 {
+        font: normal normal normal 16px/24px Muli;
+    }
+    .basket-1{
+        font: normal normal normal 16px/24px Muli;
+    }
+    .basket-left{
+        font: normal normal normal 16px/24px Muli;
+    }
     .cartdetails {
         border: 2px #D1D3D6 solid;
         padding: 2rem;
@@ -112,7 +123,8 @@
             margin-top: 1rem;
             height: 47px;
             width: 231px;
-            p{
+
+            p {
                 color: white;
                 position: relative;
                 bottom: 34px;
@@ -161,9 +173,23 @@
         margin-top: -18px;
     }
 
+    // .text-right{
+    //     margin-top: 197px;
+    // }
+    .basket-1 {
+        position: relative;
+        top: 192px;
+        font: normal normal normal 16px/24px Muli;
+    }
+
+    .basket-t h6 {
+        font: normal normal normal 16px/24px Muli;
+    }
+
     .icon {
         display: none;
     }
+
     .basket hr {
         height: 0.6rem !important;
         width: 27%;

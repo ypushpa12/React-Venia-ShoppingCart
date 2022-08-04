@@ -26,7 +26,7 @@ export default function Basket(props) {
                   <div>
                     <img src={item.image} height="180px" width="160px" />
                   </div>
-                  <div>
+                  <div className='basket-left'>
                     <h5>{item.title.substring(0, 18)}</h5>
                     <h6>Size : Medium</h6>
                     <h6>Color : Storm</h6>
@@ -72,26 +72,30 @@ export default function Basket(props) {
               <h5>Pricing Summary</h5>
               <div className="aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--6 ">
-                  <h6>Subtotal</h6>
-                  <h6>Coupon</h6>
-                  <h6>Gift Card</h6>
-                  <h6>Estimated tax</h6>
-                  <h6>Estimated shipping</h6>
-                  <h6><strong>Estimated Total</strong></h6>
+                  <div className='basket-t'>
+                    <h6>Subtotal</h6>
+                    <h6>Coupon</h6>
+                    <h6>Gift Card</h6>
+                    <h6>Estimated tax</h6>
+                    <h6>Estimated shipping</h6>
+                    <h6><strong>Estimated Total</strong></h6>
+                  </div>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--6  text-right">
-                  <h6>${itemsPrice.toFixed(2)}</h6>
-                  <h6>${taxPrice.toFixed(2)}</h6>
-                  <h6>${shippingPrice.toFixed(2)}</h6>
-                  <h6>${shippingPrice.toFixed(2)}</h6>
-                  <h6>${shippingPrice.toFixed(2)}</h6>
-                  <h6><strong>${totalPrice.toFixed(2)}</strong></h6>
+                  <div className='basket-1'>
+                    <h6>${itemsPrice.toFixed(2)}</h6>
+                    <h6>${taxPrice.toFixed(2)}</h6>
+                    <h6>${shippingPrice.toFixed(2)}</h6>
+                    <h6>${shippingPrice.toFixed(2)}</h6>
+                    <h6>${shippingPrice.toFixed(2)}</h6>
+                    <h6><strong>${totalPrice.toFixed(2)}</strong></h6>
+                  </div>
                 </div>
               </div>
               <div className="buttonsone">
                 <div>
                   <button
-                    
+
                     className="check"
                   >
                     <FiLock size={18} />&nbsp;&nbsp;<Link to="/Checkout1"><p>CHECKOUT</p></Link>

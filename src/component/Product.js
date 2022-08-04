@@ -55,11 +55,11 @@ const Product = (props) => {
                     <div class="aem-Grid aem-Grid--12">
 
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 oneprice">
-                        
+                        <p className='desktop'>Clothing / Women’s / Outerwear</p>
                             <img src={product.image} alt={product.title} width="380px" />
                         </div>
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 rating-one">
-                            <p>Clothing / Women’s / Outerwear</p>
+                           
                             <h2>{product.title}</h2>
                             <p>  $ {product.price} </p>
                             <p className="lead fw-bolder">
@@ -75,7 +75,7 @@ const Product = (props) => {
                                     </ul>
                                 </div>
                             </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            <p className='pro-t1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor labore et dolore magna</p>
                             <hr />
                             <div className="swatch">
@@ -127,7 +127,7 @@ const Product = (props) => {
                         
                     </div>
                 </div>
-                <div className='line'>
+                <div className='hr-line'>
                     <hr />
                 </div>
             </>

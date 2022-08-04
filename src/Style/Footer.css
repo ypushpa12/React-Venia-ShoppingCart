@@ -123,6 +123,9 @@ a:hover {
   .footerphone {
     display: block;
   }
+  .footerphone p {
+    font: normal normal normal 14px/18px Muli;
+  }
   .footerdesktop {
     display: none;
   }
