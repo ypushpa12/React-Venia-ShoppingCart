@@ -7,12 +7,20 @@
 .guestcheckout h4 {
     font: normal normal 600 30px/30px Source Serif Pro;
 }
-
+.c2{
+    padding-top: 88px;
+    p{
+        font: normal normal 600 20px/25px Muli;
+    }
+}
 .guestcheckout h6 {
     font: normal normal 600 15px/25px Muli;
 }
-.guestcheckout p{
-        font: normal normal normal 14px/25px Muli;
+.footer_12 .c1{
+    padding-left: 95px;
+}
+.guestcheckout p {
+    font: normal normal normal 14px/25px Muli;
 }
 
 .btn-shipping-1 {
@@ -73,6 +81,9 @@
     margin-left: 185px;
     border: 1px solid #D1D3D6;
     padding: 10px;
+    h6{
+        font: normal normal normal 14px/24px Muli;
+    }
 
 }
 
@@ -96,6 +107,9 @@
         height: 30px;
         border-radius: 4px;
         background: white;
+        a{
+            font: normal normal bold 14px/16px Muli;
+        }
     }
 
     .signin-btn p {
@@ -103,29 +117,37 @@
         // color: #E26A2C;
     }
 }
-.f1name label{
+.footer_12 label {
+    font: normal normal 600 16px/24px Muli;
+    
+}
+.shipping-info{
+    font: normal normal 600 20px/25px Muli;
+}
+.f1name label {
     position: relative;
     left: 136px;
     top: 17px;
+    font: normal normal 600 16px/24px Muli;
 }
+
 .h18 {
     width: -1px;
     font-size: 12px;
 }
 
 .btn-shipping-1 {
-    text-align: center;
-    height: 40px;
+  
     border: 2px solid #2A65D7;
-    border-radius: 14px;
+    border-radius: 7px;
     position: relative;
-    top: 27px;
+    top: 68px;
     right: 131px;
-    width: 31%;
+    width: 38%;
 }
 
 .btn-shipping-1 p {
-    font-size: 10px;
+    font: normal normal bold 14px/16px Muli;
     color: #2A65D7;
     padding: 10px;
 }
@@ -133,14 +155,14 @@
 .main-text {
     text-align: center;
     color: black;
-    font-size: 30px;
+    font: normal normal 600 48px/45px Source Serif Pro;
     padding-top: 20px;
 }
 
 .container-Checkout hr {
     height: 0.5rem !important;
     width: 5%;
-    background-color: #2A65D7 !important;
+    background-color: #1363DF !important;
     margin-bottom: 3rem;
     margin-left: 38rem !important;
     opacity: 3;

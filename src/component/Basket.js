@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../Style/Basket.scss"
 import { BiHeart, BiLockAlt } from 'react-icons/bi';
 import { RiPencilLine } from 'react-icons/ri';
@@ -90,10 +91,10 @@ export default function Basket(props) {
               <div className="buttonsone">
                 <div>
                   <button
-                    onClick={() => alert("Implement Checkout!")}
+                    
                     className="check"
                   >
-                    <FiLock size={18} />&nbsp;&nbsp;CHECKOUT
+                    <FiLock size={18} />&nbsp;&nbsp;<Link to="/Checkout1"><p>CHECKOUT</p></Link>
                   </button>
                 </div>
                 <div>

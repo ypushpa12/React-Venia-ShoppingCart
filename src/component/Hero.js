@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Style/Hero.scss"
 // import maxwidth from "../Images/max-width_header.jpg"
-
+import hero from "../Images/mobile-hero-image1.jpeg"
 function Hero() {
   return (
     <div class="container-fluid">
@@ -21,7 +21,7 @@ function Hero() {
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--8">
               <div class="card-img">
-                <img src="https://static.fibre2fashion.com/articleresources/images/92/9163/Fast_Fashion_Big.jpg" class="card-img-top" alt="" />
+                <img src={hero} class="card-img-top" alt="" />
               </div>
             </div>
           </div>

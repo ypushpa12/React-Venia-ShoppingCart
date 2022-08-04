@@ -99,7 +99,7 @@ export default function Payment() {
                                 </div>
                             </div>
                         </div>
-                        <button className='main-btn'><p><Link to="/Checkout5">PLACE ORDER</Link></p></button>
+                        <button className='main-btn1'><p><Link to="/Checkout5">PLACE ORDER</Link></p></button>
                         <p className='main-p'>By clicking confirm order you agree to our <u>Terms and Conditions</u></p>
                     </div>
                 </div>

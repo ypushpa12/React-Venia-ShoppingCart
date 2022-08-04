@@ -100,12 +100,12 @@ span.carousel-control-next-icon {
 }
 
 .Landing_left .left-content button {
-    border-radius: 18px;
+    border-radius: 6px;
     border: none;
     background: #1363DF;
     width: 184px;
-
-    height: 47px;
+    position: relative;
+    right: 99px;
 }
 
 .Landing_left .left-content button p {
@@ -133,7 +133,7 @@ span.carousel-control-next-icon {
 
 .landing_4 {
     position: relative;
-    top: 78px;
+   bottom: 165px;
 }
 
 .landing_2 .card-desc1 {
@@ -194,20 +194,19 @@ span.carousel-control-next-icon {
 
 .landing_3 .Landing_left {
     background-color: white;
-    bottom: 0px;
+    bottom: 36px;
     position: relative;
+    left: 58px;
 
 }
 
 .landing_3 {
-
-
-    height: 450px;
+    position: relative;
+    bottom: 111px;
 
     img {
-        height: 450px;
         position: relative;
-        left: 80px;
+        left: 126px;
         width: 31rem;
     }
 }
@@ -276,23 +275,32 @@ span.carousel-control-next-icon {
     background-color: black;
     height: 23.5rem;
 }
-
+.btn-shipping-1{
+    background: white
+}
 .landing_4 .landing-right h2 {
     color: white;
     font: normal normal 600 30px/60px Source Serif Pro;
     width: 326px;
-    padding-left: 45px;
-    // padding-top: 81px;
+text-align: center;
     line-height: initial;
+  
+    padding-left: 53px;
 }
 
 .landing_4 .landing-right p {
+    text-align: center;
+    position: relative;
+    top: 72px;
+    right: 2px;
     color: white;
-    padding-left: 45px;
 }
 
 .landing_4 .landing-right .btn_3 {
-    margin-left: 53px;
+    // margin-left: 53px;
+    position: relative;
+    top: 71px;
+    left: 98px;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     background-color: black;
@@ -301,8 +309,7 @@ span.carousel-control-next-icon {
 }
 
 .landing_4 .landing-right .btn_3 p {
-    font-size: 12px;
-    padding-left: 0px;
+    position: initial;
 }
 
 .landing_4 .landing-right {
@@ -311,11 +318,7 @@ span.carousel-control-next-icon {
     margin-top: -10px;
 }
 
-// .landing_2 .landimg1 hr {
-//     margin-left: 1rem;
-//     width: 17.5rem;
-//     margin-top: 4rem;
-// }
+
 
 .lines hr {
     width: 88%;
@@ -403,7 +406,7 @@ span.carousel-control-next-icon {
 
     opacity: 2;
     width: 276px;
-    bottom: 28px;
+    bottom: 30px;
 }
 
 .lines hr {
@@ -463,6 +466,7 @@ span.carousel-control-next-icon {
 
 .landing-right h2 {
     position: relative;
+    top: 70px;
 }
 .mob-landing{
     display: none;

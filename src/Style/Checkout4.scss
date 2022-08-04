@@ -11,13 +11,19 @@
 .product-desc {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    h6{
+        font: normal normal normal 16px/24px Muli;
+    }
+    h5{
+        font: normal normal 600 16px/20px Muli;
+    }
 }
 
 .checkout-pro {
     padding-bottom: 2rem;
 }
 
-.main-btn {
+.main-btn1{
     width: 30%;
     background: #1363DF;
     border: 2px;
@@ -26,24 +32,19 @@
     position: relative;
     border-radius: 14px;
     height: 33px;
+    a{
 
-    a {
-        color: white;
+            color: white;
+    
     }
 
-
-    p {
-        color: white;
-        font-size: 12px;
-    }
 }
 
 .main-p {
+    font: normal normal normal 16px/24px Muli;
     position: relative;
-    color: #172026;
+    top: 60px;
     text-align: center;
-    font-size: 10px;
-    top: 90px;
 }
 
 .checkout-pro img {

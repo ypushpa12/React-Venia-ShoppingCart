@@ -90,7 +90,7 @@ body {
 .menu a {
     display: block;
     padding-top: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
     font-weight: 700;
     color: var(--white);
     text-decoration: none;
@@ -100,6 +100,7 @@ body {
 
 .menu a:hover {
     border-bottom: 2px solid white;
+    border-radius: 10px solid white;
 }
 
 .nav {

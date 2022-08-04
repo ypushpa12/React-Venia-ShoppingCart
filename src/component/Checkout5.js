@@ -92,7 +92,11 @@ export default function Order() {
           <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12"></div>
           <div className='pricing-card1' >
             <p>Give us a follow<br/> to SAVE 20% <br/>on your next order.</p>
-            <img src={facebook} /> <img src={instagram}/> <img src={twitter}/>
+            <div class="checkout5">
+            <img src={facebook} /> 
+            <img src={instagram}/> 
+            <img src={twitter}/>
+            </div>
           </div>
         </div>
       </div>

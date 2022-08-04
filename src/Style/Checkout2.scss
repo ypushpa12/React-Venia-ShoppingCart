@@ -4,12 +4,13 @@
 
 .guesth3 {
     color: #172026;
-    padding-left: 49px;
+    padding-left: 2px;
     font: normal normal 600 23px/30px Source Serif Pro;
 }
 
 .guest1 {
     padding-left: 20px;
+    font: normal normal normal 16px/24px Muli;
 }
 
 .guest2 {
@@ -19,6 +20,7 @@
 
 .guest4 {
     padding-top: 25px;
+    font: normal normal 600 20px/25px Muli;
 }
 
 .guest3 {
@@ -39,6 +41,7 @@
     p {
         margin: 0px;
         padding: 0px;
+        font: normal normal normal 16px/24px Muli;
     }
 }
 
@@ -48,21 +51,35 @@
     color: #172026;
 
 }
+.check2 label{
+    font: normal normal normal 16px/24px Muli;
+    
+}
+.check2 p{
 
+        font: normal normal 600 20px/25px Muli;
+
+}
 .check2 .main-btn {
-    margin: 3rem 21rem;
-    padding: 5px;
 
+    padding: 5px;
+    position: relative;
+    top: 0px;
+    left: 0px;
     border-radius: 10px;
     background: white;
     border: 1px solid #2A65D7;
     width: 231px;
-    height: 34px;
+ 
 }
 
 .main-btn p {
     color: #1363DF;
-    font-size: 12px;
+   
+}
+.main-btn a{
+    font: normal normal bold 14px/16px Muli;
+   
 }
 
 .main-text {
@@ -76,21 +93,15 @@
     height: 0.5rem !important;
     width: 5%;
   
-    margin-bottom: 3rem;
-    margin-left: 38rem !important;
-    opacity: 3;
-}
-.guestcheck-2{
-    
-    position: relative;
-    left: 53px;
-
 }
 .pricing-card-2{
-   
+    margin-left: 185px;
     border: 1px solid #D1D3D6;
     padding: 10px;
-    width: 64%;
-    position: relative;
-    left: 93px;
+    h6{
+       
+     
+            font: normal normal normal 14px/24px Muli;
+        
+    }
 }

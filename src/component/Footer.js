@@ -62,7 +62,7 @@ function Footer() {
                     <div class="aem-Grid aem-Grid--12 footerdesktop">
                         <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                             <div className="footone">
-                                <h5>venia</h5>
+                                <h5>VENIA</h5>
                             </div>
                         </div>
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
@@ -70,6 +70,7 @@ function Footer() {
                                 <p>© Company Name Address Ave, City Name, State ZIP</p>
                             </div>
                         </div>
+                    
                         <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                             <div className='footer_terms'>
                                 <a href="" class="">
@@ -81,6 +82,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
+                    
                     <div class="aem-Grid aem-Grid--12 footerphone">
                         <div class="aem-GridColumn  aem-GridColumn--phone--12">
                             <div className='footer_termsphone'>
@@ -100,7 +102,7 @@ function Footer() {
                         </div>
                         <div class="aem-GridColumn  aem-GridColumn--phone--12">
                             <div className="footone">
-                                <h5>venia</h5>
+                                <h5>VENIA</h5>
                             </div>
                         </div>
 

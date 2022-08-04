@@ -8,17 +8,23 @@
 
 }
 
-.guest-2 {
-    border: none;
-}
+
 
 .guesth3 {
     color: #172026;
-    padding-left: 1rem;
-    margin: 0px;
-    font: normal normal 300 15px/25px Muli;
-}
+    
+   
 
+}
+.checkout5{
+    display: flex;
+    padding-left: 53px;
+}
+.checkout5 img{
+    display: flex;
+    display: flex;
+    padding-left: 53px;
+}
 .product-desc {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -53,23 +59,22 @@
     margin-top: 20px;
 
     p {
-        color: #172026;
-        font-size: 13px;
+        font: normal normal normal 16px/24px Muli;
     }
 }
 
 .pricing-card1 {
 
-    background-color: #1363DF;
+    background-color: #47B5FF;
     height: 250px;
     width: 250px;
     margin-left: 16rem;
 
     p {
         text-align: center;
-        padding-top: 80px;
+        padding-top: 38px;
         color: white;
-        font-size: 20px;
+        font: normal normal 600 36px/45px Source Serif Pro;
     }
 
     img {

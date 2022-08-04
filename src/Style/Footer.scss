@@ -10,7 +10,7 @@ $blue: #172026;
 .footer1{
  
   position: relative;
-  top: 151px;
+top: 96px;
 }
 
 .footer_account ul,
@@ -60,6 +60,7 @@ $blue: #172026;
 .footer_about h6,
 .footer_account h6 {
   color: $blue;
+  font: normal normal 600 16px/24px Muli;
 }
 .footer_terms {
   display: flex;

@@ -13,6 +13,9 @@
     border: 1px solid #D1D3D6;
     
 }
+.billing-proof{
+    font: normal normal normal 16px/22px Muli;
+}
 .guest-2{
     border: 1px solid #D1D3D6;
     margin-top: 10px;
@@ -46,13 +49,15 @@
 
 }
 
-// .main-btn {
-//     margin: 38px 272px;
-//     width: 180px;
-//     border: 1px solid #1363DF;
-//     padding: 8px;
-// }
-
+.pay1 p{
+    font: normal normal 600 20px/25px Muli;
+}
+.mb-3{
+    font: normal normal 600 16px/24px Muli;
+}
+.d1{
+    font: normal normal normal 16px/24px Muli;
+}
 .main-btn p {
     color: #1363DF;
     font-size: 12px;
@@ -85,4 +90,7 @@
 .pay1{
     font: normal normal 600 15px/25px Muli;
     padding-top: 30px;
+}
+.check-3 p{
+    font: normal normal bold 14px/16px Muli;
 }

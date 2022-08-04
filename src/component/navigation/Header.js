@@ -12,7 +12,7 @@ function Header() {
           <nav className="nav">
             <ul className="menu">
               <li className="menuitem"><a href="">Home</a></li>
-              <li className="menuitem"><a href="products">Women</a> </li>
+              <li className="menuitem"><a href="/products">Women</a> </li>
               <li className="menuitem"><a href="">Men</a></li>
               <li className="menuitem"><a href="">Electronics</a></li>
               <li className="menuitem"><a href="">Jewellery</a></li>

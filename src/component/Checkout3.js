@@ -82,43 +82,12 @@ export default function Checkout3() {
           </div>
         </div>
       </div>
-      {/* <div className='pay1'>
-        <p>3. Payment Information</p>
-      </div>
-      <input type="radio" id="html" value="HTML" />
-      <label for="html">Credit Card</label><br />
-      <div class="aem-Grid aem-Grid--12">
-        <div class="aem-GridColumn aem-GridColumn--default--4">
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Name on Card</Form.Label>
-              <Form.Control type="email" />
-            </Form.Group>
-          </Row>
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Credit Card Number</Form.Label>
-              <Form.Control type="email" />
-            </Form.Group>
-          </Row>
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridCity">
-              <Form.Label>Expiration Date</Form.Label>
-              <Form.Control />
-            </Form.Group>
-
-            <Form.Group as={Col} controlId="formGridState">
-              <Form.Label>CVV</Form.Label>
-              <Form.Control />
-            </Form.Group>
-          </Row>
-        </div >
-      </div> */}
+     
       <div className='pay1'>
         <p>3. Payment Information</p>
       </div>
       <input type="radio" id="html" value="HTML" />
-      <label for="html">Credit Card</label><br />
+      <label for="html" className='d1'>Credit Card</label><br />
       <div class="aem-Grid aem-Grid--12">
         <div class="aem-GridColumn aem-GridColumn--default--4">
           <Row className="mb-3">
