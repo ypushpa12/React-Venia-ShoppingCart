@@ -158,7 +158,9 @@
     font: normal normal 600 48px/45px Source Serif Pro;
     padding-top: 20px;
 }
-
+.mobile-button{
+    display:none
+}
 .container-Checkout hr {
     height: 0.5rem !important;
     width: 5%;
@@ -170,6 +172,24 @@
 @media only screen and (max-width: 320px){
     .signin-check{
         margin-left: 0px;
+    }
+    .btn-shipping-1{
+        display: none;
+    }
+    .mobile-button{
+        display: block;
+    }
+    .mobile-button{
+        color: #1363DF;
+    left: 6rem;
+    background: white;
+    border: 2px solid #1363DF;
+    position: relative;
+    /* bottom: -50px; */
+    top: 5rem;
+    border-radius: 7px;
+    height: 38px;
+    width: 114px;
     }
     .pricing-card{
         margin-left: 0px;
@@ -184,13 +204,5 @@
     .last12{
         margin-top: 0px;
     }
-    .btn-shipping-1 {
-        // position: relative;
-        // top: 74px;
-        position: relative;
-        // top: 74px;
-        width: 16rem;
-        top: 45px;
-        left: 0px;
-    }
+   
 }
