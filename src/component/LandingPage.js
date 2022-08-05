@@ -83,8 +83,6 @@ export default function Landing() {
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--10">
               <div className='landimg'>
-                {/* <div className='card'>
-                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" /> */}
 
                 <div className='card-desc'>
                   <h3>Shop Men</h3>

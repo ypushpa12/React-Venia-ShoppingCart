@@ -9,7 +9,9 @@
 }
 
 $blackcolor: #172026;
-
+.addtocart{
+    font-family: "Muli";
+}
 
 .Sizebutton button {
     border-radius: 5px;
@@ -19,15 +21,21 @@ $blackcolor: #172026;
     margin-right: 10px;
     background-color: white;
 }
-.hr-line{
-    background-color: #1363DF;
-    width: 85px;
-    height: 8px;
-    margin-top: 9px;
+// .hr-line{
+//     background-color: #1363DF;
+//     width: 15px;
+//     height: 8px;
+//     margin-top: 9px;
+// }
+.oneprice img{
+    height: 680px;
 }
 .oneprice p{
     font: normal normal normal 16px/24px Muli;
     display: none;
+}
+.icn a{
+    font-family: 'Muli';
 }
 .qty{
     font: normal normal 600 20px/30px Muli;
@@ -105,13 +113,13 @@ $blackcolor: #172026;
     padding-top: 0px !important;
 }
 
-.line hr {
-    background-color: #1363DF !important;
-    height: 0.5rem !important;
-    width: 7%;
-    margin: 2rem 0rem;
-    opacity: 1;
-}
+// .line hr {
+//     background-color: #1363DF !important;
+//     height: 0.5rem !important;
+//     width: 7%;
+//     margin: 2rem 0rem;
+//     opacity: 1;
+// }
 
 .addtocart {
     width: 300px;

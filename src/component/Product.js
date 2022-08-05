@@ -127,9 +127,9 @@ const Product = (props) => {
                         
                     </div>
                 </div>
-                <div className='hr-line'>
+                {/* <div className='hr-line'>
                     <hr />
-                </div>
+                </div> */}
             </>
         )
     }

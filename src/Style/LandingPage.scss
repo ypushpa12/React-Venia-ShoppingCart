@@ -615,6 +615,7 @@ span.carousel-control-next-icon {
     .mob-img img {
         position: absolute;
         top: 137rem;
+        width: 21rem;
     }
 
     .mob-landing .mob-text h2 {
@@ -761,5 +762,26 @@ span.carousel-control-next-icon {
         opacity: 2;
         width: 324px;
         bottom: 30px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .Landing_left .left-content h2{
+        text-align: center;
+    padding-right: 65px;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .landing_3 img {
+        position: absolute;
+        right: 45px;
+    }
+    .landing_4 .map1{
+        right: 293px;
+        position: absolute;
+    }
+    .landing_4 hr{
+        position: absolute;
+        right: 295px;
     }
 }
