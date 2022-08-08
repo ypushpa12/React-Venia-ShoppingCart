@@ -235,7 +235,12 @@
 
 
 }
-
+@media only screen and (max-width: 1440px){
+  .pic1 img{
+    width: 78rem;
+    left: -20px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .pic1 img {
     width: 48.5rem;
@@ -275,16 +280,13 @@
   }
 }
 
-// @media only screen and (max-width: 425px) {
-//   .pic1 img{
-//     height: 17rem;
-//     width: 31rem;
-//   }
-//   .hero-sec .card_1-body{
-//     width: 28.5rem;
-//     margin-top: 13rem;
-//   }
-//   .l hr{
-//     left: 123px;
-//   }
-// }
+@media (min-width: 425px) {
+  .pic1 img{
+    height: 17rem;
+    width: 100%;
+  }
+  .hero-sec .card_1-body{
+    width: 28rem;
+    margin-top: 14rem;
+  }
+}

@@ -19,6 +19,7 @@ import Checkout3 from './component/Checkout3';
 import Checkout2 from './component/Checkout2';
 import Checkout4 from './component/Checkout4';
 import Checkout5 from './component/Checkout5';
+import TodosList from '../src/component/features/todos/TodoList'
 import productListing from './component/productListing'
 // import Shipping from './component/Shipping';
 
@@ -55,12 +56,13 @@ function App() {
   const getCategory = () => category;
   return (
     <>
+    <TodosList/>
     <Mainlayout/>
       <Navbar countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
 
       {/* <LandingPage /> */}
       <Routes>
-    
+      {/* <Route exact path='/TodosList' element={<TodosList />} /> */}
         {/* <Route exact path='/landingpage' element={<LandingPage />} /> */}
         <Route exact path='/' element={<LandingPage />} />
         <Route exact path = '/testing' component={<productListing/>}/>
