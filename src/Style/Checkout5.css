@@ -51,7 +51,6 @@
 .main-p {
   color: #172026;
   text-align: center;
-  font-size: 10px;
 }
 
 .last-para {
@@ -66,14 +65,14 @@
   background-color: #47B5FF;
   height: 250px;
   width: 250px;
-  margin-left: 16rem;
+  margin-left: 6rem;
 }
 
 .pricing-card1 p {
   text-align: center;
   padding-top: 38px;
   color: white;
-  font: normal normal 600 36px/45px Source Serif Pro;
+  font: normal normal 600 30px Source Serif Pro;
 }
 
 .pricing-card1 img {

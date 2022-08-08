@@ -34,13 +34,13 @@ function Filter({ setCategory, selectedCategory }) {
             <hr />
             <div className='attribute'>
                 <h6>Categories</h6>
-                <input type="checkbox" id="option" name="option" value="Smart Gear" />
+                <input type="checkbox" id="option" name="option" value="jewelery" />
                 <label>Jewellery</label> <br />
-                <input type="checkbox" id="option" name="option" value="option" />
+                <input type="checkbox" id="option" name="option" value="electronics" />
                 <label>Electronics</label> <br />
-                <input type="checkbox" id="option" name="option" value="option" />
+                <input type="checkbox" id="option" name="option" value="men's clothing" />
                 <label>Men's Clothing</label> <br />
-                <input type="checkbox" id="option" name="option" value="option" />
+                <input type="checkbox" id="option" name="option" value="women's clothing" />
                 <label>Women's Clothing</label> <br />
                 <hr />
             </div>

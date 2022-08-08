@@ -3,20 +3,21 @@ const intialState = {
   products: [],
 };
 
-export const productsReducer = (state = intialState, { type, payload }) => {
-  switch (type) {
+export const productsReducer = (state = intialState, action) => {
+  switch (action.type) {
     case ActionTypes.SET_PRODUCTS:
-      return { ...state, products: payload };
+      return { ...state, products: action.products };
     default:
       return state;
   }
 };
 
-export const selectedProductsReducer = (state = {}, { type, payload }) => {
-  console.log(type);
-  switch (type) {
+export const selectedProductsReducer = (state = intialState, action) => {
+  switch (action.type) {
+    case ActionTypes.GET_PRODUCTS_SUCCESS:
+      return Object.assign({}, state, { products: action.products });
     case ActionTypes.SELECTED_PRODUCT:
-      return { ...state, ...payload };
+      return { ...state, ...action };
     case ActionTypes.REMOVE_SELECTED_PRODUCT:
       return {};
     default:

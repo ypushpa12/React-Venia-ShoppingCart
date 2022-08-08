@@ -7,6 +7,7 @@ import "../Style/Products.scss"
 const itemsPerPage = 12;
 
 const Products = ({ category }) => {
+    console.log(category);
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
@@ -19,6 +20,7 @@ const Products = ({ category }) => {
                 setData(await response.clone().json());
                 const data = await response.json();
                 setFilter(data);
+                console.log(data);
                 setLoading(false);
             }
             return () => {
@@ -66,7 +68,8 @@ const Products = ({ category }) => {
         };
         return (
             <>
-
+            <div class="aem-Grid aem-Grid--12">
+            </div>
                 {currentItems?.map((product) => {
                     return (
                         <>

@@ -251,7 +251,12 @@ p {
 
         width: 47px;
     }
-
+    .icn a{
+        display: flex;
+    }
+    .icn a svg{
+        margin-top: 6px;
+    }
     .oneprice img {
         height: 410px;
         width: 270px;
@@ -288,5 +293,14 @@ p {
 
     .Producttitle {
         text-align: center;
+    }
+    .icn{
+        margin-left: 16rem;
+    }
+    .icn a{
+        display: flex;
+    }
+    .icn a svg{
+        margin-top: 6px;
     }
 }

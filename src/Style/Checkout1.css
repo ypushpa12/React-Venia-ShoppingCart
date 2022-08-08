@@ -141,6 +141,7 @@
 }
 
 .btn-shipping-1 {
+  background-color: white;
   border: 2px solid #2A65D7;
   border-radius: 7px;
   position: relative;
@@ -162,6 +163,10 @@
   padding-top: 20px;
 }
 
+.mobile-button {
+  display: none;
+}
+
 .container-Checkout hr {
   height: 0.5rem !important;
   width: 5%;
@@ -175,6 +180,24 @@
   .signin-check {
     margin-left: 0px;
   }
+  .btn-shipping-1 {
+    display: none;
+  }
+  .mobile-button {
+    display: block;
+  }
+  .mobile-button {
+    color: #1363DF;
+    left: 6rem;
+    background: white;
+    border: 2px solid #1363DF;
+    position: relative;
+    /* bottom: -50px; */
+    top: 5rem;
+    border-radius: 7px;
+    height: 38px;
+    width: 114px;
+  }
   .pricing-card {
     margin-left: 0px;
   }
@@ -185,11 +208,31 @@
   .last12 {
     margin-top: 0px;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+  .signin-check {
+    margin-left: 85px;
+  }
+  .pricing-card {
+    margin-left: 85px;
+  }
   .btn-shipping-1 {
-    position: relative;
-    width: 16rem;
-    top: 45px;
-    left: 0px;
+    background: white;
+    width: 19rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-shipping-1 {
+    left: 11rem;
+  }
+  .container-Checkout hr {
+    margin-left: 22rem !important;
+    width: 12%;
+  }
+  .pricing-card {
+    margin-top: 4rem;
   }
 }
 /*# sourceMappingURL=Checkout1.css.map */

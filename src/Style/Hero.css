@@ -100,7 +100,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (min-width: 320px) {
   .adc {
     display: none;
   }
@@ -132,10 +132,10 @@
   .hero-sec .card_1-body {
     margin-top: 252px;
     height: 16rem;
+    z-index: 999;
     width: 21rem;
     position: relative;
     margin-top: 91px;
-    height: 16rem;
     left: 15px;
   }
   .pic1 img {
@@ -178,6 +178,54 @@
     margin: 3rem 22rem;
     border-radius: 15px 15px;
     opacity: 3;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .pic1 img {
+    width: 26.5rem;
+  }
+}
+
+.hero-sec .card_1-body {
+  width: 25rem;
+}
+
+@media only screen and (min-width: 425px) {
+  .pic1 img {
+    width: 30rem;
+  }
+  .hero-sec .card_1-body {
+    width: 28rem;
+  }
+  .l hr {
+    left: 124px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pic1 img {
+    height: 18rem;
+    width: 55rem;
+  }
+  .hero-sec .card_1-body {
+    width: 53rem;
+    margin-top: 12rem;
+  }
+  .l hr {
+    left: 305px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .pic1 img {
+    width: 73rem;
+  }
+  .hero-sec .card_1-body {
+    width: 71rem;
+  }
+  .l hr {
+    left: 423px;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

@@ -47,7 +47,7 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                             )
                         } */}
 
-                        <li className="menuitem"><NavLink to="/">Home</NavLink></li>
+                        <li className="menuitem1"><NavLink to="/">Home</NavLink></li>
                         <li className="menuitem"><NavLink to="/women">Women</NavLink> </li>
                         <li className="menuitem"><NavLink to="/men">Men</NavLink></li>
                         <li className="menuitem"><NavLink to="/electronics">Electronics</NavLink></li>

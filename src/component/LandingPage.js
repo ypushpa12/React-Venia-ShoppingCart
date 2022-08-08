@@ -1,11 +1,12 @@
 
 import React from 'react';
-import '../Style/LandingPage.scss';
+import { Link } from "react-router-dom";
+import '../Style/landing-page.scss';
 import { BiMap } from "react-icons/bi";
 import landing1 from '../Images/landingpage1.png';
-import landing2 from '../Images/landingpage2.png'
+import landing2 from '../Images/hero-component-image2.jpg'
 import Carousel from 'react-bootstrap/Carousel';
-import landingimg1 from '../Images/Carousel-image.jpg';
+import landingimg1 from '../Images/Carousel-image 2cropped1.jpeg';
 
 export default function Landing() {
   return (
@@ -13,203 +14,150 @@ export default function Landing() {
       <div className='landing_1'>
         <Carousel >
           <Carousel.Item>
-            <div class="aem-Grid aem-Grid--12">
-              <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                <div className='land-i'>
-                  <div className='Landing_left'>
+            <div className="aem-Grid aem-Grid--12">
+              <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12 flex-disp">
                     <div className='left-content'>
-                      <h2>Shop the new<br />Signature Collection</h2>
-                      <p className='hide-desktop'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p> <p className="hide-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
-                      <div class="mobile-btn">
-                        <button>SHOP NOW</button>
+                      <h2 className="csl-text-one">Shop the new<br />Signature Collection</h2>
+                      <p className='md-block mob-csl-text-two'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p> 
+                      <p className="dd-block csl-text-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
+                      <div className="mobile-btn">
+                        <p><a className="a-btn"href="">SHOP NOW</a></p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-
-                <div className='Landing-right'>
-                  {/* <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22980%22%20height%3D%22650%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20980%20650%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%20%20%20%20%20%20%20%23holder%20text%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20sans-serif%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22holder%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23cccccc%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20text-anchor%3D%22middle%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20dy%3D%22.3em%22%3ECarousel%20Image%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fsvg%3E" className='imgsize' /> */}
-                  <img src={landingimg1} className='imgsize' />
+                      </div>
+                      <div className='right-content'>
+                      <img src={landingimg1} className='dd-block tab-block' />
+                      <img  className="md-block" src="https://i.ibb.co/jT8BMpJ/mobile-c-img.jpg"/>
                 </div>
               </div>
             </div>
-
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="aem-Grid aem-Grid--12">
+              <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12 flex-disp">
+                    <div className='left-content'>
+                      <h2 className="csl-text-one">Shop the new<br />Signature Collection</h2>
+                      <p className='md-block mob-csl-text-two'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p> 
+                      <p className="dd-block csl-text-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
+                      <div className="mobile-btn">
+                        <p><a className="a-btn"href="">SHOP NOW</a></p>
+                      </div>
+                      </div>
+                      <div className='right-content'>
+                      <img src={landingimg1} className='dd-block tab-block' />
+                      <img  className="md-block" src="https://i.ibb.co/jT8BMpJ/mobile-c-img.jpg"/>
+                </div>
+              </div>
+            </div>
           </Carousel.Item>
           
 
         </Carousel>
       </div>
-      {/* mobile */}
-      {/* <div class="container">
-
-        <div class="landing-mob">
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-              <div className='Landingright'>
-                <img src="https://i.pinimg.com/originals/5f/d7/26/5fd726232a043b591df8272be0c4d0cd.jpg" />
-
+      <div className='container max-width-desktop'>
+          <div className="aem-Grid aem-Grid--12 mgt-1">
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 ">
+              <div className='landimg img1'>
+                {/* <div className='card'>*/}
+                  
               </div>
-            </div>
-            <div class="aem-GridColumn aem-GridColumn--phone--12">
-              <div className='Landingleft'>
-                <h2>Shop the new<br /> Women’s Collection</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
-                <button><p>SHOP NOW</p></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      <div className='container'>
-        <div className='landing_2'>
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--10">
-              <div className='landimg1'>
-                {/* <div className='card'>
-                <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" /> */}
-                <div className='card-desc'>
-                  <h3>Shop Women</h3>
+              <div className='card-desc'>
+                  <h3><Link to="/women">Shop Women</Link></h3>
                   <p>Lorem ipsum dolor sit amet</p>
 
                 </div>
-                <div className='line'>
-                  <hr />
-                </div>
-              </div>
+              
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--10">
-              <div className='landimg'>
-
-                <div className='card-desc'>
-                  <h3>Shop Men</h3>
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 ">
+              <div className='landimg img2'>
+                
+              </div>
+              <div className='card-desc'>
+                  <h3><Link to="/mem">Shop Men</Link></h3>
                   <p>Lorem ipsum dolor sit amet</p>
                 </div>
-              </div>
-              <div className='lines'>
-                <hr />
-              </div>
-
-              {/* </div> */}
+             
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--10">
-              <div className='landimg2'>
-                {/* <div className='card'>
-                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" /> */}
-                <div className='card-desc'>
-                  <h3>Jewellery</h3>
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 ">
+              <div className='landimg img3'>
+                {/* <div className='card'>*/}
+                
+
+
+              </div>
+              <div className='card-desc'>
+                  <h3><Link to="/jewellery">Jewellery</Link></h3>
                   <p>Lorem ipsum dolor sit amet</p>
                 </div>
-
-
-              </div>
-              <div className='lines'>
-                <hr />
-              </div>
+            
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--10">
-              <div className='landimg3'>
-                {/* <div className='card'>
-                <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" /> */}
-                <div className='card-desc'>
-                  <h3>Electronics</h3>
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 ">
+              <div className='landimg img4'>
+                {/* <div className='card'>*/}
+                
+
+              </div>
+              <div className='card-desc'>
+                  <h3><Link to="/electronics">Electronics</Link></h3>
                   <p>Lorem ipsum dolor sit amet</p>
 
                 </div>
-
-              </div>
-              <div className='lines'>
-                <hr />
-              </div>
+              
             </div>
           </div>
-
-        </div>
-      </div>
-      <div className='container'>
-        <div className='landing_3'>
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-              <div className='Landing_left'>
-                <h2>Take off in the new <br />Signature Legging</h2>
-                <h5>Lorem Ipsum Dolor Tempor</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adi<br />ut labore et
-                  dolore magna aliqua.Lobortis <br />mattis aliquam faucibus purus.</p>
-                <div className='btns'>
-                  <button className='btn_1'><p>SHOP COLLECTION</p></button>
-                  <button className='btn_2'><p>SHOP NOW</p></button>
-
-                </div>
-                <hr className='hero-3-hr' />
-              </div>
-
-            </div>
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-              <div className='Landing-right'>
-                <img src={landing1} />
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='container'>
-        <div className='mob-landing'>
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-              <div className='mob-img'>
-                <img src={landing1} />
-              </div>
-            </div>
-            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-              <div className='mob-text'>
-                <h2>Take off in the new <br />Signature Legging</h2>
-                <h5>Lorem Ipsum Dolor Tempor</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Lobortis mattis aliquam faucibus purus.</p>
-                <div class="aem-Grid aem-Grid--12">
-                  <div className='btns'>
-                    <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                      <button className='btn_4'><p>SHOP NOW</p></button>
-                    </div>
-                  </div>
-                  <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                    <div className='btns'>
-                      <button className='btn_3'><p>SHOP COLLECTION</p></button>
-                    </div>
-                    <div className='line'>
-                      <hr />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
+     <div className="aem-Grid aem-Grid--12 max-width-desktop mob-flex-display pd-2">
+         <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
+            <div className="textblock">
+               <h2 className="text-block-one">
+                  Take off in the new
+                  Signature Legging
+               </h2>
+               <h3 className="text-block-two">
+                  Lorem ipsum dolor Tempor
+               </h3>
+               <div className="text-block-three">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore magna lorem ipsum dolor sit amet. 
+               </div>
+               
+               <div>
+                  <p>
+                     <span className="mob-flex-display">
+                        <a className="text-block-btns" href="">Shop Collection</a>
+                        <a className="text-block-btns text-block-btns-b" href="">Shop Now</a>
+                        </span>
+                        <hr className="border-btm"/>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
+            <div>
+            <img className="componentimg" src="../assets/model1.png" />
+            </div>
+         </div>
+         </div>
 
-
-
-      <div className='container'>
+      <div className='container pd-2 max-width-desktop'>
         <div className='landing_4'>
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
+          <div className="aem-Grid aem-Grid--12 flex-display ">
+            <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
               <div className='landing-left'>
-                <img src={landing2} />
+                <img className="adventure-img" src={landing2} />
               </div>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--phone--12">
+              <a href="#" className='map1'><BiMap />
+              <hr className="map-border"/></a>
+            </div>
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className='landing-right'>
                 <div className='land-content'>
-                  <h2 className='mobile-text'>Conquer your </h2><h2 className='desktop-text'>next adventure</h2>
+                  <h2 className='mobile-text'>Conquer your next adventure</h2>
                   <p>Lorem Ipsum Dolor Tempor</p>
-                  <button className='btn_3'><p>SHOP DEVICES</p></button>
+                  <a href="" className='text-block-btns text-block-btns-w'>SHOP DEVICES</a>
                 </div>
-                <a href="#" className='map1'><BiMap /></a>
+                
                 <hr />
               </div>
 

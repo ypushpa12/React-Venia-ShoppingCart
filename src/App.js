@@ -19,6 +19,7 @@ import Checkout3 from './component/Checkout3';
 import Checkout2 from './component/Checkout2';
 import Checkout4 from './component/Checkout4';
 import Checkout5 from './component/Checkout5';
+import productListing from './component/productListing'
 // import Shipping from './component/Shipping';
 
 
@@ -61,9 +62,13 @@ function App() {
       <Routes>
     
         {/* <Route exact path='/landingpage' element={<LandingPage />} /> */}
-        <Route exact path='/' element={<LandingPage category={category} />} />
+        <Route exact path='/' element={<LandingPage />} />
+        <Route exact path = '/testing' component={<productListing/>}/>
         <Route exact path='/Checkout1' element={<Checkout1 />} />
-        <Route exact path='/women' element={<Home category={category} />} />
+        <Route exact path='/men' element={<Home category="men's clothing"/>} />
+        <Route exact path='/women' element={<Home category="women's clothing" />} />
+        <Route exact path='/jewellery' element={<Home category="jewelery" />} />
+        <Route exact path='/electronics' element={<Home category="electronics" />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/filter' element={<Filter />} />
         <Route exact path='/products' element={<Products category="" />} />

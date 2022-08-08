@@ -7,18 +7,23 @@
 .guestcheckout h4 {
     font: normal normal 600 30px/30px Source Serif Pro;
 }
-.c2{
+
+.c2 {
     padding-top: 88px;
-    p{
+
+    p {
         font: normal normal 600 20px/25px Muli;
     }
 }
+
 .guestcheckout h6 {
     font: normal normal 600 15px/25px Muli;
 }
-.footer_12 .c1{
+
+.footer_12 .c1 {
     padding-left: 95px;
 }
+
 .guestcheckout p {
     font: normal normal normal 14px/25px Muli;
 }
@@ -81,7 +86,8 @@
     margin-left: 185px;
     border: 1px solid #D1D3D6;
     padding: 10px;
-    h6{
+
+    h6 {
         font: normal normal normal 14px/24px Muli;
     }
 
@@ -107,7 +113,8 @@
         height: 30px;
         border-radius: 4px;
         background: white;
-        a{
+
+        a {
             font: normal normal bold 14px/16px Muli;
         }
     }
@@ -117,13 +124,16 @@
         // color: #E26A2C;
     }
 }
+
 .footer_12 label {
     font: normal normal 600 16px/24px Muli;
-    
+
 }
-.shipping-info{
+
+.shipping-info {
     font: normal normal 600 20px/25px Muli;
 }
+
 .f1name label {
     position: relative;
     left: 136px;
@@ -137,7 +147,7 @@
 }
 
 .btn-shipping-1 {
-  
+background-color: white;
     border: 2px solid #2A65D7;
     border-radius: 7px;
     position: relative;
@@ -158,9 +168,11 @@
     font: normal normal 600 48px/45px Source Serif Pro;
     padding-top: 20px;
 }
-.mobile-button{
-    display:none
+
+.mobile-button {
+    display: none
 }
+
 .container-Checkout hr {
     height: 0.5rem !important;
     width: 5%;
@@ -169,40 +181,73 @@
     margin-left: 38rem !important;
     opacity: 3;
 }
-@media only screen and (max-width: 320px){
-    .signin-check{
+
+@media only screen and (max-width: 320px) {
+    .signin-check {
         margin-left: 0px;
     }
-    .btn-shipping-1{
+
+    .btn-shipping-1 {
         display: none;
     }
-    .mobile-button{
+
+    .mobile-button {
         display: block;
     }
-    .mobile-button{
+
+    .mobile-button {
         color: #1363DF;
-    left: 6rem;
-    background: white;
-    border: 2px solid #1363DF;
-    position: relative;
-    /* bottom: -50px; */
-    top: 5rem;
-    border-radius: 7px;
-    height: 38px;
-    width: 114px;
+        left: 6rem;
+        background: white;
+        border: 2px solid #1363DF;
+        position: relative;
+        /* bottom: -50px; */
+        top: 5rem;
+        border-radius: 7px;
+        height: 38px;
+        width: 114px;
     }
-    .pricing-card{
+
+    .pricing-card {
         margin-left: 0px;
     }
-    .text-right h6{
+
+    .text-right h6 {
         position: relative;
         bottom: 180px;
     }
+
     // .c2{
     //     padding-top: 0px;
     // }
-    .last12{
+    .last12 {
         margin-top: 0px;
     }
-   
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .signin-check {
+        margin-left: 85px;
+    }
+    .pricing-card {
+        margin-left: 85px;
+    }
+    .btn-shipping-1{
+        background: white;
+        width: 19rem;
+    }
+}
+@media only screen and (max-width: 768px){
+.btn-shipping-1{
+left: 11rem;
+}
+.container-Checkout hr{
+    margin-left: 22rem !important;
+    width: 12%;
+}
+.pricing-card{
+    margin-top: 4rem;
+}
+
 }

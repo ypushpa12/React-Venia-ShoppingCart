@@ -84,7 +84,7 @@ export default function Checkout1() {
                 </form>
               </div>
               <button className='btn-shipping-1'><p><Link to="/Checkout2">CONTINUE TO SHIPPING METHOD</Link></p></button>
-              <button className='mobile-button'>CONTINUE</button>
+              <button className='mobile-button'><Link to="/Checkout2">CONTINUE</Link></button>
               <div class="c2">
                 <hr />
                 <p>2. Shipping Method</p>

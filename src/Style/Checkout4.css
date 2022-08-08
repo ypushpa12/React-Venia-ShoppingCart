@@ -64,11 +64,19 @@
   }
   .text-right h6 {
     position: relative;
-    bottom: 177px;
   }
   .main-p {
     position: relative;
     top: 28px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-btn1 {
+    top: 11px;
+  }
+  .main-p {
+    top: 10px;
   }
 }
 /*# sourceMappingURL=Checkout4.css.map */

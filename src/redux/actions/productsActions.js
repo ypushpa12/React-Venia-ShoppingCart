@@ -1,5 +1,12 @@
 import { ActionTypes } from "../constants/action-types";
 
+export function getProductSuccess(products) {
+  return {
+    type: ActionTypes.GET_PRODUCTS_SUCCESS,
+    products
+  };
+}
+
 export const setProducts = (products) => {
   return {
     type: ActionTypes.SET_PRODUCTS,

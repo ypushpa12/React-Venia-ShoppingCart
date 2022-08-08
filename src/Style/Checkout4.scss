@@ -1,22 +1,23 @@
-
-
 .guest-3 {
     padding-left: 245px;
     padding-top: 10px;
-p{
-    color: #1363DF;
-    display: flex;
-}
+
+    p {
+        color: #1363DF;
+        display: flex;
+    }
 }
 
 
 .product-desc {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    h6{
+
+    h6 {
         font: normal normal normal 16px/24px Muli;
     }
-    h5{
+
+    h5 {
         font: normal normal 600 16px/20px Muli;
     }
 }
@@ -25,7 +26,7 @@ p{
     padding-bottom: 2rem;
 }
 
-.main-btn1{
+.main-btn1 {
     width: 30%;
     background: #1363DF;
     border: 2px;
@@ -34,10 +35,11 @@ p{
     position: relative;
     border-radius: 14px;
     height: 33px;
-    a{
 
-            color: white;
-    
+    a {
+
+        color: white;
+
     }
 
 }
@@ -54,21 +56,35 @@ p{
     position: relative;
     left: 9px;
 }
-@media only screen and (max-width: 320px){
 
-.main-btn1{
-    width: 44%;
-    top: 30px;
-    left: 91px;
-    position: relative;
+@media only screen and (max-width: 320px) {
+
+    .main-btn1 {
+        width: 44%;
+        top: 30px;
+        left: 91px;
+        position: relative;
+    }
+
+    .text-right h6 {
+        position: relative;
+        // top: 181px;
+        // bottom: -4px;
+
+    }
+
+    .main-p {
+        position: relative;
+        top: 28px;
+    }
 }
-.text-right h6{
-    position: relative;
-    // top: 181px;
-    bottom: 177px;
-}
-.main-p{
-    position: relative;
-    top: 28px;
-}
+
+@media only screen and (max-width: 1024px) {
+    .main-btn1 {
+        top: 11px;
+    }
+    .main-p{
+     
+        top: 10px;
+    }
 }

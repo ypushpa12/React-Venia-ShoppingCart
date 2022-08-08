@@ -18,6 +18,7 @@
 .aem-Grid {
     display: block;
     width: 100%;
+    /* background-color: wheat; */
   }
   .aem-Grid::before,
   .aem-Grid::after {
@@ -3084,6 +3085,8 @@
     float: left;
     clear: none;
     width: 25%;
+    max-height: cal;
+    /* padding: 2px; */
   }
   .aem-Grid.aem-Grid--12 > .aem-GridColumn.aem-GridColumn--default--4 {
     float: left;
