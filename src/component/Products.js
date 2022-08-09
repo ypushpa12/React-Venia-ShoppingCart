@@ -5,7 +5,9 @@ import ReactPaginate from 'react-paginate';
 import heart from "../Images/heart.jpg";
 import "../Style/Products.scss"
 import store from '../redux/store';
+import '../Style/landing-page.scss'
 import { getProductsdata } from './api/productsApi';
+
 const itemsPerPage = 12;
 
 const Products = ({ category }) => {
@@ -14,19 +16,18 @@ const Products = ({ category }) => {
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
     let componentMounted = true;
-    getProductsdata();
     useEffect(() => {
         const getProducts = async () => {
             setLoading(true);
-            // const response = await fetch("https://fakestoreapi.com/products");
-            // getProductsdata();
+            await getProductsdata();
 
-            const productsdata = store.getState();
-            console.log(productsdata);
-            const response= productsdata;
+
             if (componentMounted) {
-                setData(await response.clone().json());
-                const data = await response.json();
+                const productsdata = store.getState();
+                const response = productsdata.allProducts.products;
+                console.log();
+                setData(response);
+                const data = response;
                 setFilter(data);
                 console.log(data);
                 setLoading(false);
@@ -76,25 +77,44 @@ const Products = ({ category }) => {
         };
         return (
             <>
-            <div class="aem-Grid aem-Grid--12">
-            </div>
-                {currentItems?.map((product) => {
-                    return (
-                        <>
-                            <div className="col-md-4 col-sm-6 col-6">
-                                <div className=" " key={product.id}>
-                                    < NavLink to={`/products/${product.id}`}>
-                                        <img src={product.image} className="card-img-top" alt={product.title}  /></NavLink>
-                                    <div className="card-body">
-                                        <h5 className="card-title mb-0">{product.title.substring(0, 12)}...</h5>
-                                        <p className="card-text lead fw-bold">${product.price}</p>
-                                        <img src={heart} />
+                <div class="aem-Grid aem-Grid--12">
+                    <div class="aem-Grid aem-Grid--12 aem-Grid-default--9">
+
+                        {currentItems?.map((product) => {
+                            return (
+
+                                <>
+                                    <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 ">
+                                        <div className="Product_card landing" key={product.id}>
+                                            <div className='product_image'>
+                                                < NavLink to={`/products/${product.id}`}>
+
+                                                    <img src={product.image} className="card-img-top" alt={product.title} /></NavLink>
+                                                </div>
+                                                <div className="card-body">
+                                                    <h5 className="card-title mb-0">{product.title.substring(0, 12)}...</h5>
+                                                    <p className="card-text lead fw-bold">${product.price}</p>
+                                                    <img src={heart} />
+                                                </div>
+                                            </div>
+                                        
+                                        {/* <div className='landimg img1'>
+                                            
+
+                                        </div>
+                                        <div className='card-desc'>
+                                            <h3><Link to="/women">Shop Women</Link></h3>
+                                            <p>Lorem ipsum dolor sit amet</p>
+
+                                        </div> */}
                                     </div>
-                                </div>
-                            </div>
-                        </>
-                    )
-                })}
+                                </>
+                            )
+                        })}
+                    </div>
+                </div>
+
+
                 <div class="aem-Grid aem-Grid--12">
                     <div class="aem-GridColumn aem-GridColumn--default--5">
                         &nbsp;
@@ -128,20 +148,18 @@ const Products = ({ category }) => {
             </>
         )
     }
-    return (
+return (
 
-        <div className='product'>
-            <div className="container">
-                <div className="row">
-                </div>
-                <div className="row">
-                    {loading ? <Loading /> : <ShowProducts />}
+    <div className='product'>
 
-                </div>
 
-            </div>
-        </div>
-    )
+        {loading ? <Loading /> : <ShowProducts />}
+
+
+
+    </div>
+
+)
 }
 
 export default Products
