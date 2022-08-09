@@ -4,6 +4,8 @@ import Skeleton from 'react-loading-skeleton';
 import ReactPaginate from 'react-paginate';
 import heart from "../Images/heart.jpg";
 import "../Style/Products.scss"
+import store from '../redux/store';
+import { getProductsdata } from './api/productsApi';
 const itemsPerPage = 12;
 
 const Products = ({ category }) => {
@@ -12,10 +14,16 @@ const Products = ({ category }) => {
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
     let componentMounted = true;
+    getProductsdata();
     useEffect(() => {
         const getProducts = async () => {
             setLoading(true);
-            const response = await fetch("https://fakestoreapi.com/products");
+            // const response = await fetch("https://fakestoreapi.com/products");
+            // getProductsdata();
+
+            const productsdata = store.getState();
+            console.log(productsdata);
+            const response= productsdata;
             if (componentMounted) {
                 setData(await response.clone().json());
                 const data = await response.json();

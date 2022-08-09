@@ -1,14 +1,22 @@
 import store from '../../redux/store';
-import {getProductSuccess} from '../../redux/actions/productsActions'
+import { getProducts } from '../../redux/actions/productsActions'
 // import _ from 'lodash';
 
 const productRestApi = "https://fakestoreapi.com/products";
 
-export function getProducts() {
-  productRestApi.get().then(function({data}) {
-  	console.log("in get products",data)
-    store.dispatch(getProductSuccess(data));
-  }).catch(function (error) {
-    console.log("Get products failed: " + error);
+// export function getProductsdata() {
+//   productRestApi.get().then(function({data}) {
+//   	console.log("in get products",data)
+//     store.dispatch(getProducts(data));
+//   }).catch(function (error) {
+//     console.log("Get products failed: " + error);
+//   });
+// }
+export const getProductsdata = async () => {
+  await fetch('https://fakestoreapi.com/products').then(function (res) {
+    return res.json();
+  }).then(function (json) {
+    console.log(json)
+    store.dispatch(getProducts(json));
   });
-}
+};

@@ -13,14 +13,15 @@ import Signin from './component/Signin';
 import Signup from "./component/CreateAccount";
 import Navfilter from './component/Navfilter';
 import Mainlayout from './mainlayout';
-import Checkout1 from './component/Checkout1';
+
 import LandingPage from './component/LandingPage';
-import Checkout3 from './component/Checkout3';
-import Checkout2 from './component/Checkout2';
-import Checkout4 from './component/Checkout4';
-import Checkout5 from './component/Checkout5';
-import TodosList from '../src/component/features/todos/TodoList'
-import productListing from './component/productListing'
+
+import Checkout1 from "./component/Checkout/Checkout1";
+import Checkout2 from "./component/Checkout/Checkout2";
+import Checkout3 from "./component/Checkout/Checkout3";
+import Checkout4 from "./component/Checkout/Checkout4";
+import Checkout5 from "./component/Checkout/Checkout5";
+
 // import Shipping from './component/Shipping';
 
 
@@ -56,7 +57,7 @@ function App() {
   const getCategory = () => category;
   return (
     <>
-    <TodosList/>
+   
     <Mainlayout/>
       <Navbar countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
 
@@ -66,7 +67,7 @@ function App() {
         {/* <Route exact path='/landingpage' element={<LandingPage />} /> */}
         <Route exact path='/' element={<LandingPage />} />
         <Route exact path = '/testing' component={<productListing/>}/>
-        <Route exact path='/Checkout1' element={<Checkout1 />} />
+       
         <Route exact path='/men' element={<Home category="men's clothing"/>} />
         <Route exact path='/women' element={<Home category="women's clothing" />} />
         <Route exact path='/jewellery' element={<Home category="jewelery" />} />
@@ -75,10 +76,11 @@ function App() {
         <Route exact path='/filter' element={<Filter />} />
         <Route exact path='/products' element={<Products category="" />} />
         <Route exact path='/signin' element={<Signin />} />
-        <Route exact path='/Checkout2' element={<Checkout2 />} />
-        <Route exact path='/Checkout3' element={<Checkout3 />} />
-        <Route exact path='/Checkout4' element={<Checkout4 />} />
-        <Route exact path='/Checkout5' element={<Checkout5 />} />
+        <Route path="/Checkout1" element={<Checkout1 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+        <Route path="/Checkout2" element={<Checkout2 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+        <Route path="/Checkout3" element={<Checkout3 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+        <Route path="/Checkout4" element={<Checkout4 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+        <Route path="/Checkout5" element={<Checkout5 />} />
         <Route exact path='/signup' element={<Signup />} />
         <Route exact path='/products/:id' element={<Product onAdd={onAdd} />} />
         <Route exact path='/cart' element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
