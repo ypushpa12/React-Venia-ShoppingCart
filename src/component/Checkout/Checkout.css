@@ -501,6 +501,7 @@ h1, h2, h3 {
 .ordersuccessful__info p {
   font-size: 14px;
   margin-bottom: 0px;
+  font-family: "Muli";
 }
 
 .ordersuccessful__info-items {
@@ -549,7 +550,9 @@ h1, h2, h3 {
   margin: 0 10px;
 }
 
-
+.mobile-b {
+  display: none;
+}
 
 .edit-mbl {
   display: none;

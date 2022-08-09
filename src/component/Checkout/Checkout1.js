@@ -264,7 +264,7 @@ function Checkout(props) {
                                                 </div>
                                                 <div className='checkout-buttons'>
                                                     <Link className='button-secondary desktop-btn' to="/Checkout2">CONTINUE TO SHIPPING METHOD</Link>
-                                                    <Link className='button-secondary mobile-btn' to="/Checkout2">CONTINUE</Link>
+                                                    <Link className='button-secondary mobile-b' to="/Checkout2">CONTINUE</Link>
                                                 </div>
                                             </div>
                                         </form>

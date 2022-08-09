@@ -11,7 +11,7 @@ function Hero() {
       <div className='hero-sec'>
         <div class="aem-Grid aem-Grid--12 mobile_hero_image">
         
-          <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 ">
+          <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
          
             <div className='hero_landing-right'>
               <div className='hero_land-content'>

@@ -203,7 +203,7 @@ body {
     padding-right: 30px;
   }
   .menu a:hover {
-    border-bottom: 7px solid white;
+    border-bottom: 5px solid white;
   }
   .hamb {
     display: none;
