@@ -25,9 +25,12 @@ const Products = ({ category }) => {
             if (componentMounted) {
                 const productsdata = store.getState();
                 const response = productsdata.allProducts.products;
-                console.log();
-                setData(response);
-                const data = response;
+                const activeIds = [1, 2, 3, 4, 5, 7, 9, 12, 15, 16, 17, 18, 19, 20]
+                const finaldata = response.filter((item) => {
+                    return activeIds.includes(item.id);
+                });
+                setData(finaldata);
+                const data = finaldata;
                 setFilter(data);
                 console.log(data);
                 setLoading(false);
@@ -81,23 +84,31 @@ const Products = ({ category }) => {
                     <div class="aem-Grid aem-Grid--12 aem-Grid-default--9">
 
                         {currentItems?.map((product) => {
+                            let backgroundImageURL = product.image;
+                            const containerStyle = {
+                                backgroundImage:
+                                    `url(${backgroundImageURL})`
+                            };
                             return (
 
                                 <>
-                                    <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 ">
+                                    <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 pd-32">
                                         <div className="Product_card landing" key={product.id}>
-                                            <div className='product_image'>
+                                            <div className='product_image' style={containerStyle}>
+
+
+
+                                            </div>
+                                            <div className="card-bodydesc">
                                                 < NavLink to={`/products/${product.id}`}>
 
-                                                    <img src={product.image} className="card-img-top" alt={product.title} /></NavLink>
-                                                </div>
-                                                <div className="card-body">
                                                     <h5 className="card-title mb-0">{product.title.substring(0, 12)}...</h5>
-                                                    <p className="card-text lead fw-bold">${product.price}</p>
-                                                    <img src={heart} />
-                                                </div>
+                                                </NavLink>
+                                                <p className="card-text lead fw-bold">${product.price}</p>
+                                                <img src={heart} />
                                             </div>
-                                        
+                                        </div>
+
                                         {/* <div className='landimg img1'>
                                             
 
@@ -148,18 +159,18 @@ const Products = ({ category }) => {
             </>
         )
     }
-return (
+    return (
 
-    <div className='product'>
-
-
-        {loading ? <Loading /> : <ShowProducts />}
+        <div className='product'>
 
 
+            {loading ? <Loading /> : <ShowProducts />}
 
-    </div>
 
-)
+
+        </div>
+
+    )
 }
 
 export default Products

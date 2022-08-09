@@ -81,22 +81,69 @@
 
 }
 
-.pic1 img {
-  height: 18rem;
-  width: 72rem;
-  position: relative;
-  top: 1rem;
-  left: 3px;
+.hero_landing-right {
+  height: 310px;
+  margin-left: 0px;
+  background-color: #1b252c;
+
+  // margin-left: -13em;
 }
 
+.hero_land-content {
+  padding: 7em;
+}
+
+.hero_land-content h2.mobile-text {
+  color: white;
+  // font-size: 40px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Source Serif Pro';
+}
+
+.hero_land-content p {
+  color: white;
+  font-size: 40px;
+
+  margin-left: -27px;
+}
+
+.hero-border {
+  border: 3px solid #1363df;
+  opacity: 100%;
+  position: relative;
+  width: 5.35rem;
+  // margin: auto;
+  margin-left: 0px;
+}
+
+.pic1 img {
+  width: 100%;
+  height: 278px;
+  position: relative;
+  top: 1rem;
+
+}
+
+// .card-img-top {
+// height: 382px;
+// width: 319px;
+// padding: 5px;
+
+// height: 18rem;
+
+// margin-left: 1px;
+// }
 .card-img-top {
-  height: 382px;
-  width: 319px;
-  padding: 5px;
-
-  // height: 18rem;
-
-  // margin-left: 1px;
+  align-content: end !important;
+  background-size: cover !important;
+  display: grid !important;
+  height: 362px !important;
+  justify-content: end !important;
+  margin: 0 !important;
+  min-height: 240px !important;
+  padding: 0 !important;
+  width: 100% !important;
 }
 
 .lines img {
@@ -127,7 +174,7 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (min-width: 320px) {
   .adc {
     display: none;
   }
@@ -135,6 +182,28 @@
   .mob {
     display: block;
   }
+
+  // .mobile_hero_image {
+  //   display: flex;
+  //   flex-direction: column-reverse;
+  // }
+
+  // .hero_landing-right {
+  //   width: 290px;
+  //   margin: auto;
+  //   margin-top: -2rem;
+  // }
+
+  // .hero_land-content {
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: center;
+  // }
+
+  // .pic1 img {
+  //   top: 0px;
+  //   height: 158px !important;
+  // }
 
   .card-img img {
     width: 23rem;
@@ -177,13 +246,6 @@
     height: 16rem;
 
     left: 15px;
-  }
-
-  .pic1 img {
-    position: absolute;
-    // height: 11rem;
-    height: 20rem;
-    width: 22.5rem;
   }
 
   .herosection {
@@ -235,58 +297,62 @@
 
 
 }
-@media only screen and (max-width: 1440px){
-  .pic1 img{
-    width: 78rem;
-    left: -20px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .pic1 img {
-    width: 48.5rem;
-    left: 84px;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .pic1 img {
-    margin-left: -6rem;
-    width: 55rem;
-  }
+// @media only screen and (max-width: 1440px){
+//   .pic1 img{
+//     width: 78rem;
+//     left: -20px;
+//   }
+// }
+// @media only screen and (max-width: 1024px) {
+//   .pic1 img {
+//     width: 48.5rem;
+//     left: 84px;
+//   }
+// }
 
-  .hero-sec .card_1-body {
-    width: 53rem;
-    position: relative;
-    margin-top: 212px;
-    left: 15px;
-  }
+// @media only screen and (max-width: 768px) {
+//   .pic1 img {
+//     margin-left: -6rem;
+//     width: 55rem;
+//   }
 
-  .l hr {
-    left: 300px;
-    position: relative;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .pic1 img{
-    height: 17rem;
-    width: 23rem;
-  }
-  .hero-sec .card_1-body{
-    width: 21rem;
-    margin-top: 13rem;
-  }
-  .l hr{
-    left: 84px;
-  }
-}
+//   .hero-sec .card_1-body {
+//     width: 53rem;
+//     position: relative;
+//     margin-top: 212px;
+//     left: 15px;
+//   }
 
-@media (min-width: 425px) {
-  .pic1 img{
-    height: 17rem;
-    width: 100%;
-  }
-  .hero-sec .card_1-body{
-    width: 28rem;
-    margin-top: 14rem;
-  }
-}
+//   .l hr {
+//     left: 300px;
+//     position: relative;
+//   }
+// }
+// @media only screen and (max-width: 320px) {
+//   .pic1 img{
+//     height: 17rem;
+//     width: 23rem;
+//   }
+//   .hero-sec .card_1-body{
+//     width: 21rem;
+//     margin-top: 13rem;
+//   }
+//   .l hr{
+//     left: 84px;
+//   }
+//   .card-img-top{
+//     height: 196px !important;
+//   }
+// }
+
+// @media (min-width: 425px) {
+//   .pic1 img{
+//     height: 17rem;
+//     width: 100%;
+//   }
+//   .hero-sec .card_1-body{
+//     width: 28rem;
+//     margin-top: 14rem;
+//   }
+// }

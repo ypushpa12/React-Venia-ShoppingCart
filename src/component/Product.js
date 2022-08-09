@@ -127,20 +127,16 @@ const Product = (props) => {
                         
                     </div>
                 </div>
-                {/* <div className='hr-line'>
-                    <hr />
-                </div> */}
+                
             </>
         )
     }
     return (
         <div>
-            <div className="container py-5">
-                <div className="row py-4">
+           
                     {loading ? <Loading /> : <ShowProduct onAdd={onAdd} />}
                 </div>
-            </div>
-        </div>
+           
     )
 }
 

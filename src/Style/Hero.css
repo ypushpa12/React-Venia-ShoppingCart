@@ -72,18 +72,58 @@
   width: 68rem;
 }
 
+.hero_landing-right {
+  height: 310px;
+  margin-left: 0px;
+  background-color: #1b252c;
+}
+
+.hero_land-content {
+  padding: 7em;
+}
+
+.hero_land-content h2.mobile-text {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Source Serif Pro';
+}
+
+.hero_land-content p {
+  color: white;
+  font-size: 40px;
+  margin-left: -27px;
+}
+
+.hero-border {
+  border: 3px solid #1363df;
+  opacity: 100%;
+  position: relative;
+  width: 5.35rem;
+  margin-left: 0px;
+}
+
 .pic1 img {
-  height: 18rem;
-  width: 72rem;
+  width: 100%;
+  height: 278px;
   position: relative;
   top: 1rem;
-  left: 3px;
 }
 
 .card-img-top {
-  height: 382px;
-  width: 319px;
-  padding: 5px;
+  -ms-flex-line-pack: end !important;
+      align-content: end !important;
+  background-size: cover !important;
+  display: -ms-grid !important;
+  display: grid !important;
+  height: 362px !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
+  margin: 0 !important;
+  min-height: 240px !important;
+  padding: 0 !important;
+  width: 100% !important;
 }
 
 .lines img {
@@ -100,7 +140,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (min-width: 320px) {
   .adc {
     display: none;
   }
@@ -138,11 +178,6 @@
     height: 16rem;
     left: 15px;
   }
-  .pic1 img {
-    position: absolute;
-    height: 20rem;
-    width: 22.5rem;
-  }
   .herosection {
     padding-top: 3px;
   }
@@ -178,62 +213,6 @@
     margin: 3rem 22rem;
     border-radius: 15px 15px;
     opacity: 3;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .pic1 img {
-    width: 78rem;
-    left: -20px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .pic1 img {
-    width: 48.5rem;
-    left: 84px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .pic1 img {
-    margin-left: -6rem;
-    width: 55rem;
-  }
-  .hero-sec .card_1-body {
-    width: 53rem;
-    position: relative;
-    margin-top: 212px;
-    left: 15px;
-  }
-  .l hr {
-    left: 300px;
-    position: relative;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .pic1 img {
-    height: 17rem;
-    width: 23rem;
-  }
-  .hero-sec .card_1-body {
-    width: 21rem;
-    margin-top: 13rem;
-  }
-  .l hr {
-    left: 84px;
-  }
-}
-
-@media (min-width: 425px) {
-  .pic1 img {
-    height: 17rem;
-    width: 100%;
-  }
-  .hero-sec .card_1-body {
-    width: 28rem;
-    margin-top: 14rem;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

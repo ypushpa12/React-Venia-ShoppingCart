@@ -1,33 +1,39 @@
 import React from 'react'
 import "../Style/Hero.scss"
+
 // import maxwidth from "../Images/max-width_header.jpg"
 import hero from "../Images/mobile-hero-image1.jpeg"
 function Hero() {
   return (
     // <div class="container-fluid">
-        <div className='main'>
+    <div className='main'>
+
+      <div className='hero-sec'>
+        <div class="aem-Grid aem-Grid--12 mobile_hero_image">
         
-        <div className='hero-sec'>
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
-              <div class="card_1">
-                <div class="card_1-body">
-                  <h5 class="card_1_title">Men’s <br/>Outerwear</h5>
-                  <div className='l'>
-                    <hr />
-                  </div> 
-                </div>
+          <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 ">
+         
+            <div className='hero_landing-right'>
+              <div className='hero_land-content'>
+                <h2 className='mobile-text'>Men's</h2>
+                <p>Outwear</p>
+                
+                <hr className="hero-border"/>
+                {/* <a href="" className='text-block-btns text-block-btns-w'>SHOP DEVICES</a> */}
               </div>
+
+          
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
-              <div class="pic1">
-                <img src={hero} class="pic" alt="" />
-              </div>
+          </div>
+          <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
+            <div class="pic1">
+              <img src={hero} class="pic" alt="" />
             </div>
           </div>
         </div>
-      
-    {/* </div> */}
+      </div>
+
+      {/* </div> */}
       {/* <div className='adc'>
         <div className='container-fluid'>
           <div className='herosection'>
