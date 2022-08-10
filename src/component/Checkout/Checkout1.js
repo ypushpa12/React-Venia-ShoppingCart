@@ -281,7 +281,7 @@ function Checkout(props) {
                         <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
                             <div className='checkout__right'>
                                 <div className='checkout__right-signin'>
-                                    <h5>Sign in for Express Checkout</h5><button className='button-secondary'>SIGN IN</button>
+                                    <h5>Sign in for Express Checkout</h5><button className='buttn-secondary'>SIGN IN</button>
                                 </div>
                                 <div className='checkout__right-summary'>
                                     <h4>Price Summary</h4>

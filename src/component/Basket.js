@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
+
 import "../Style/Basket.scss"
 import { BiHeart, BiLockAlt } from 'react-icons/bi';
 import { RiPencilLine } from 'react-icons/ri';

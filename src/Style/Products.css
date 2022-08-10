@@ -1,9 +1,9 @@
 .card-title {
-  font: normal normal bold 16px Muli;
+  font-family: "Muli";
 }
 
 .card-text {
-  font: normal normal 600 16px/20px Muli;
+  font-family: "Muli";
 }
 
 .Product_card {

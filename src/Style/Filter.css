@@ -2,6 +2,10 @@
   font-family: "Muli, Regular";
 }
 
+.basket-1 h6 {
+  padding-bottom: 8px;
+}
+
 .colors {
   display: -webkit-box;
   display: -ms-flexbox;

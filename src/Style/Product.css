@@ -6,6 +6,10 @@
   font-family: "Muli";
 }
 
+.Sweat-wicking {
+  text-align: center;
+}
+
 .Sizebutton button {
   border-radius: 5px;
   width: 55px;
@@ -250,8 +254,11 @@ p {
     height: 410px;
     width: 270px;
   }
-  .Sweat-wicking h5 {
-    padding-left: 116px;
+  .Sweat-wicking h4 {
+    text-align: center;
+  }
+  .Sweat-wicking p {
+    text-align: center;
   }
   .Details-1 h5 {
     padding-left: 119px;

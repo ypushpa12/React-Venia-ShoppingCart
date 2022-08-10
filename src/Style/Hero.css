@@ -149,7 +149,7 @@
     display: block;
   }
   .l hr {
-    left: 77px;
+    left: 25%;
   }
   .mob-reverse {
     display: -webkit-box;
@@ -161,7 +161,7 @@
             flex-direction: column-reverse;
   }
   .card_1-body {
-    width: 290px !important;
+    width: 90% !important;
     margin: auto;
     height: 250px !important;
   }
@@ -174,6 +174,9 @@
   .pic1 img {
     height: 190px;
     top: 0px;
+  }
+  .paginationone {
+    display: none;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

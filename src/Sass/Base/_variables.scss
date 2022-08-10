@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap');
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Source Serif Pro', serif;
 }
+
 $enable-rfs: false;
 $primary-color: #1363DF;
 $secondary-color: #1B252C;
 $teritary-color: #FFFFFF;
 $footer-text: #545D63;
 $footer-head: #172026;
-$product-text:#172026;
-$cardcolor:#47B5FF;
+$product-text: #172026;
+$cardcolor: #47B5FF;
 
 // mixins
 
@@ -46,7 +49,7 @@ $button-border-radius: 25px;
 $button-text-transform: uppercase;
 $button-font: 14px;
 
-.button-primary{
+.button-primary {
     border-radius: 10px;
     background-color: $primary-color;
     font-size: $button-font;
@@ -54,13 +57,25 @@ $button-font: 14px;
     text-transform: $button-text-transform;
     border-color: transparent;
     padding: $padding-lv-1 $padding-lv-6;
-    &:hover{
+
+    &:hover {
         color: $teritary-color;
         text-decoration: none;
     }
 }
 
-.button-secondary{
+.buttn-secondary {
+    border-radius: 10px;
+    background-color: $teritary-color;
+    font-size: $button-font;
+    color: $primary-color;
+    text-transform: $button-text-transform;
+    width: 115px;
+    height: 45px;
+    border: 2px solid $primary-color;
+}
+
+.button-secondary {
     border-radius: 10px;
     background-color: $teritary-color;
     font-size: $button-font;
@@ -68,8 +83,8 @@ $button-font: 14px;
     text-transform: $button-text-transform;
     padding: $padding-lv-1 $padding-lv-6;
     border: 2px solid $primary-color;
-    
-    &:hover{
+
+    &:hover {
         color: $primary-color;
         text-decoration: none;
     }
@@ -78,20 +93,43 @@ $button-font: 14px;
 // Media queries
 
 @mixin responsive($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (min-width: 320px) and (max-width: 767px) { @content };
+    @if $breakpoint ==phone {
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+            @content
+        }
+
+        ;
     }
-    @if $breakpoint == tablet {
-        @media only screen and (min-width: 768px) and (max-width: 991px) { @content };
+
+    @if $breakpoint ==tablet {
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            @content
+        }
+
+        ;
     }
-    @if $breakpoint == medium {
-        @media only screen and (min-width: 1024px) and (max-width: 1200px) { @content };
+
+    @if $breakpoint ==medium {
+        @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+            @content
+        }
+
+        ;
     }
-    @if $breakpoint == desktop {
-        @media only screen and (min-width: 1440px) and (max-width: 1600px) { @content };
+
+    @if $breakpoint ==desktop {
+        @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+            @content
+        }
+
+        ;
     }
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 1920px) and (max-width: 2000px) { @content };
+
+    @if $breakpoint ==big-desktop {
+        @media only screen and (min-width: 1920px) and (max-width: 2000px) {
+            @content
+        }
+
+        ;
     }
 }
-
