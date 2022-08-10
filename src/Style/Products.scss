@@ -1,15 +1,19 @@
 
 .card-title{
-    font: normal normal bold 16px Muli;
+    font-family: "Muli";
 }
 .card-text{
-    font: normal normal 600 16px/20px Muli;
+   font-family: "Muli";
 }
 // .product{
 //     padding-top:25px;
 // }
 .Product_card{
     padding-right: 15px;
+}
+
+.card-title{
+    color: black
 }
 .product_image{
     align-content: end !important;

@@ -6,7 +6,10 @@ $blue: #172026;
   color: $black;
   font-size: 16px;
 }
-
+.footer1{
+  border-top: 4px solid #ccc;
+  margin-top: 53px;
+}
 
 .foot{
   padding-top: 40px;
@@ -118,8 +121,10 @@ a:hover{
     gap: 20px;
     padding-top: 26px;
   }
-
-
+.footer1{
+  border-top: 4px solid #ccc;
+  margin-top: 53px;
+}
   .footer_termsphone a {
     color: $blue;
     font-size: 14px;

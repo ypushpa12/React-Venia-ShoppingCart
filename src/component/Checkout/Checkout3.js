@@ -192,9 +192,7 @@ function Paymentmethods(props) {
                                                                 {errors.email && (
                                                                     <small className="text-danger">{errors.phone.message}</small>
                                                                 )}
-                                                                <span>
-                                                                    <AiOutlineQuestionCircle />
-                                                                </span>
+                                                               
                                                             </div>
                                                         </div>
                                                     </div>
@@ -226,7 +224,7 @@ function Paymentmethods(props) {
                                 </form>
                                 <div className='checkout-buttons'>
                                     <Link className='button-secondary desktop-btn' to="/Checkout4">CONTINUE TO REVIEW ORDER</Link>
-                                    <Link className='button-secondary mobile-btn' to="/Checkout4">CONTINUE</Link>
+                                    <Link className='button-secondary mobile-b' to="/Checkout4">CONTINUE</Link>
                                 </div>
 
                             </div>

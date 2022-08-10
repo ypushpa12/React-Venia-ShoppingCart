@@ -226,9 +226,7 @@ main h2 {
   text-rendering: optimizeLegibility;
 }
 
-:focus {
-  outline: 0;
-}
+
 
 .hidden {
   display: none;

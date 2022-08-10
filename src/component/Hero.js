@@ -1,83 +1,38 @@
 import React from 'react'
 import "../Style/Hero.scss"
-
 // import maxwidth from "../Images/max-width_header.jpg"
 import hero from "../Images/mobile-hero-image1.jpeg"
-function Hero() {
+function Hero({category}) {
+  category=category.replace('clothing','Outerwear');
+  const heading = category.split(" ");
+  for (var i = 0; i < heading.length; i++) {
+    heading[i] = heading[i].charAt(0).toUpperCase() + heading[i].slice(1);
+  }
   return (
     // <div class="container-fluid">
-    <div className='main'>
-
-      <div className='hero-sec'>
-        <div class="aem-Grid aem-Grid--12 mobile_hero_image">
+        <div className='main'>
         
-          <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
-         
-            <div className='hero_landing-right'>
-              <div className='hero_land-content'>
-                <h2 className='mobile-text'>Men's</h2>
-                <p>Outwear</p>
-                
-                <hr className="hero-border"/>
-                {/* <a href="" className='text-block-btns text-block-btns-w'>SHOP DEVICES</a> */}
-              </div>
-
-          
-            </div>
-          </div>
-          <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
-            <div class="pic1">
-              <img src={hero} class="pic" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* </div> */}
-      {/* <div className='adc'>
-        <div className='container-fluid'>
-          <div className='herosection'>
-            <div class="aem-Grid aem-Grid--12">
-              <div class="aem-GridColumn aem-GridColumn--default--4">
-                <div class="cardone">
-                  <div class="card-body">
-                    <h5 class="card-title">Men's<br/>Outwear</h5>
-                    <div className='lines'>
-                      <hr />
-                    </div>
-                  </div>
+        <div className='hero-sec'>
+          <div class="aem-Grid aem-Grid--12 mob-reverse">
+            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 mob_1">
+              <div class="card_1">
+                <div class="card_1-body">
+                  <h5 class="card_1_title">{heading[0]}<br/>{heading[1]}</h5>
+                  <div className='l'>
+                    <hr />
+                  </div> 
                 </div>
               </div>
-              <div class="aem-GridColumn aem-GridColumn--default--8">
-                <div class="card-img">
-                  <img src="https://gumlet.assettype.com/freepressjournal/2021-03/89d260ac-1a71-4138-8d5c-872e4cde15e1/week_anchor_1_march_28.jpg?w=1200&h=900&auto=format%2Ccompress&fit=max" class="card-img-top" alt="" />
-                </div>
+            </div>
+            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
+              <div class="pic1">
+                <img src={hero} class="pic" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </div> */}
-
-      {/* <div className='mob herosection'>
-        <div class="aem-Grid aem-Grid--12">
-          <div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
-            <div class="card-img">
-              <img src="https://img.freepik.com/free-photo/shopping-bag-cart_23-2148879372.jpg?w=2000" class="card-img-top" alt="" />
-            </div>
-          </div>
-
-          <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-            <div class="cardone">
-              <div class="card-body">
-                <h3 class="card-title">Women's</h3>
-                <div className='lines'>
-                  <hr />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      
+    
 
     </div>
   )

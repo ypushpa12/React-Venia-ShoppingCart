@@ -7,9 +7,9 @@ import Breadcrumb from './Breadcrumb';
 function Home({ category }) {
     return (
         <>
-            <Hero />
+            <Hero category={category}/>
             <div>
-                <Breadcrumb />
+                <Breadcrumb category={category}/>
             </div>
             <div class="aem-Grid aem-Grid--12 container">
                 <div class="aem-GridColumn aem-GridColumn--default--3">

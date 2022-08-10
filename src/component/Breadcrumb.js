@@ -1,70 +1,39 @@
-import React from 'react'
-// import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Link from '@mui/material/Link';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import { FiSliders } from "react-icons/fi";
 import { RiArrowUpDownLine } from "react-icons/ri";
 import "../Style/Filter.scss"
-
-function Breadcrumb() {
+import store from '../redux/store';
+const txtStyle={
+    fontSize:"16px",
+    fontFamily:'Muli',
+    paddingRight:"10px",
+    color:"inherit"
+}
+function Breadcrumb({category}) {
+  let categoryId=[category];
+  console.log(categoryId);
+  category=category.replace('clothing','Outerwear');
+  const heading = category.split(" ");
+  for (var i = 0; i < heading.length; i++) {
+    heading[i] = heading[i].charAt(0).toUpperCase() + heading[i].slice(1);
+  }
+  const productsdata= store.getState();
+  const activeIds = [1,2,3,4,5,7,9,12,15,16,17,18,19,20]
+  const products = productsdata.allProducts.products
+   const finaldata = products.filter((item) => {
+                  if(categoryId.includes(item.category) && activeIds.includes(item.id)) 
+                    return item;
+                });
+   console.log("finaldata",finaldata)
   return (
     <div className='container bread'>
-      {/* <div class="aem-Grid aem-Grid--12 desk">
-        <div class="aem-GridColumn aem-GridColumn--default--3">
-          <div><Breadcrumbs aria-label="breadcrumb">
-            <Link underline="hover" color="text.primary" href="/">
-              Clothing
-            </Link>
-            <Link
-              underline="hover"
-              color="text.primary"
-              href="/"
-            >
-              Women’s
-            </Link>
-            <Link
-              underline="hover"
-              color="text.primary"
-              href="/"
-            >
-              Outerwear
-            </Link>
-          </Breadcrumbs></div>
-        </div>
-        <div class="aem-GridColumn aem-GridColumn--default--9">
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--10">
-              <h6>38 Results</h6>
-            </div>
-            
-          </div>
-        </div>
+      <div className="breadcrumb" >
+      <span style={txtStyle}>Clothing / </span><span style={txtStyle}>{heading[0]} </span>{heading[1] ? <span style={txtStyle}><Link to={`/${heading[0].split("'")[0]}`} style={txtStyle}> / {heading[1]}</Link></span> : ""}
       </div>
-      <div className="mobile">
-        <div className="category">
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link underline="hover" color="text.primary" href="/">
-              Clothing
-            </Link>
-            <Link underline="hover" color="text.primary" href="/">
-              Women’s
-            </Link>
-            <Link underline="hover" color="text.primary" href="/">
-              Outerwear
-            </Link>
-          </Breadcrumbs>
-        </div>
-
-        <div className="aem-Grid aem-Grid--12">
-          <div className="aem-GridColumn aem-GridColumn--default--6">
-            <h5><FiSliders />&nbsp;&nbsp;&nbsp;Filter Results</h5>
-          </div>
-          <div className="aem-GridColumn aem-GridColumn--default--6">
-            <h5><RiArrowUpDownLine />&nbsp;&nbsp;&nbsp;Sort by Latest</h5>
-          </div>
-        </div>
-
-        <h6>38 Results</h6>
-      </div> */}
+      <div className="results">
+        {finaldata.length} Results
+      </div >
     </div>
   )
 }

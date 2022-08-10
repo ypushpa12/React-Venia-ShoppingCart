@@ -8,14 +8,14 @@
 
 .hero-sec .card_1-body {
   background-color: #1B252C;
-  height: 20rem;
-  width: 24.3rem;
+  height: 290px;
+  width: 100%;
 }
 
 .hero-sec .card_1_title {
   color: white;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 7rem;
   font-size: 3rem;
   font-family: 'Source Serif Pro', serif;
 }
@@ -34,6 +34,14 @@
   width: 71rem;
   margin-left: -7.4rem;
   margin-top: 1rem;
+}
+
+.pic1 img {
+  height: 267px;
+  width: 100% !important;
+  position: relative;
+  top: 9px;
+  left: 0px !important;
 }
 
 .lines img {
@@ -133,14 +141,17 @@
   display: none;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 780px) {
   .adc {
     display: none;
   }
   .mob {
     display: block;
   }
-  .mobile_hero_image {
+  .l hr {
+    left: 77px;
+  }
+  .mob-reverse {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,51 +160,20 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .mob_img {
-    z-index: 4;
-  }
-  .hero_landing-right {
-    width: 290px;
+  .card_1-body {
+    width: 290px !important;
     margin: auto;
+    height: 250px !important;
   }
-  .hero_land-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+  .mob_1 {
+    z-index: 999;
+  }
+  .card_1 {
+    margin-top: -2rem;
   }
   .pic1 img {
+    height: 190px;
     top: 0px;
-    height: 158px !important;
-  }
-  .card-img img {
-    width: 23rem;
-    height: 157px;
-    margin-top: 173px;
-  }
-  .card-img {
-    width: 100%;
-  }
-  .cardone {
-    margin-top: -77px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-  }
-  .herosection .card-body {
-    height: 11rem;
-    width: 24rem;
-    background-color: #1B252C;
-  }
-  .herosection .card-title {
-    padding-top: 0rem;
-  }
-  .herosection {
-    padding-top: 3px;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

@@ -20,7 +20,7 @@ function OrderSuccess() {
                 <div class="aem-Grid aem-Grid--12">
                     
                     <div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
-                    <h4>Order Number #1700834</h4>
+                    <h4 className='desk_h6'>Order Number #1700834</h4>
                         <div className='ordersuccessful__info'>
                             <div class="aem-Grid aem-Grid--12">
 

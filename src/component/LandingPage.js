@@ -72,7 +72,7 @@ export default function Landing() {
                 
               </div>
               <div className='card-desc'>
-                  <h3><Link to="/mem">Shop Men</Link></h3>
+                  <h3><Link to="/men">Shop Men</Link></h3>
                   <p>Lorem ipsum dolor sit amet</p>
                 </div>
              

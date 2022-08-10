@@ -13,7 +13,9 @@ $blackcolor: #172026;
     font-family: "Muli";
 }
 
-   
+   .Sweat-wicking{
+    text-align: center;
+   }
 
 .Sizebutton button {
     border-radius: 5px;
@@ -44,16 +46,20 @@ $blackcolor: #172026;
 }
 .rating-one h2{
     font: normal normal 600 24px/30px Source Serif Pro;
+ 
+    
    
 }
 .Sweat-wicking h4{
     font: normal normal 600 24px/30px Source Serif Pro;
+  
 }
 .Sweat-wicking h5{
     font: normal normal 600 16px/25px Muli;
 }
 .Sweat-wicking p {
     font: normal normal normal 16px/24px Muli;
+   
 }
 .size h5{
     font: normal normal 600 20px/30px Muli;
@@ -66,6 +72,7 @@ $blackcolor: #172026;
 }
 .rating-one p{
     font: normal normal 600 20px/30px Muli;
+    // text-align: center;
 }
 .swatch {
     padding-bottom: 1rem;
@@ -264,9 +271,13 @@ p {
         width: 270px;
       
     }
-    .Sweat-wicking h5 {
-        padding-left: 116px;
+    .Sweat-wicking h4{
+        text-align: center;
     }
+    .Sweat-wicking p{
+        text-align: center;
+    }
+  
 
     .Details-1 h5 {
         padding-left: 119px;

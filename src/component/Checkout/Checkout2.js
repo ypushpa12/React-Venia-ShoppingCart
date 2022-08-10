@@ -127,7 +127,7 @@ function Shipmethod(props) {
                                     </div>
                                     <div className='checkout-buttons'>
                                         <Link className='button-secondary desktop-btn' to="/Checkout3">CONTINUE TO PAYMENT</Link>
-                                        <Link className='button-secondary mobile-btn' to="/Checkout3">CONTINUE</Link>
+                                        <Link className='button-secondary mobile-b' to="/Checkout3">CONTINUE</Link>
                                     </div>
                                 </form>
                             </div>

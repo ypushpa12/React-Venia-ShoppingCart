@@ -9,6 +9,13 @@
   gap: 4px;
 }
 
+.results {
+  text-align: center;
+  position: relative;
+  bottom: 36px;
+  font-family: "Muli";
+}
+
 .colors1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +146,9 @@ label {
 @media only screen and (max-width: 320px) {
   .filterone {
     display: none;
+  }
+  .results {
+    bottom: 10px;
   }
 }
 /*# sourceMappingURL=Filter.css.map */

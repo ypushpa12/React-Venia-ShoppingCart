@@ -94,19 +94,20 @@ const Products = ({ category }) => {
                                 <>
                                     <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--6 pd-32">
                                         <div className="Product_card landing" key={product.id}>
-                                            <div className='product_image' style={containerStyle}>
+                                            < NavLink to={`/products/${product.id}`}>
+                                                <div className='product_image' style={containerStyle}>
 
 
-
-                                            </div>
-                                            <div className="card-bodydesc">
-                                                < NavLink to={`/products/${product.id}`}>
+                                                </div>
+                                                <div className="card-bodydesc">
+                                                    {/* < NavLink to={`/products/${product.id}`}> */}
 
                                                     <h5 className="card-title mb-0">{product.title.substring(0, 12)}...</h5>
-                                                </NavLink>
-                                                <p className="card-text lead fw-bold">${product.price}</p>
-                                                <img src={heart} />
-                                            </div>
+
+                                                    <p className="card-text lead">${product.price}</p>
+                                                    <img src={heart} />
+                                                </div>
+                                            </NavLink>
                                         </div>
 
                                         {/* <div className='landimg img1'>

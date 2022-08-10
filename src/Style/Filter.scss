@@ -8,12 +8,19 @@
     height: 40px;
     width: 54px;
 }
-
+.basket-1 h6{
+    padding-bottom: 8px;
+}
 .colors {
     display: flex;
     gap: 4px;
 }
-
+.results{
+    text-align: center;
+    position: relative;
+    bottom: 36px;
+    font-family: "Muli";
+}
 .colors1 {
     display: flex;
     gap: 4px;
@@ -120,5 +127,8 @@ label {
 @media only screen and (max-width: 320px) {
     .filterone {
         display: none;
+    }
+    .results{
+        bottom: 10px;
     }
 }

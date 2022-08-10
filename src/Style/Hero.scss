@@ -12,15 +12,15 @@
 
   background-color: #1B252C;
 
-  height: 20rem;
-  width: 24.3rem;
+  height: 290px;
+  width: 100%;
 
 }
 
 .hero-sec .card_1_title {
   color: white;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 7rem;
   font-size: 3rem;
   font-family: 'Source Serif Pro', serif;
 }
@@ -39,6 +39,14 @@
   width: 71rem;
   margin-left: -7.4rem;
   margin-top: 1rem;
+}
+
+.pic1 img {
+  height: 267px;
+  width: 100% !important;
+  position: relative;
+  top: 9px;
+  left: 0px !important;
 }
 
 .lines img {
@@ -140,25 +148,20 @@
   padding-bottom: 12px;
 }
 
-// .lines{
-//   margin: -4rem -1rem;
-// }
-// .lines hr {
-//   background-color: #1F39FF !important;
-//   height: 0.5rem !important;
-//   width: 19%;
-//   margin: 6rem 11rem;
-
-//   opacity: 3;
-// }
 
 .mob {
   display: none;
 }
 
+@media only screen and(min-width:1024px) {
+  .pic1 img {
+    // width: 89% !important;
+    // left: 84px !important;
+  }
+}
 
-
-@media only screen and (min-width: 320px) {
+// @media only screen and (min-width: 320px)
+@media only screen and (min-width: 320px) and (max-width: 780px){
   .adc {
     display: none;
   }
@@ -166,79 +169,31 @@
   .mob {
     display: block;
   }
-
-  .mobile_hero_image {
+.l hr{
+  left: 25%;
+}
+  .mob-reverse {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .mob_img {
-    z-index: 4;
-  }
-
-  .hero_landing-right {
-    width: 290px;
+  .card_1-body {
+    width: 90% !important;
     margin: auto;
-
+    height: 250px !important;
   }
 
-  .hero_land-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .mob_1 {
+    z-index: 999;
+  }
+
+  .card_1 {
+    margin-top: -2rem;
   }
 
   .pic1 img {
+    height: 190px;
     top: 0px;
-    height: 158px !important;
   }
-
-  .card-img img {
-    width: 23rem;
-    height: 157px;
-    margin-top: 173px;
-  }
-
-  .card-img {
-    width: 100%;
-  }
-
-
-
-  .cardone {
-    margin-top: -77px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-  }
-
-  .herosection .card-body {
-    height: 11rem;
-    width: 24rem;
-    background-color: #1B252C;
-  }
-
-  .herosection .card-title {
-
-    padding-top: 0rem;
-
-  }
-
-  // .hero-sec .card_1-body {
-  //   margin-top: 252px;
-  //   height: 16rem;
-
-  //   width: 21rem;
-  //   position: relative;
-  //   margin-top: 91px;
-  //   height: 16rem;
-
-  //   left: 15px;
-  // }
-
-  .herosection {
-    padding-top: 3px;
-  }
-
-
 }
+
