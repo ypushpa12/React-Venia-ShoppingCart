@@ -72,10 +72,8 @@ function Checkout(props) {
                                                         className={`form-control ${errors.email && "invalid"}`}
                                                         {...register("email", {
                                                             required: "There is an error that relates to this field",
-                                                            pattern: {
-                                                                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                                                message: "Invalid Email address",
-                                                            }
+                                                        
+                                                            
                                                         })}
                                                         onKeyUp={() => {
                                                             trigger("email");
@@ -112,9 +110,7 @@ function Checkout(props) {
                                         </div>
                                     </form>
                                 </div>
-                                {/* <div className='checkout__left-stepper'>
-                                    <VerticalLinearStepper />
-                                </div> */}
+                            
                                 <div className='checkout__left-shipinfo'>
                                     <div>
                                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -135,11 +131,14 @@ function Checkout(props) {
                                                         <input
                                                             type="text"
                                                             className={`form-control ${errors.name && "invalid"}`}
+                                                            
                                                             {...register("fname", { required: "There is an error that relates to this field" })}
                                                             onKeyUp={() => {
                                                                 trigger("fname");
                                                             }}
+                                                            
                                                         />
+                                                        
                                                         {errors.fname && (
                                                             <small className="text-danger">{errors.fname.message}</small>
                                                         )}

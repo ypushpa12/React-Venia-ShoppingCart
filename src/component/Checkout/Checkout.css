@@ -6,6 +6,8 @@ h3 {
   font-family: 'Source Serif Pro', serif;
 }
 
+
+
 .button-primary {
   border-radius: 10px;
   background-color: #1363DF;
@@ -580,6 +582,9 @@ h3 {
   }
   .checkout h1 {
     font-size: 24px;
+  }
+  .mobile-b{
+    display: block;
   }
   .checkout h1::before {
     width: 15%;

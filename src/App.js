@@ -9,8 +9,8 @@ import { useEffect, useState } from 'react';
 import About from './component/About';
 import Filter from './component/Filter';
 import Footer from './component/Footer';
-import Signin from './component/Signin';
-import Signup from "./component/CreateAccount";
+
+
 import Navfilter from './component/Navfilter';
 import Mainlayout from './mainlayout';
 
@@ -75,13 +75,13 @@ function App() {
         <Route exact path='/about' element={<About />} />
         <Route exact path='/filter' element={<Filter />} />
         <Route exact path='/products' element={<Products category="" />} />
-        <Route exact path='/signin' element={<Signin />} />
+      
         <Route path="/Checkout1" element={<Checkout1 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
         <Route path="/Checkout2" element={<Checkout2 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
         <Route path="/Checkout3" element={<Checkout3 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
         <Route path="/Checkout4" element={<Checkout4 cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
         <Route path="/Checkout5" element={<Checkout5 />} />
-        <Route exact path='/signup' element={<Signup />} />
+    
         <Route exact path='/products/:id' element={<Product onAdd={onAdd} />} />
         <Route exact path='/cart' element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
       </Routes>
