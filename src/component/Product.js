@@ -15,7 +15,8 @@ import { BiShareAlt } from "react-icons/bi";
 import { TbLeaf } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 const Product = (props) => {
-    const { onAdd } = props;
+    const { cartItems, onAdd, onRemove } = props;
+
     const { id } = useParams();
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -29,37 +30,28 @@ const Product = (props) => {
         getProduct();
     }, []);
 
-    const Loading = () => {
-        return (
-            <>
-                <div className="col-md-6">
-                    <Skeleton height={400} />
-                </div>
-                <div className="col-md-6" style={{ lineHeight: 2 }}>
-                    <Skeleton height={50} width={300} />
-                    <Skeleton height={75} />
-                    <Skeleton height={25} width={150} />
-                    <Skeleton height={50} />
-                    <Skeleton height={150} />
-                    <Skeleton height={50} width={100} />
-                    <Skeleton height={50} width={100} style={{ marginLeft: 6 }} />
-                </div>
-            </>
-        )
-    }
+    
 
     const ShowProduct = () => {
         return (
             <>
                 <div className='container'>
                     <div class="aem-Grid aem-Grid--12">
+                        <div className="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--phone--12">
+                            <img src={product.image} alt={product.title} height="100px" width="80px" />
+                            <img src={product.image} alt={product.title} height="100px" width="80px" />
+                            <img src={product.image} alt={product.title} height="100px" width="80px" />
+                            <img src={product.image} alt={product.title} height="100px" width="80px" />
+                            <img src={product.image} alt={product.title} height="100px" width="80px" />
 
-                        <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 oneprice">
-                        <p className='desktop'>Clothing / Women’s / Outerwear</p>
+                        </div>
+
+                        <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 oneprice">
+                          
                             <img src={product.image} alt={product.title} width="380px" />
                         </div>
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 rating-one">
-                           
+                        <h6 className='desktop'>Clothing / Women’s / Outerwear</h6>
                             <h2>{product.title}</h2>
                             <p>  $ {product.price} </p>
                             <p className="lead fw-bolder">
@@ -96,10 +88,27 @@ const Product = (props) => {
                             <br />
                             <div className='static'>
                                 <h5 class="qty">Quantity</h5>
-                                <div class="static1">
+                                {/* <div class="static1">
                                     <span className='start'>-</span>
                                     <span className='one'>1</span>
                                     <span className='end'>+</span>
+                                </div> */}
+                                <div className="input-group w-auto align-items-center">
+                                    <input
+                                        type="button"
+                                        value="-"
+                                        className="button-minus border rounded-circle"
+                                        data-field="quantity"
+                                        onClick={() => onRemove(product)}
+                                    />&nbsp;&nbsp;
+                                    <h6 className="quant">{cartItems?.find((x) => x.id === product.id)?.qty || 1}</h6>&nbsp;&nbsp;
+                                    <input
+                                        type="button"
+                                        value="+"
+                                        className="button-plus border rounded-circle"
+                                        data-field="quantity"
+                                        onClick={() => onAdd(product)}
+                                    />
                                 </div>
                             </div><br />
                             <br />
@@ -123,20 +132,20 @@ const Product = (props) => {
                             <h5>Description</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore dolore magna lorem ipsum dolor sit amet ipsum dolor sit amet, consectetur. Duis tristique sollicitudin nibh sit amet. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</p>
                         </div>
-                        
-                        
+
+
                     </div>
                 </div>
-                
+
             </>
         )
     }
     return (
         <div>
-           
-                    {loading ? <Loading /> : <ShowProduct onAdd={onAdd} />}
-                </div>
-           
+
+            {<ShowProduct onAdd={onAdd} />}
+        </div>
+
     )
 }
 

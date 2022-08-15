@@ -67,7 +67,7 @@ function App() {
         {/* <Route exact path='/landingpage' element={<LandingPage />} /> */}
         <Route exact path='/' element={<LandingPage />} />
         <Route exact path = '/testing' component={<productListing/>}/>
-       
+      
         <Route exact path='/men' element={<Home category="men's clothing"/>} />
         <Route exact path='/women' element={<Home category="women's clothing" />} />
         <Route exact path='/jewellery' element={<Home category="jewelery" />} />

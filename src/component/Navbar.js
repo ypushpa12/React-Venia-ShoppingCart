@@ -40,12 +40,7 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                 <div className="logo headerlogo"><NavLink to="/"><img src="../../../assets/venia-logo.png"></img></NavLink></div>
                 <nav className="nav">
                     <ul className="menu">
-                        {/* {
-                            categories?.map(category =>
-                                <li className={`nav-link ${category.filter === selectedCategory ? 'active' : ''} `} aria-current="page" onClick={() => setCategory(category.filter)}>{category.displayName}
-                                </li>
-                            )
-                        } */}
+                    
 
                         <li className="menuitem1"><NavLink to="/">Home</NavLink></li>
                         <li className="menuitem"><NavLink to="/women">Women</NavLink> </li>

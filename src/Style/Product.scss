@@ -25,6 +25,15 @@ $blackcolor: #172026;
     margin-right: 10px;
     background-color: white;
 }
+.input-group .border {
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 2px #b5b7bc solid !important;
+    color: #b5b7bc;
+    margin-top: -6px;
+  }
+ 
 // .hr-line{
 //     background-color: #1363DF;
 //     width: 15px;
@@ -34,9 +43,8 @@ $blackcolor: #172026;
 // .oneprice img{
 //     height: 680px;
 // }
-.oneprice p{
+.rating-one h6{
     font: normal normal normal 16px/24px Muli;
-    display: none;
 }
 .icn a{
     font-family: 'Muli';
