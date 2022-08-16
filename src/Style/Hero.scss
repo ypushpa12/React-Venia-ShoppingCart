@@ -29,8 +29,7 @@
   opacity: 3;
   background-color: #1363DF;
   width: 10rem;
-  left: 94px;
-  position: relative;
+  margin: auto;
   background-color: 42rem;
   height: 5px;
 }
@@ -42,10 +41,10 @@
 }
 
 .pic1 img {
-  height: 267px;
+  height: 280px !important;
   width: 100% !important;
   position: relative;
-  top: 9px;
+  top: 5px;
   left: 0px !important;
 }
 
@@ -170,13 +169,15 @@
     display: block;
   }
 .l hr{
-  left: 25%;
+  margin: auto;
 }
   .mob-reverse {
     display: flex;
     flex-direction: column-reverse;
   }
-
+.hero-sec .card_1_title{
+  padding-top: 3rem;
+}
   .card_1-body {
     width: 90% !important;
     margin: auto;
@@ -192,15 +193,11 @@
   }
 
   .pic1 img {
-    height: 190px;
+    height: 190px !important;
     top: 0px;
   }
   .paginationone{
     display: none;
   }
 }
-@media only screen and (max-width: 1024px){
-.l hr{
-left: 60px;
-}
-}
+

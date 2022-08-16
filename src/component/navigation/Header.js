@@ -1,5 +1,6 @@
 
 import React, { Fragment } from 'react';
+import {NavLink} from 'react-router-dom';
 
 function Header() {
   return (
@@ -11,11 +12,11 @@ function Header() {
           <div className="logo headerlogo"><a href="">VENIA</a></div>
           <nav className="nav">
             <ul className="menu">
-              <li className="menuitem"><a href="">Home</a></li>
-              <li className="menuitem"><a href="/products">Women</a> </li>
-              <li className="menuitem"><a href="">Men</a></li>
-              <li className="menuitem"><a href="">Electronics</a></li>
-              <li className="menuitem"><a href="">Jewellery</a></li>
+              <li className="menuitem"><NavLink to="/">Home</NavLink></li>
+              <li className="menuitem"><NavLink to="/women">Women</NavLink> </li>
+              <li className="menuitem"><NavLink to="/men">Men</NavLink></li>
+              <li className="menuitem"><NavLink to="/electronics">Electronics</NavLink></li>
+              <li className="menuitem"><NavLink to="/jewellery">Jewellery</NavLink></li>
             </ul>
           </nav>
           <div className="carticon">

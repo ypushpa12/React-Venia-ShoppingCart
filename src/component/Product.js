@@ -30,7 +30,7 @@ const Product = (props) => {
         getProduct();
     }, []);
 
-    
+
 
     const ShowProduct = () => {
         return (
@@ -47,11 +47,11 @@ const Product = (props) => {
                         </div>
 
                         <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12 oneprice">
-                          
+
                             <img src={product.image} alt={product.title} width="380px" />
                         </div>
                         <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 rating-one">
-                        <h6 className='desktop'>Clothing / Women’s / Outerwear</h6>
+                            <h6 className='desktop'>Clothing / Women’s / Outerwear</h6>
                             <h2>{product.title}</h2>
                             <p>  $ {product.price} </p>
                             <p className="lead fw-bolder">

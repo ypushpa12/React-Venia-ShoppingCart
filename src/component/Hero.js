@@ -2,10 +2,9 @@ import React from 'react'
 import "../Style/Hero.scss"
 
 import hero from "../Images/mobile-hero-image1.jpeg";
-// import women from '../Images/pinleg.jpg';
-import women from "../Images/women-img.png";
-import Electronics from "../Images/laptop2.webp";
-import jewellery from "../Images/jewllery.jpg";
+import women from "../Images/Women-banner.jpg";
+import Electronics from "../Images/lappy.jpg";
+import jewellery from "../Images/jewellery2.jpg";
 let heroimgs = {
   "Men's": hero,
   "Women's": women,
