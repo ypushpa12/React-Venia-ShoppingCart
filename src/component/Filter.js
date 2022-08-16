@@ -41,25 +41,25 @@ function Filter({ setCategory, selectedCategory }) {
 
 
     return (
-       
-                <div className='filterone'>
-                    <div className='filter'>
-                        <h6 style={txtStyle}>Filters</h6>
-                    </div>
-                    <hr />
-                    <div className='attribute'>
-                        <h6 style={txtStyle}>Categories</h6>
-                        <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/jewellery")} checked={pathname == "/jewellery"} id="option" name="option" value="jewelery" />
-                        <label style={txtStyle}>Jewellery</label> <br />
-                        <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/electronics")} checked={pathname == "/electronics"} id="option" name="option" value="electronics" />
-                        <label style={txtStyle}>Electronics</label> <br />
-                        <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/men")} checked={pathname == "/men"} id="option" name="option" value="men's clothing" />
-                        <label style={txtStyle}>Men's Clothing</label> <br />
-                        <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/women")} checked={pathname == "/women"} id="option" name="option" value="women's clothing" />
-                        <label style={txtStyle}>Women's Clothing</label> <br />
-                        <hr />
-                    </div>
-                </div>
+
+        <div className='filterone'>
+            <div className='filter'>
+                <h6 style={txtStyle}>Filters</h6>
+            </div>
+            <hr />
+            <div className='attribute'>
+                <h6 style={txtStyle}>Categories</h6>
+                <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/jewellery")} checked={pathname == "/jewellery"} id="option" name="option" value="jewelery" />
+                <label style={txtStyle}>Jewellery</label> <br />
+                <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/electronics")} checked={pathname == "/electronics"} id="option" name="option" value="electronics" />
+                <label style={txtStyle}>Electronics</label> <br />
+                <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/men")} checked={pathname == "/men"} id="option" name="option" value="men's clothing" />
+                <label style={txtStyle}>Men's Clothing</label> <br />
+                <input style={chkboxsize} type="checkbox" onChange={(e) => filterHandler(e.target.checked, "/women")} checked={pathname == "/women"} id="option" name="option" value="women's clothing" />
+                <label style={txtStyle}>Women's Clothing</label> <br />
+                <hr />
+            </div>
+        </div>
 
     )
 }

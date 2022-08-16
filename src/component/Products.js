@@ -109,16 +109,6 @@ const Products = ({ category }) => {
                                                 </div>
                                             </NavLink>
                                         </div>
-
-                                        {/* <div className='landimg img1'>
-                                            
-
-                                        </div>
-                                        <div className='card-desc'>
-                                            <h3><Link to="/women">Shop Women</Link></h3>
-                                            <p>Lorem ipsum dolor sit amet</p>
-
-                                        </div> */}
                                     </div>
                                 </>
                             )
@@ -161,16 +151,9 @@ const Products = ({ category }) => {
         )
     }
     return (
-
         <div className='product'>
-
-
             {loading ? <Loading /> : <ShowProducts />}
-
-
-
         </div>
-
     )
 }
 

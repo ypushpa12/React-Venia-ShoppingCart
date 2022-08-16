@@ -37,7 +37,7 @@ const Product = (props) => {
             <>
                 <div className='container'>
                     <div class="aem-Grid aem-Grid--12">
-                        <div className="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--phone--12">
+                        <div className="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--phone--12 p-6">
                             <img src={product.image} alt={product.title} height="100px" width="80px" />
                             <img src={product.image} alt={product.title} height="100px" width="80px" />
                             <img src={product.image} alt={product.title} height="100px" width="80px" />
@@ -88,11 +88,6 @@ const Product = (props) => {
                             <br />
                             <div className='static'>
                                 <h5 class="qty">Quantity</h5>
-                                {/* <div class="static1">
-                                    <span className='start'>-</span>
-                                    <span className='one'>1</span>
-                                    <span className='end'>+</span>
-                                </div> */}
                                 <div className="input-group w-auto align-items-center">
                                     <input
                                         type="button"

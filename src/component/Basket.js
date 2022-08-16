@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
-
 import "../Style/Basket.scss"
 import { BiHeart, BiLockAlt } from 'react-icons/bi';
 import { RiPencilLine } from 'react-icons/ri';
 import { FiLock, FiTrash2 } from 'react-icons/fi';
-import Accordian from './Accordian';
+// import Accordian from './Accordian';
 import paypal from '../Images/PP_BTN.png';
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
@@ -72,7 +71,7 @@ export default function Basket(props) {
             <>
               <h5>Pricing Summary</h5>
               <div className="aem-Grid aem-Grid--12">
-                <div className="aem-GridColumn aem-GridColumn--default--6 ">
+                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--6 ">
                   <div className='basket-t'>
                     <h6>Subtotal</h6>
                     <h6>Coupon</h6>
@@ -82,7 +81,7 @@ export default function Basket(props) {
                     <h6><strong>Estimated Total</strong></h6>
                   </div>
                 </div>
-                <div className="aem-GridColumn aem-GridColumn--default--6  text-right">
+                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--6 text-right">
                   <div className='basket-1'>
                     <h6>${itemsPrice.toFixed(2)}</h6>
                     <h6>${taxPrice.toFixed(2)}</h6>
@@ -110,11 +109,11 @@ export default function Basket(props) {
           )}
         </div>
       </div>
-      <div className="aem-Grid aem-Grid--12">
+      {/* <div className="aem-Grid aem-Grid--12">
         <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 accordianone">
           <Accordian />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

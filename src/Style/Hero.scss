@@ -180,7 +180,7 @@
   .card_1-body {
     width: 90% !important;
     margin: auto;
-    height: 250px !important;
+    height: 210px !important;
   }
 
   .mob_1 {
@@ -199,4 +199,8 @@
     display: none;
   }
 }
-
+@media only screen and (max-width: 1024px){
+.l hr{
+left: 60px;
+}
+}

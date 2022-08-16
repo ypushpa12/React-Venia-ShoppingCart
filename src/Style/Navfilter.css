@@ -172,9 +172,9 @@ body {
 }
 
 @media only screen and (max-width:320px) {
-  .static {
+  /* .static {
     padding: 3rem 0rem;
-  }
+  } */
 
   .cart {
     margin-left: 0rem;

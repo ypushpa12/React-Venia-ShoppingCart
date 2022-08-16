@@ -1,22 +1,28 @@
 import React from 'react'
 import "../Style/Hero.scss"
 
-import hero from "../Images/mobile-hero-image1.jpeg"
-import women from '../Images/hero_image_1.jpg';
-let heroimgs = [
-  { category: "Mens", imgurl: "../Images/mobile-hero-image1.jpeg" },
-  { category: "Womens", imgurl: "../Images/hero_image_1.jpg" }
-]
+import hero from "../Images/mobile-hero-image1.jpeg";
+// import women from '../Images/pinleg.jpg';
+import women from "../Images/women-img.png";
+import Electronics from "../Images/laptop2.webp";
+import jewellery from "../Images/jewllery.jpg";
+let heroimgs = {
+  "Men's": hero,
+  "Women's": women,
+  "Electronics": Electronics,
+  "Jewelery": jewellery
+}
+
 function Hero({ category }) {
+
   category = category.replace('clothing', 'Outerwear');
   const heading = category.split(" ");
   for (var i = 0; i < heading.length; i++) {
     heading[i] = heading[i].charAt(0).toUpperCase() + heading[i].slice(1);
   }
-  const result = heroimgs.filter(item => item.category == 'Mens');
-const finalimgurl = result[0].imgurl;
-  console.log(finalimgurl, "result", heading[0])
- 
+
+  console.log(heading[0]);
+
   return (
     <div className='main'>
 
@@ -34,7 +40,7 @@ const finalimgurl = result[0].imgurl;
           </div>
           <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
             <div class="pic1">
-              <img src={hero} class="pic" alt="" />
+              <img src={heroimgs[heading[0]]} class="pic" alt="" />
               {/* <img src={women} class="pic" alt="" /> */}
             </div>
           </div>

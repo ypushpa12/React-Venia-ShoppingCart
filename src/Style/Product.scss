@@ -1,4 +1,4 @@
-*{
+* {
     font-family: "Muli, Regular";
 }
 
@@ -9,13 +9,14 @@
 }
 
 $blackcolor: #172026;
-.addtocart{
+
+.addtocart {
     font-family: "Muli";
 }
 
-   .Sweat-wicking{
+.Sweat-wicking {
     text-align: center;
-   }
+}
 
 .Sizebutton button {
     border-radius: 5px;
@@ -25,6 +26,7 @@ $blackcolor: #172026;
     margin-right: 10px;
     background-color: white;
 }
+
 .input-group .border {
     width: 2rem;
     height: 2rem;
@@ -32,8 +34,8 @@ $blackcolor: #172026;
     border: 2px #b5b7bc solid !important;
     color: #b5b7bc;
     margin-top: -6px;
-  }
- 
+}
+
 // .hr-line{
 //     background-color: #1363DF;
 //     width: 15px;
@@ -43,45 +45,56 @@ $blackcolor: #172026;
 // .oneprice img{
 //     height: 680px;
 // }
-.rating-one h6{
+.rating-one h6 {
     font: normal normal normal 16px/24px Muli;
 }
-.icn a{
+
+.icn a {
     font-family: 'Muli';
 }
-.qty{
+
+.qty {
     font: normal normal 600 20px/30px Muli;
 }
-.rating-one h2{
+
+.rating-one h2 {
     font: normal normal 600 24px/30px Source Serif Pro;
- 
-    
-   
+
+
+
 }
-.Sweat-wicking h4{
+
+.Sweat-wicking h4 {
     font: normal normal 600 24px/30px Source Serif Pro;
-  
+
 }
-.Sweat-wicking h5{
+
+.Sweat-wicking h5 {
     font: normal normal 600 16px/25px Muli;
 }
+
 .Sweat-wicking p {
     font: normal normal normal 16px/24px Muli;
-   
+
 }
-.size h5{
+
+.size h5 {
     font: normal normal 600 20px/30px Muli;
 }
-.swatch h5{
+
+.swatch h5 {
     font: normal normal 600 20px/30px Muli;
 }
-.rating-one .pro-t1{
+
+.rating-one .pro-t1 {
     font: normal normal normal 16px/24px Muli;
 }
-.rating-one p{
+
+.rating-one p {
     font: normal normal 600 20px/30px Muli;
     // text-align: center;
 }
+
 .swatch {
     padding-bottom: 1rem;
 }
@@ -170,10 +183,6 @@ $blackcolor: #172026;
     border-radius: 50%;
 }
 
-.static {
-    padding-bottom: 1rem;
-}
-
 .static .end {
     float: left;
     width: 30px;
@@ -228,29 +237,34 @@ $blackcolor: #172026;
     padding-left: 0px;
     display: flex;
 }
-.swatch{
+
+.swatch {
     display: flex;
-   
+
 }
+
 // .oneprice img{
 //     height: 55rem;
 //     position: relative;
 //     left: 9rem;
 // }
-.swatch img{
+.swatch img {
     right: 47px;
     position: relative;
     top: 34px;
 }
-.icn{
-    
+
+.icn {
+
     display: flex;
     padding-top: 13px;
 
 }
-.size{
+
+.size {
     padding-top: 37px;
 }
+
 p {
     color: $blackcolor;
 }
@@ -258,36 +272,47 @@ p {
 .Producttitle {
     padding-top: 40px;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 766px) {
 
     // .line {
     //     display: none;
     // }
-.size{
-    display: none;
-}
+    .p-6 img{
+        display: none;
+    }
+
+    .size {
+        display: none;
+    }
+
     .Sizebutton button {
 
         width: 47px;
     }
-    .icn a{
+
+    .icn a {
         display: flex;
     }
-    .icn a svg{
+
+    .icn a svg {
         margin-top: 6px;
     }
+
     .oneprice img {
         height: 410px;
         width: 270px;
-      
+
     }
-    .Sweat-wicking h4{
+
+    .Sweat-wicking h4 {
         text-align: center;
     }
-    .Sweat-wicking p{
+
+    .Sweat-wicking p {
         text-align: center;
     }
-  
+
 
     .Details-1 h5 {
         padding-left: 119px;
@@ -317,13 +342,16 @@ p {
     .Producttitle {
         text-align: center;
     }
-    .icn{
+
+    .icn {
         margin-left: 16rem;
     }
-    .icn a{
+
+    .icn a {
         display: flex;
     }
-    .icn a svg{
+
+    .icn a svg {
         margin-top: 6px;
     }
 }
