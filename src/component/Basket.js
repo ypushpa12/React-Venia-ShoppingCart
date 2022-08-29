@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../Style/Basket.scss"
 import { BiHeart, BiLockAlt } from 'react-icons/bi';
 import { RiPencilLine } from 'react-icons/ri';
@@ -28,7 +28,7 @@ export default function Basket(props) {
                   </div>
                   <div className='basket-left'>
                     <h5>{item.title.substring(0, 18)}</h5>
-                    <h6>Size : Medium</h6>
+                    <h6>Size : {item.Size}</h6>
                     <h6>Color : Storm</h6>
                     <h6>${item.price}</h6>
                   </div>
@@ -55,8 +55,9 @@ export default function Basket(props) {
               </div>
 
               <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12 icon">
-                <p><RiPencilLine size={18} /> Edit item</p>
-                <p><FiTrash2 size={18} /> Remove&nbsp;</p>
+                <p><Link to={`/products/${item.id}`}><RiPencilLine size={18} /> Edit item</Link></p>
+                {/* <p><FiTrash2 size={18} /> Remove&nbsp;</p> */}
+                <p><Link to='#' onClick={() => onRemove(item)}><FiTrash2 size={18} /> Remove</Link></p>
                 <p><BiHeart size={18} /> Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
               </div>
 

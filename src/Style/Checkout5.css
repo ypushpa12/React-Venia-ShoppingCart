@@ -12,15 +12,11 @@
 }
 
 .checkout5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 53px;
 }
 
 .checkout5 img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: flex;
   padding-left: 53px;
@@ -42,7 +38,6 @@
   padding: 8px;
   background-color: #1363DF;
 }
-
 .main-btn p {
   color: white;
   font-size: 12px;
@@ -56,7 +51,6 @@
 .last-para {
   margin-top: 20px;
 }
-
 .last-para p {
   font: normal normal normal 16px/24px Muli;
 }
@@ -67,14 +61,12 @@
   width: 250px;
   margin-left: 6rem;
 }
-
 .pricing-card1 p {
   text-align: center;
   padding-top: 38px;
   color: white;
   font: normal normal 600 30px Source Serif Pro;
 }
-
 .pricing-card1 img {
   font-size: 10px;
   width: 38px;
@@ -90,5 +82,4 @@
   .product {
     padding-bottom: 0rem;
   }
-}
-/*# sourceMappingURL=Checkout5.css.map */
+}/*# sourceMappingURL=Checkout5.css.map */

@@ -82,17 +82,27 @@
             display: flex;
             font-family: "Muli";
         }
+
+        .remove {
+
+            color: #172026;
+            display: flex;
+
+        }
     }
 
     .basket-t h6 {
         font: normal normal normal 16px/24px Muli;
     }
-    .basket-1{
+
+    .basket-1 {
         font: normal normal normal 16px/24px Muli;
     }
-    .basket-left{
+
+    .basket-left {
         font: normal normal normal 16px/24px Muli;
     }
+
     .cartdetails {
         border: 2px #D1D3D6 solid;
         padding: 2rem;
@@ -108,7 +118,7 @@
             font-size: 13px;
             font-weight: 400;
             // padding-top: 0rem;
-            
+
         }
 
         button {

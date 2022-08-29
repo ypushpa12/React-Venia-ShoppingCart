@@ -2,11 +2,8 @@
   padding-left: 245px;
   padding-top: 10px;
 }
-
 .guest-3 p {
   color: #1363DF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -14,11 +11,9 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
 .product-desc h6 {
   font: normal normal normal 16px/24px Muli;
 }
-
 .product-desc h5 {
   font: normal normal 600 16px/20px Muli;
 }
@@ -37,7 +32,6 @@
   border-radius: 14px;
   height: 33px;
 }
-
 .main-btn1 a {
   color: white;
 }
@@ -70,7 +64,6 @@
     top: 28px;
   }
 }
-
 @media only screen and (max-width: 1024px) {
   .main-btn1 {
     top: 11px;
@@ -78,5 +71,4 @@
   .main-p {
     top: 10px;
   }
-}
-/*# sourceMappingURL=Checkout4.css.map */
+}/*# sourceMappingURL=Checkout4.css.map */

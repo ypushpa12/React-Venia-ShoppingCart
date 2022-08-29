@@ -43,7 +43,6 @@
   padding-top: 50px;
   line-height: 10px;
 }
-
 .guestp p {
   margin: 0px;
   padding: 0px;
@@ -118,7 +117,6 @@
     margin-left: 220px;
   }
 }
-
 @media only screen and (max-width: 320px) {
   .check-3 {
     margin-left: 26px;
@@ -126,5 +124,4 @@
   .billing-proof {
     font: normal normal normal 14px Muli;
   }
-}
-/*# sourceMappingURL=Checkout3.css.map */
+}/*# sourceMappingURL=Checkout3.css.map */

@@ -45,7 +45,7 @@
 .footer_aboutus a,
 .footer_help_one a {
   text-decoration: none;
-  font-family: 'Muli';
+  font-family: "Muli";
   letter-spacing: 1px;
   color: #545D63;
   font-size: 16px;
@@ -81,8 +81,6 @@ a:hover {
 }
 
 .footer_terms {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -103,8 +101,6 @@ a:hover {
 }
 
 .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -115,8 +111,6 @@ a:hover {
 @media only screen and (min-width: 320px) and (max-width: 765px) {
   .footer_termsphone {
     padding-left: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 20px;
     padding-top: 26px;
@@ -142,7 +136,6 @@ a:hover {
     text-align: center;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1020px) {
   .footer_termsphone {
     display: none;
@@ -160,5 +153,4 @@ a:hover {
   .footerphone {
     text-align: center;
   }
-}
-/*# sourceMappingURL=Footer.css.map */
+}/*# sourceMappingURL=Footer.css.map */

@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import "../Style/Product.scss";
+import store from '../redux/store';
 import Swatchone from '../Images/Swatch 01.png';
 import Swatchtwo from '../Images/Swatch 02.png';
 import Swatchthree from '../Images/Swatch 03.png';
@@ -16,13 +17,16 @@ import { TbLeaf } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 const Product = (props) => {
     const { cartItems, onAdd, onRemove } = props;
-
     const { id } = useParams();
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
+    console.log(product, "initial product")
+
     useEffect(() => {
+
         const getProduct = async () => {
             setLoading(true);
+            console.log("fetching from api", store.getState('products/${id}'))
             const response = await fetch(`https://fakestoreapi.com/products/${id}`);
             setProduct(await response.json());
             setLoading(false);
@@ -31,6 +35,15 @@ const Product = (props) => {
     }, []);
 
 
+    let buttonclass = "";
+    let SizeValue;
+    function SelectedSize(event) {
+        SizeValue = event.target.value;
+        product['Size'] = SizeValue;
+        setProduct(product);
+        console.log(event.target.value, product);
+        buttonclass = "clicked";
+    }
 
     const ShowProduct = () => {
         return (
@@ -71,19 +84,19 @@ const Product = (props) => {
                                 sed do eiusmod tempor labore et dolore magna</p>
                             <hr />
                             <div className="swatch">
-                                <h5>Colors</h5>
+                                <h5>Colors:</h5>
                                 <img src={Swatchone} className="swatchone" alt="image1" />
                                 <img src={Swatchtwo} className="swatchtwo" alt="image2" />
                                 <img src={Swatchthree} className="swatchthree" alt="image2" />
                                 <img src={Swatchfour} className="swatchfour" alt="image2" />
                             </div>
                             <div className='size'>
-                                <h5>Size</h5>
-                                <span >XS</span>
-                                <span >S</span>
-                                <span >M</span>
-                                <span >L</span>
-                                <span >XL</span>
+                                <h5>Size:{product.Size}</h5>
+                                <button className={buttonclass} onClick={SelectedSize} value="XS">XS</button>
+                                <button className={buttonclass} onClick={SelectedSize} value="S">S</button>
+                                <button className={buttonclass} onClick={SelectedSize} value="M">M</button>
+                                <button className={buttonclass} onClick={SelectedSize} value="L">L</button>
+                                <button className={buttonclass} onClick={SelectedSize} value="XL">XL</button>
                             </div>
                             <br />
                             <div className='static'>

@@ -3,7 +3,7 @@
 }
 
 .herosection {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 .hero-sec .card_1-body {
@@ -17,15 +17,14 @@
   text-align: center;
   padding-top: 7rem;
   font-size: 3rem;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 .l hr {
   opacity: 3;
   background-color: #1363DF;
   width: 10rem;
-  left: 94px;
-  position: relative;
+  margin: auto;
   background-color: 42rem;
   height: 5px;
 }
@@ -37,10 +36,10 @@
 }
 
 .pic1 img {
-  height: 267px;
+  height: 280px !important;
   width: 100% !important;
   position: relative;
-  top: 9px;
+  top: 5px;
   left: 0px !important;
 }
 
@@ -72,7 +71,7 @@
   text-align: center;
   padding-top: 4rem;
   font-size: 3rem;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 .card-img {
@@ -94,7 +93,7 @@
   color: white;
   font-size: 40px;
   font-weight: 400;
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
 }
 
 .hero_land-content p {
@@ -112,15 +111,11 @@
 }
 
 .card-img-top {
-  -ms-flex-line-pack: end !important;
-      align-content: end !important;
+  align-content: end !important;
   background-size: cover !important;
-  display: -ms-grid !important;
   display: grid !important;
   height: 362px !important;
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: end !important;
+  justify-content: end !important;
   margin: 0 !important;
   min-height: 240px !important;
   padding: 0 !important;
@@ -149,21 +144,19 @@
     display: block;
   }
   .l hr {
-    left: 25%;
+    margin: auto;
   }
   .mob-reverse {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .hero-sec .card_1_title {
+    padding-top: 3rem;
   }
   .card_1-body {
     width: 90% !important;
     margin: auto;
-    height: 250px !important;
+    height: 210px !important;
   }
   .mob_1 {
     z-index: 999;
@@ -172,11 +165,10 @@
     margin-top: -2rem;
   }
   .pic1 img {
-    height: 190px;
+    height: 190px !important;
     top: 0px;
   }
   .paginationone {
     display: none;
   }
-}
-/*# sourceMappingURL=Hero.css.map */
+}/*# sourceMappingURL=Hero.css.map */

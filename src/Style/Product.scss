@@ -94,9 +94,9 @@ $blackcolor: #172026;
 }
 
 .swatch img {
-    padding-left: 0px;
-    width: 52px;
-    height: 35px;
+    // padding-left: 0px;
+    // width: 52px;
+    // height: 35px;
     border-radius: 10px;
 }
 
@@ -132,15 +132,6 @@ $blackcolor: #172026;
 .details-1 {
     padding-top: 0px !important;
 }
-
-// .line hr {
-//     background-color: #1363DF !important;
-//     height: 0.5rem !important;
-//     width: 7%;
-//     margin: 2rem 0rem;
-//     opacity: 1;
-// }
-
 .addtocart {
     width: 300px;
     height: 40px;
@@ -184,7 +175,7 @@ $blackcolor: #172026;
     border-radius: 50%;
 }
 
-.size span {
+.size button {
     float: left;
     width: 60px;
     text-align: center;
@@ -233,13 +224,8 @@ $blackcolor: #172026;
 
 }
 
-// .oneprice img{
-//     height: 55rem;
-//     position: relative;
-//     left: 9rem;
-// }
 .swatch img {
-    right: 47px;
+    right: 60px;
     position: relative;
     top: 34px;
 }

@@ -1,7 +1,5 @@
 import store from '../../redux/store';
 import { getProducts } from '../../redux/actions/productsActions'
-// import _ from 'lodash';
-
 const productRestApi = "https://fakestoreapi.com/products";
 
 // export function getProductsdata() {

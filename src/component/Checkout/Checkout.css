@@ -3,10 +3,8 @@
 h1,
 h2,
 h3 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
-
-
 
 .button-primary {
   border-radius: 10px;
@@ -17,7 +15,6 @@ h3 {
   border-color: transparent;
   padding: 10px 30px;
 }
-
 .button-primary:hover {
   color: #FFFFFF;
   text-decoration: none;
@@ -43,13 +40,12 @@ h3 {
   padding: 10px 30px;
   border: 2px solid #1363DF;
 }
-
 .button-secondary:hover {
   color: #1363DF;
   text-decoration: none;
 }
 
-.form input[type="checkbox"]:before {
+.form input[type=checkbox]:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -65,11 +61,11 @@ h3 {
   color: #1363DF;
 }
 
-.form input[type="checkbox"]:checked:before {
+.form input[type=checkbox]:checked:before {
   content: "\f046";
 }
 
-.form input[type="checkbox"] {
+.form input[type=checkbox] {
   font-size: 20px;
   appearance: none;
   -webkit-appearance: none;
@@ -79,14 +75,12 @@ h3 {
 .checkout {
   margin: 45px 0;
 }
-
 .checkout h1 {
   color: #172026;
   font-size: 32px;
   position: relative;
   margin-bottom: 35px;
 }
-
 .checkout h1::before {
   content: "";
   background-color: #1363DF;
@@ -96,91 +90,70 @@ h3 {
   bottom: -25%;
   left: 47%;
 }
-
 .checkout__left h3 {
   font-size: 28px;
   margin-bottom: 15px;
 }
-
 .checkout__left h5 {
   font-size: 16px;
   color: #72777F;
 }
-
 .checkout__left p {
   font-size: 14px;
 }
-
 .checkout__left h4 {
   color: #172026;
   font-size: 16px;
   margin-bottom: 5px;
 }
-
 .checkout__left .MuiAccordionSummary-expandIconWrapper {
   display: none;
 }
-
 .checkout__left label {
   color: #181C24;
   font-size: 14px;
   font-weight: bold;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
-
 .checkout__left input {
   width: 90%;
-  font-family: 'Muli';
+  font-family: "Muli";
   font-size: 14px;
 }
-
 .checkout__left select {
   width: 90%;
-  font-family: 'Muli';
+  font-family: "Muli";
   font-size: 14px;
 }
-
 .checkout__left .blank-space {
   visibility: hidden;
 }
-
 .checkout__left .address2-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 90%;
 }
-
 .checkout__left .address2-label span {
   color: #545D63;
 }
-
 .checkout__left .checkout-buttons {
   text-align: center;
   float: left;
   width: 95%;
   margin: 15px 0;
 }
-
 .checkout__left .checkout-buttons button {
   margin: 15px 0;
 }
-
 .checkout__left .state-align {
   width: 94%;
 }
-
 .checkout__left-guest {
   margin-bottom: 30px;
 }
-
 .checkout__left-steps {
   margin-top: 30px;
 }
-
 .checkout__left-steps h4 {
   font-size: 18px;
   border-top: 1px solid #B5B7BC;
@@ -189,80 +162,58 @@ h3 {
   color: #72777F;
   width: 95%;
 }
-
 .checkout__left-steps h4:last-child {
   border-bottom: 1px solid #B5B7BC;
 }
-
 .checkout__left-stepper .css-16r9pk3 {
   max-width: 100% !important;
 }
-
 .checkout__left-stepper .css-vnkopk-MuiStepLabel-iconContainer {
   display: none;
 }
-
 .checkout__left-stepper .css-14yr603-MuiStepContent-root {
   border-left: 0px;
 }
-
 .checkout__left-stepper .css-8t49rw-MuiStepConnector-line {
   border-color: #FFFFFF;
 }
-
 .checkout__left-stepper .css-1pe7n21-MuiStepConnector-root {
   display: none;
 }
-
 .checkout__left-stepper .css-14yr603-MuiStepContent-root {
   margin: 0px;
   padding: 0px;
 }
-
 .checkout__left-stepper .css-1mz1l2x-MuiStepContent-root {
   margin: 0px;
   padding: 0px;
 }
-
 .checkout__right h4 {
   font-size: 20px;
   color: #172026;
   margin-bottom: 20px;
   font-family: "Muli";
 }
-
 .checkout__right-signin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border: 1px solid #D1D3D6;
   padding: 15px;
   margin-bottom: 20px;
 }
-
 .checkout__right-signin h5 {
   width: 60%;
   font-size: 18px;
   font: normal normal 600 20px Muli;
 }
-
 .checkout__right-summary {
   border: 1px solid #D1D3D6;
   padding: 15px;
 }
-
 .checkout__right-summary div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .checkout__right-summary div p {
   font-size: 14px;
   font-family: "Muli";
@@ -271,14 +222,12 @@ h3 {
 .shipmethods {
   margin: 45px 0;
 }
-
 .shipmethods h1 {
   color: #172026;
   font-size: 32px;
   position: relative;
   margin-bottom: 35px;
 }
-
 .shipmethods h1::before {
   content: "";
   background-color: #1363DF;
@@ -288,72 +237,56 @@ h3 {
   bottom: -25%;
   left: 47%;
 }
-
 .shipmethods h3 {
   font-size: 28px;
   margin-bottom: 15px;
 }
-
 .shipmethods__info {
   border: 1px solid #D1D3D6;
   padding: 15px;
   width: 95%;
   margin-bottom: 30px;
 }
-
 .shipmethods__info h6 {
-  font: normal normal 600 15px Muli;
+  font-size: 17px;
   margin-bottom: 10px;
   font-weight: 600;
 }
-
 .shipmethods__info-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .shipmethods__info-details span {
   font-size: 14px;
   color: #1363DF;
 }
-
 .shipmethods__info a:hover {
   text-decoration: none;
 }
-
 .shipmethods__info p {
   font-size: 17px;
   color: #535965;
   margin-bottom: 0;
 }
-
 .shipmethods__ships h4 {
-  font: normal normal 600 16px Muli;
+  font-size: 16px;
   color: #172026;
   margin-bottom: 20px;
   font-family: "Muli";
 }
-
 .shipmethods__ships label {
   font-size: 14px;
   margin-bottom: 10px;
 }
-
 .shipmethods__ships .checkout-buttons {
   text-align: center;
   float: left;
   width: 95%;
   margin: 15px 0;
 }
-
 .shipmethods__ships .form-check {
   padding-left: 20px;
 }
-
 .shipmethods__ships .checkout__left-steps {
   width: 95%;
   float: left;
@@ -363,14 +296,12 @@ h3 {
 .paymentmethods {
   margin: 45px 0;
 }
-
 .paymentmethods h1 {
   color: #172026;
   font-size: 32px;
   position: relative;
   margin-bottom: 35px;
 }
-
 .paymentmethods h1::before {
   content: "";
   background-color: #1363DF;
@@ -380,7 +311,6 @@ h3 {
   bottom: -25%;
   left: 47%;
 }
-
 .paymentmethods .paypal-check {
   border: 1px solid #D1D3D6;
   border-right: 0px;
@@ -388,31 +318,23 @@ h3 {
   width: 100%;
   padding: 15px 25px;
 }
-
 .paymentmethods .paypal-check label {
   margin-bottom: 0px;
 }
-
 .paymentmethods .state-align input {
   width: 70%;
 }
-
 .paymentmethods .cvv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .paymentmethods .cvv span {
   font-size: 16px;
   margin-left: 10px;
 }
-
 .paymentmethods .save-card {
   color: #181C24;
-  font: normal normal normal 16px/22px Muli;
+  font-size: 14px;
 }
-
 .paymentmethods .paypal-label {
   font-size: 16px;
   font-weight: normal;
@@ -421,18 +343,15 @@ h3 {
 .revieworder {
   margin: 45px 0;
 }
-
 .revieworder h1 {
   color: #172026;
   font-size: 32px;
   position: relative;
   margin-bottom: 35px;
 }
-
 .revieworder .totalitems {
   margin-bottom: 20px;
 }
-
 .revieworder h1::before {
   content: "";
   background-color: #1363DF;
@@ -442,42 +361,32 @@ h3 {
   bottom: -25%;
   left: 47%;
 }
-
 .revieworder h3 {
   font-size: 28px;
   margin-bottom: 15px;
 }
-
 .revieworder .items-inorder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .revieworder .items-inorder img {
   width: 80px;
 }
-
 .revieworder .items-inorder div {
   padding-left: 15px;
 }
-
 .revieworder .checkout-buttons {
   text-align: center;
 }
-
 .revieworder .checkout-buttons p {
-  font: normal normal normal 15px Muli;
+  font-size: 14px;
   margin-top: 20px;
   color: #172026;
 }
-
 .revieworder .checkout-buttons p a {
   color: #172026;
   text-decoration: underline;
   font-weight: 600;
 }
-
 .revieworder .checkout-buttons p a:hover {
   color: #172026;
 }
@@ -485,14 +394,12 @@ h3 {
 .ordersuccessful {
   margin: 45px 0;
 }
-
 .ordersuccessful h1 {
   color: #172026;
   font-size: 32px;
   position: relative;
   margin-bottom: 35px;
 }
-
 .ordersuccessful h1::before {
   content: "";
   background-color: #1363DF;
@@ -502,67 +409,49 @@ h3 {
   bottom: -25%;
   left: 47%;
 }
-
 .ordersuccessful__info {
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.desk_h6{
-  font: normal normal 600 16px Muli;
-}
 .ordersuccessful__info h6 {
-  font: normal normal 600 16px/20px Muli;
+  font-size: 14px;
   margin-bottom: 10px;
 }
-
 .ordersuccessful__info p {
   font-size: 14px;
   margin-bottom: 0px;
   font-family: "Muli";
 }
-
 .ordersuccessful__info-items {
   margin-top: 15px;
 }
-
 .ordersuccessful__message p {
   font-size: 12px;
   font-family: "Muli";
 }
-
 .ordersuccessful .items-inorder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 0;
 }
-
 .ordersuccessful .items-inorder img {
   width: 90px;
 }
-
 .ordersuccessful .items-inorder div {
   padding-left: 15px;
 }
-
 .ordersuccessful .ordersuccessful-summary {
   background-color: #47B5FF;
   padding: 50px;
   text-align: center;
 }
-
 .ordersuccessful .ordersuccessful-summary h2 {
   color: #FFFFFF;
   font-size: 28px;
 }
-
 .ordersuccessful__socialicons {
   margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .ordersuccessful__socialicons a {
   color: #FFFFFF;
   margin: 0 10px;
@@ -582,9 +471,6 @@ h3 {
   }
   .checkout h1 {
     font-size: 24px;
-  }
-  .mobile-b{
-    display: block;
   }
   .checkout h1::before {
     width: 15%;
@@ -755,7 +641,6 @@ h3 {
     margin-top: 20px;
   }
 }
-
 @media only screen and (min-width: 1440px) and (max-width: 1600px) {
   .checkout {
     margin-top: 85px;
@@ -772,5 +657,4 @@ h3 {
   .ordersuccessful {
     margin-top: 85px;
   }
-}
-/*# sourceMappingURL=Checkout.css.map */
+}/*# sourceMappingURL=Checkout.css.map */
