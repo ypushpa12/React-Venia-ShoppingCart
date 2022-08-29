@@ -28,7 +28,7 @@ export default function Basket(props) {
                   </div>
                   <div className='basket-left'>
                     <h5>{item.title.substring(0, 18)}</h5>
-                    <h6>Size : {item.Size}</h6>
+                    <h6>Size : {item.size}</h6>
                     <h6>Color : Storm</h6>
                     <h6>${item.price}</h6>
                   </div>

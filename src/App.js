@@ -22,13 +22,23 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const [category, setCategory] = useState("");
   const onAdd = (product) => {
-    const exist = cartItems.find((x) => x.id === product.id);
-    if (exist) {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
-        )
-      );
+    const idexist = cartItems.find((x) => x.id === product.id);
+    if (idexist) {
+      const sizeexist = cartItems.find((x) => x.size === product.size);
+      if (sizeexist) {
+        setCartItems(
+          cartItems.map((x) =>
+            x.size === product.size ? { ...sizeexist, qty: sizeexist.qty + 1 } : x
+          )
+        );
+      }
+      else {
+        setCartItems(
+          cartItems.map((x) =>
+            x.id === product.id ? { ...idexist, qty: idexist.qty + 1 } : x
+          )
+        );
+      }
     } else {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
     }

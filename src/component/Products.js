@@ -11,7 +11,7 @@ import { getProductsdata } from './api/productsApi';
 const itemsPerPage = 12;
 
 const Products = ({ category }) => {
-    console.log(category);
+
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
@@ -32,7 +32,7 @@ const Products = ({ category }) => {
                 setData(finaldata);
                 const data = finaldata;
                 setFilter(data);
-                console.log(data);
+             
                 setLoading(false);
             }
             return () => {
@@ -66,16 +66,14 @@ const Products = ({ category }) => {
 
         useEffect(() => {
             const endOffset = itemOffset + itemsPerPage;
-            console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+           
             setCurrentItems(filter.slice(itemOffset, endOffset));
             setPageCount(Math.ceil(filter.length / itemsPerPage));
         }, [itemOffset, itemsPerPage]);
 
         const handlePageClick = (event) => {
             const newOffset = (event.selected * itemsPerPage) % filter.length;
-            console.log(
-                `User requested page number ${event.selected}, which is offset ${newOffset}`
-            );
+           
             setItemOffset(newOffset);
         };
         return (

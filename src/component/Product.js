@@ -20,18 +20,23 @@ const Product = (props) => {
     const { id } = useParams();
     const [product, setProduct] = useState([]);
     const [loading, setLoading] = useState(false);
-    console.log(product, "initial product")
+
+
+
+
 
     useEffect(() => {
 
-        const getProduct = async () => {
-            setLoading(true);
-            console.log("fetching from api", store.getState('products/${id}'))
-            const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-            setProduct(await response.json());
-            setLoading(false);
-        }
-        getProduct();
+        const productsdata = store.getState();
+        const response = productsdata.allProducts.products;
+        const finaldata = response.filter((item) => {
+            if (item.id == id) {
+
+                setProduct(item)
+                return item;
+            }
+
+        });
     }, []);
 
 
@@ -39,9 +44,9 @@ const Product = (props) => {
     let SizeValue;
     function SelectedSize(event) {
         SizeValue = event.target.value;
-        product['Size'] = SizeValue;
+        product['size'] = SizeValue;
         setProduct(product);
-        console.log(event.target.value, product);
+console.log(product);
         buttonclass = "clicked";
     }
 
@@ -91,7 +96,7 @@ const Product = (props) => {
                                 <img src={Swatchfour} className="swatchfour" alt="image2" />
                             </div>
                             <div className='size'>
-                                <h5>Size:{product.Size}</h5>
+                                <h5>Size:{product.size}</h5>
                                 <button className={buttonclass} onClick={SelectedSize} value="XS">XS</button>
                                 <button className={buttonclass} onClick={SelectedSize} value="S">S</button>
                                 <button className={buttonclass} onClick={SelectedSize} value="M">M</button>
